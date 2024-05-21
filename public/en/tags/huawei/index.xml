@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Huawei on Hyruo Blog</title>
+        <link>https://hyruo.com/en/tags/huawei/</link>
+        <description>Recent content in Huawei on Hyruo Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Tue, 18 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/en/tags/huawei/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to design a network storage solution for a large number of family photos</title>
+        <link>https://hyruo.com/en/article/how-to-design-a-network-storage-solution-for-family-photos/</link>
+        <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/article/how-to-design-a-network-storage-solution-for-family-photos/</guid>
+        <description>&lt;img src="https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/N1-scaled-1.webp" alt="Featured image of post How to design a network storage solution for a large number of family photos" /&gt;&lt;p&gt;Over the years, as the number of personal electronic documents and photos has grown, I personally currently have roughly 40GB of Office files containing nearly 100,000 DOC documents and countless excel files. My family has over 120,000 files of photos and videos stored, containing jpg cr2 heiv heif mp4 avi and various other formats, which is about 700GB after removing duplicate files.Recently, I re-adjusted some of the cloud storage products and services. Here is how I design a solution for network storage aticles.&lt;/p&gt;
+&lt;h2 id=&#34;clear-about-the-type-of-device-you-have&#34;&gt;Clear about the type of device you have
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;First, &lt;strong&gt;be clear about the type of device you have&lt;/strong&gt;. For example, the main electronic products and network services I am using personally and at home are as follows:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I have three main cell phones currently in use at home, namely Huawei P40 Pro ,Vivo X80, Huawei mate 20. I need to meet the demand for each phone to be able to view all the photos of my family anytime and anywhere.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I currently have three computers at home, namely Lenovo Y9000p, Thinkpad P53, Intel NUC12, all equipped with 4K resolution monitors, corresponding to the needs of games, work and network video respectively. In addition there are iPad Pro and vivo pad and other tablet computers, often need to pass files to each other.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I have other digital cameras at home, which probably produce about 200GB of photos and videos per year and need secure storage.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I have two TVs at home, TCL 75-inch and Sony 65-inch, both with 4K resolution, which need to meet the demand for large bandwidth video viewing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I have a Synology small NAS at home that can store 4TB of data, but it uses a 2.5-inch hard drive version with lower performance because it needs to be stuffed into a weak box. In addition, I have two Netgear routers at home with a third-party modified version of the Merlin system, which can readily mount large-capacity removable hard drives.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My family uses China Mobile&amp;rsquo;s family mobile data package service, which includes more than 100GB of network traffic per month, which can meet the daily needs of using cell phones to link to cloud storage for uploading and downloading files at any time. In addition, China Mobile also gives 1000Mbps home fiber broadband, which has a download speed of 100MB/s and an upload speed of 5MB/s.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/nas-jpg.webp&#34;
+	width=&#34;742&#34;
+	height=&#34;314&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/nas-jpg_hu529502e9836253be38ca36bd6df6132b_11030_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/nas-jpg_hu529502e9836253be38ca36bd6df6132b_11030_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;236&#34;
+		data-flex-basis=&#34;567px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A comprehensive analysis reveals that the biggest problem at present is that my family uses various brands and platforms of smart devices. The cell phone is mainly android platform and Huawei Harmony OS based on android platform, the computer has both windows system and Android and IOS system, and the TV is all Android system. In this case, it is difficult for me to solve my needs through a single cloud storage method. One possible idea is to replace all the major devices I am using with the same brand and the same platform. For example, replacing the Vivo phone I&amp;rsquo;m currently using with a Huawei phone. However, the main reason why I am buying a Vivo phone in 2022 is that Huawei was unjustifiably sanctioned by the U.S., which prevented the 5G chip it designed from being produced, and all the phones on sale are 4G versions. I had to buy a non-Huawei branded 5G phone because the 4G network speed was hard to satisfy me. But this problem will probably be solved in the next few years with the rapid progress of photolithography and chip manufacturing technology in mainland China.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;break-down-your-needs-into-the-specialized-terms&#34;&gt;Break down your needs into the specialized terms
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Second, &lt;strong&gt;break down your needs into the specialized terms&lt;/strong&gt; that correspond to cloud storage services. For example, my personal and family needs can be summarized as follows:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;high-capacity storage space: photo storage services of 1TB or more;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;multi-platform sharing: compatible with Android/Windows/IOS and other platforms;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;intranet high-speed transfer: support CloudSync of Synology NAS; (WebDav and other unofficial and unstable ways are not considered)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;extranet high-speed transfer: support 20MB/S download service and 5MB/s upload service;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;security and privacy: integrity of data preservation and reliable privacy protection;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;document management: professional Office document management;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;album management: professional photo management;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;intelligent photo albums: automatic photo organization by means of artificial intelligence;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;efficient search: providing text \OCR\ intelligent recognition search;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;suitable cost: affordable price.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;look-for-a-network-storage-service-that-corresponds-to-your-needs&#34;&gt;look for a network storage service that corresponds to your needs
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Next, &lt;strong&gt;look for a network storage service that corresponds to your needs&lt;/strong&gt;. Here, I briefly list some of the storage services I have used in the last 10 years:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;the Synology NAS Ds416slim 4*2TB (available capacity 4TB), mainly used to store family photos and videos. one-time purchase cost in 2017 was RMB 4,000, no plans to update in the near future.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;115.com cloud storage.115.com cloud storage 80TB, mainly used to store illegal resources on the Internet. 2014 one-time purchase cost is RMB 400 (2014-2024), no renewal plan after expiration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Onedrive Home Edition 6TB , mainly used to store online books and photos and videos, etc. Microsoft 365 Home Edition, annual cost of 220 RMB, ongoing subscription.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Huawei Cloud 2TB, used only to backup Huawei cell phone photos and videos. Costs 750 RMB per year, renewal cancelled in March 2023.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aliyun Cloud 2TB, used only for downloading movies, TV shows and other web resources. Free.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Baidu Cloud 2TB , used only for downloading web resources. Free of charge, with occasional paid usage at 30 RMB per month.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ChinaMobile Cloud 9TB, only used to backup home files. Limited free (because I am a China Mobile mobile data package user, free gift).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WPS Cloud 1TB for WPS Office document storage only. 2019 one-time purchase cost is RMB 600 (2019-2029), current renewal fee is RMB 250 per year.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iCloud, a 200GB version was previously purchased during the family&amp;rsquo;s use of iPhones and has not been used since 2018.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;After a long time of using the above products and services, here I briefly talk about the experience of using them. At the same time, I also made a table to list my scoring of these products and services, and as my personal decision basis.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;1-synology-nas&#34;&gt;1. Synology NAS
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NAS is my largest one-time investment in storage, and the value of its use is undeniable. There are mainly the following conveniences:&lt;/p&gt;
+&lt;p&gt;a. The storage capacity is large enough to store all the important family files conveniently, and it has strong privacy, so you don&amp;rsquo;t have to worry about leaking personal privacy. In terms of data security, I set up two sets of Raid 1 for the four hard drives and manually back up important data to the removable drive from time to time so that I can recover the data even if the drive is destroyed.&lt;/p&gt;
+&lt;p&gt;b. You can easily backup to a network drive. For example, NAS files can be synchronized and backed up to cloud storage such as Baidu Cloud and Onedrive via the built-in CloudSync program.&lt;/p&gt;
+&lt;p&gt;c. High-speed file transfer within the home is possible. NAS folders can be mounted to any computer and smartphone, tablet, or TV at home via protocols such as Samba.&lt;/p&gt;
+&lt;p&gt;However, there are very big limitations in using Synology NAS in home use, especially in China&amp;rsquo;s network environment.&lt;/p&gt;
+&lt;p&gt;a. Currently, most of the home broadband users in China are using shared IPv4 pools, and there is no fixed IPv4, so there is no way to open NAS files quickly on networks outside the home. You need to use a third party network penetration service, which increases the cost of use.&lt;/p&gt;
+&lt;p&gt;b. Although Synology provides Quick connect, an external network access service, the reliability of this service is not high in China, and the speed of file transfer is less than 500KB/s, which is less practical.&lt;/p&gt;
+&lt;p&gt;c. China&amp;rsquo;s home broadband is an asymmetric network, the 1Gbps fiber optic network I am currently using at home, although the downlink speed can reach more than 100MB/s, but the maximum upload speed of files is only 5MB/s, which is difficult to achieve high-speed file outgoing transmission. operators usually limit the upload speed of home users&amp;rsquo; network to about 30-40Mbps.&lt;/p&gt;
+&lt;p&gt;d. In China&amp;rsquo;s network environment, currently large files (e.g., 4K videos, TV episodes, etc.) are usually downloaded using network hard disk mode. In actual use, network drives such as Aliyun Cloud , ChinaMobile Cloud, etc. provide TV/PC clients directly to provide 4K video online viewing services. Unless the individual has a strong collection fetish, it is already very unwise to download video and TV episode files to local viewing. This also further compresses the limitations of NAS usage, making it more focused on internal home file usage rather than an aid for using network files.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/IMG_20230418_145317-461x1024.webp&#34;
+	width=&#34;461&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/IMG_20230418_145317-461x1024_hu6c1c0a100c7df69ea0fb1f35ada03386_15090_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/IMG_20230418_145317-461x1024_hu6c1c0a100c7df69ea0fb1f35ada03386_15090_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;45&#34;
+		data-flex-basis=&#34;108px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;2-115-cloud&#34;&gt;2. 115 Cloud
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;According to personal observation, most of the users who use 115 cloud storage are storing illegal video files. For example: pirated pornographic videos, pirated movies, etc. The following advantages are available when storing these files:&lt;/p&gt;
+&lt;p&gt;a. Large capacity. 115 Cloud provided unlimited storage space for some paid users before 2014, which could be obtained using lower cost at that time. I did not purchase the unlimited space service back then, but I purchased a 10-year regular membership for RMB 40 per year to get access to 80TB of space. The current membership renewal offer is around 200 RMB per year.&lt;/p&gt;
+&lt;p&gt;b. Fast speed. 115 Cloud download speed is about 200Mbps, which is enough for daily use, because even 4K video online only needs 100Mbps.&lt;/p&gt;
+&lt;p&gt;c. Easy to upload files. 115 Cloud can easily store files using magnet links, bt seed files, SHA1 collisions, etc. There are plenty of such resources available in some websites. For example, just by providing a magnet link of the top 500 movies in imdb list, you can store HD video files of 500 movies to the user&amp;rsquo;s 115 Cloud folder in seconds.&lt;/p&gt;
+&lt;p&gt;d. The most strange thing is that in the strictly regulated environment, it is almost impossible for the cloud storage services of Internet giants such as Baidu Alibaba to provide any chance of illegal file storage, but 115 Cloud always runs stably. Needless to say, this is strange.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144103-461x1024.webp&#34;
+	width=&#34;461&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144103-461x1024_huac9eb2c42a86424f6993dec08bde3d13_15430_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144103-461x1024_huac9eb2c42a86424f6993dec08bde3d13_15430_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;45&#34;
+		data-flex-basis=&#34;108px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Since 115 Cloud storage wanders on the edge of illegality, its biggest flaw is always the security issue, and it may simply announce its closure during some future crackdown organized by the government on the distribution of illegal files. I believe no user would dare to store important data on such a network drive.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;3-onedrive&#34;&gt;3. Onedrive
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Onedrive has two kinds of storage in China, one is stored in mainland China, operated by Vnet, mainly for business users; the other is stored in Hong Kong or Singapore, operated by Microsoft itself, mainly for personal services. The main advantages are as follows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144114-461x1024.webp&#34;
+	width=&#34;461&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144114-461x1024_hu321e831bec0a4f4bcb933be48e6a7cf9_17242_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144114-461x1024_hu321e831bec0a4f4bcb933be48e6a7cf9_17242_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;45&#34;
+		data-flex-basis=&#34;108px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;a. Better privacy. Compared with other cloud storage in China, Onedrive does a good job in privacy protection. Other cloud stores use SHA1 collision by default when uploading files, so if the file is available in the cloud server, it will bypass the upload step and copy the file directly to the user&amp;rsquo;s folder. ps: Nowadays, this has become a major disadvantage of Onedrive, because users need to upload all files through their own network. For example, uploading a movie file downloaded on the Internet will most likely take only a few seconds on other web sites (most of the Internet resources are backed up in these cloud stores), but Onedrive requires the complete re-upload of the file over the user&amp;rsquo;s network.&lt;/p&gt;
+&lt;p&gt;b. Easy to connect with Windows systems and Offce software. For example, in windows 11, onedrive is the only backup method in the system settings by default. If you need to backup to local hard disk, you need to find the traditional &amp;ldquo;control panel&amp;rdquo; and choose windows 7 backup mode to backup.&lt;/p&gt;
+&lt;p&gt;Onedrive gives you the option to add all your photos from your personal folder to an album, even if they are not placed in the default photo folder, so you can manage them easily. In addition, onedrive also provides intelligent classification recognition of pictures and text ocr search of pictures.Overall, Onedrive is a moderate cloud storage service. However, since it does not provide localized personal services in mainland China, there are many inconveniences in the process of using it.&lt;/p&gt;
+&lt;p&gt;a. The speed of internet connection is not high. I subscribed to MicroSoft 365 family service, and I can open up to 6 accounts with 6TB storage space, but in the process of using it, I often encounter network blockage, the speed is fast and slow, and occasionally disconnected.&lt;/p&gt;
+&lt;p&gt;b. onedrive does not support Chinese well. There have been problems with onedrive in Chinese search. For example, document search does not support Chinese. In the latest version of the app, onedrive still doesn&amp;rsquo;t support Chinese well in photo search, and only the first 50 search results are displayed each time, which is obviously not enough for me who has more than 100,000 photos.&lt;/p&gt;
+&lt;p&gt;c. Some services of Onedrive are blocked in China. For example, there is usually no way to open the photo sharing links directly, you have to borrow VPN and other ways to access them. The web version of onedrive is also blocked in China.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;4-huawei-cloud-drive&#34;&gt;4. Huawei Cloud Drive
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Huawei&amp;rsquo;s cloud storage solution is similar to iCloud in that it offers 5GB of space for free and 50GB/200GB/2024GB for a fee. The main advantages are as follows:&lt;/p&gt;
+&lt;p&gt;a. Deeply bound to the cell phone system. You can experience the convenience of cloud services in the album without perception, and because Chinese cell phone manufacturers continue to innovate in the album, the addition of various artificial intelligence recognition services makes it extremely convenient to find photos in the phone. Even if the number of photos I had stored in Huawei&amp;rsquo;s cloud reached hundred of thousands, I was able to quickly filter them out through the search function.&lt;/p&gt;
+&lt;p&gt;b. The overall speed of use is smooth. On the one hand, I rarely encounter the situation that I can&amp;rsquo;t open photos because of network problems, and the upload and download speeds are kept at excellent levels. On the other hand, in terms of photo album integration, the photos stored in the cloud are basically the same as local photos, so users don&amp;rsquo;t need to care whether the photos are stored locally or in the cloud.&lt;/p&gt;
+&lt;p&gt;c. Comes with cell phone system backup function. If you turn on a high-capacity cloud package service, you can generally backup your phone files to the cloud as a whole, and you only need to log in to your original account when you change your phone.&lt;/p&gt;
+&lt;p&gt;However, as the cloud storage of cell phone manufacturers mainly focus on cell phone use, the scope of use is narrow.&lt;/p&gt;
+&lt;p&gt;a. Cross-platform use is difficult. Unless the whole family uses the same brand of cell phones and computers, it is difficult to share the cloud storage space and its convenience with each other.&lt;/p&gt;
+&lt;p&gt;b. The price is high. For example, Huawei&amp;rsquo;s 2048gb package plan costs RMB 68 per month, more than three times the price of other mainstream consumer cloud storage space on the market.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Overall, Huawei cloud storage is in the same class as Apple&amp;rsquo;s iCloud. But because Huawei was sanctioned by the United States, his hardware line is currently less complete and better than Apple&amp;rsquo;s, which is indeed a great pity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;5-aliyundrive&#34;&gt;5. AliyunDrive
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AliyunDrive is a new service launched by Alibaba Group in the last two years, with free and unlimited speed as its main selling point, which relies on Aliyun platform, currently the largest cloud service platform in China. This website is also hosted on AliCloud Singapore server. Because the back of the tree is good to ride, so Ali cloud disk currently also has a great advantage.&lt;/p&gt;
+&lt;p&gt;a. First is its main selling point of unlimited speed as well as free. Currently Ali cloud for free users to provide more than 2TB of cloud disk capacity, and able to through the daily sign-up function and participate in other free activities, regularly receive premium membership services. However, AliCloud&amp;rsquo;s promise of unlimited speed is mainly a huge improvement compared to other consumer network drive services in China, but not completely unlimited speed.&lt;/p&gt;
+&lt;p&gt;b. AliCloud Drive&amp;rsquo;s user interface is relatively simple and convenient, similar to One drive, and is very user-friendly compared to other consumer network drives in China, without too many ads and other cluttered content displayed.&lt;/p&gt;
+&lt;p&gt;c. The photo management function of AliCloud Drive is relatively powerful, and it can use AI intelligence to identify and sort most photos. In addition, in addition to personal file storage, Ali Cloud Drive also has a very large number of network resources to share, so you can easily access to a variety of file resources on the network.&lt;/p&gt;
+&lt;p&gt;However, because Ali Cloud Drive is generally a latecomer to the role, there are some problems in daily use.&lt;/p&gt;
+&lt;p&gt;a. The stability of AliCloud Disk App is not high enough, there are some lagging and bug problems. For example, when I used my computer to upload 200GB photos to Ali Cloud Drive, the software freezes occurred many times.&lt;/p&gt;
+&lt;p&gt;b. AliCloud&amp;rsquo;s photo album function has a completely different storage logic than other web drives. By default, AliCloud will put all the photos and videos uploaded by users into its photo module, and users cannot manage their own photo folders. And after users create new albums under its photo module by themselves, they can only operate 500 photos at a time, and even for photo deletion operation, they can only delete 2000 photos at a time, which is obviously not enough for a large number of photo management needs in.&lt;/p&gt;
+&lt;p&gt;c. Ali cloud disk privacy protection and Baidu cloud disk as a difficult to say, especially Ali cloud disk itself is focused on free services, is bound to sacrifice a certain amount of user data privacy to meet aliyun computing services for certain purposes. For example, aliyun disk will intelligently identify each photo and video uploaded by users, review its legality, and even immediately displayed a warning is issued within seconds of the user uploading the video that one of the images in the video file has a violation.&lt;/p&gt;
+&lt;p&gt;d. At present, Ali Cloud Drive has already passed the initial promotion period, and as the user base continues to expand, the online fee model and other usage restrictions may increasingly become the norm.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144137-461x1024.webp&#34;
+	width=&#34;461&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144137-461x1024_hu509c772ea27f37bb3f0fba886dd83a77_17140_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144137-461x1024_hu509c772ea27f37bb3f0fba886dd83a77_17140_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;45&#34;
+		data-flex-basis=&#34;108px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;6-baidu-cloud-drive&#34;&gt;6. Baidu Cloud Drive
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Baidu Cloud Drive was a network storage that I didn&amp;rsquo;t want to mention here at all because there were too many bad experiences. But overall, Baidu Cloud Drive is still the most used network drive service in China. The main advantages are as follows:&lt;/p&gt;
+&lt;p&gt;a. Baidu Cloud Drive was developed earlier and has a huge user base base and a first mover advantage. It is the most complete network resource on the entire Chinese Internet. But this is actually not too attractive for me.&lt;/p&gt;
+&lt;p&gt;b. Baidu Cloud Drive provides 2TB of storage space for free users, which is enough for the vast majority of users.&lt;/p&gt;
+&lt;p&gt;c. Baidu Cloud Drive, combined with Baidu Search and Baidu Library, is the preferred file sharing method for most Chinese web users. If one is going to share a large number of files with others, using Baidu Cloud Drive, the other party is generally acceptable.&lt;/p&gt;
+&lt;p&gt;But Baidu Cloud Drive has a spotty history of development.&lt;/p&gt;
+&lt;p&gt;a. Baidu Cloud Drive is probably one of the most restrictive network drives in the world for free users. Free registered users of Baidu Cloud Drive can usually only reach 20KB/s when downloading files, which is not at all like something a modern network service company can do. It has now improved under the verbal criticism of the general media, but it is still not friendly enough for free users.&lt;/p&gt;
+&lt;p&gt;b. Baidu Cloud Drive monitors and deletes user files. As long as a file is intelligently identified by Baidu Cloud Drive as illegal or potentially risky, Baidu Cloud Drive will delete the file without informing the user. Since this intelligent identification is done automatically by the machine and does not give any hint to the user, it is easy to give the user the risk of losing the file. In case the file is deleted by mistake, there is basically no possibility for the user to get the file back.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/IMG_20230418_145351-461x1024.webp&#34;
+	width=&#34;461&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/IMG_20230418_145351-461x1024_hu092deb7c51864b533a25fd256a213f5d_30400_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/IMG_20230418_145351-461x1024_hu092deb7c51864b533a25fd256a213f5d_30400_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;45&#34;
+		data-flex-basis=&#34;108px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The above mentioned is the case of the free version of Baidu Cloud Drive, if you buy Baidu Cloud Drive paid services, the experience will feel much better, except for automatic deletion of user files and privacy issues, the other is first-class.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;7-chinamobile-cloud-drive&#34;&gt;7. ChinaMobile Cloud Drive
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;China Mobile, China Unicom and China Telecom, the three major mobile operators in China, all offer their own network cloud storage services.&lt;/p&gt;
+&lt;p&gt;In general, the quality of cloud storage services operated by these three companies are similar. The main advantage is that mobile operators&amp;rsquo; network cloud drives usually exempt users from charging for cell phone traffic when using the cloud drive, and users are able to store and download services smoothly when using the operators&amp;rsquo; mobile communication networks and home fiber broadband.&lt;/p&gt;
+&lt;p&gt;But all three carriers&amp;rsquo; network drives have the same problem; all three of their offerings are technically inferior to other network drive services. For example, China Mobile Cloud Drive&amp;rsquo;s folders can only copy and move up to a few thousand files at a time, which is extremely inconvenient for users like me who have a huge number of files. In addition, China Mobile Cloud Drive&amp;rsquo;s intelligent photo recognition function can only identify up to 20 kinds of categories, which is a huge gap compared to cell phone manufacturers and other consumer network cloud drives.&lt;/p&gt;
+&lt;p&gt;However, if it is used as a file backup tool, I personally think it is still very suitable, because China&amp;rsquo;s mobile operators are state-owned enterprises, they can hardly take users&amp;rsquo; private data to meet other commercial purposes like other private companies, and these giant state-owned enterprises are at a very high level in the Chinese government agencies, so it is difficult for ordinary regulators to access these files, and the privacy for users is still better than other Internet companies.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/IMG_20230418_145446-461x1024.webp&#34;
+	width=&#34;461&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/IMG_20230418_145446-461x1024_hu963e056bed9fce0e33a8839ffdea4128_24732_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/IMG_20230418_145446-461x1024_hu963e056bed9fce0e33a8839ffdea4128_24732_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;45&#34;
+		data-flex-basis=&#34;108px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;8-wps-cloud-drive&#34;&gt;8. WPS Cloud Drive
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;WPS Cloud Drive is similar to onedrive, but its functionality is completely limited to WPS office files.&lt;/p&gt;
+&lt;p&gt;I have tried to use WPS Cloud Drive to store some of my personal photos, but there is no way to manage them other than folders. And its search function is developed based on document logic, there is almost no possibility to search for photos unless you can remember the file name of the photo.&lt;/p&gt;
+&lt;p&gt;In the Chinese network environment, WPS cloud drive is the best way to store office files, he provides a complete text and OCR search function, and WPS office itself for the vast majority of non-professional users, has enough to compete with Microsoft office, the price is also much cheaper than Microsoft.&lt;/p&gt;
+&lt;p&gt;But it can be expected that, as microsoft office has begun to introduce chatgpt function, and WPS office&amp;rsquo;s artificial intelligence module is still in the process of development, wps in this regard relative to Microsoft still exists a large gap.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144040-461x1024.webp&#34;
+	width=&#34;461&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144040-461x1024_hu20169eeac4f136ddaf07bf785f3d46fc_24196_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/Screenshot_20230418_144040-461x1024_hu20169eeac4f136ddaf07bf785f3d46fc_24196_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;45&#34;
+		data-flex-basis=&#34;108px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;My personal scoring of the above storage products and services&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/table-1024x677.webp&#34;
+	width=&#34;1024&#34;
+	height=&#34;677&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/table-1024x677_hu95741e6d26852bca463b661ba0c531f0_39328_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/how-to-design-a-network-storage-solution-for-family-photos/images/table-1024x677_hu95741e6d26852bca463b661ba0c531f0_39328_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;363px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;This table is based entirely on individual usage and is intended to be used only as a reference for its analysis. For example, in terms of subsequent usage costs, since I have already purchased part of the cloud storage service for a long period of time, I do not need to pay additional fees for some time in the future. In addition, Synology NAS requires expenses for electricity, and my DS416slim consumes about 100 kWh of electricity per year, which is about 70 RMB.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;my-final-choice-of-solution&#34;&gt;My final choice of solution
+&lt;/h2&gt;&lt;p&gt;After analyzing the various storage products and services in use, I personally tend to make the following arrangements.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;a. Continue to use Synology NAS as the main home storage device and use the photo function with limited external network transfer speed. I will purchase a new NAS product to replace it at an appropriate time in the future.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;b. Give up using 115 Cloud, in fact I haven&amp;rsquo;t used the service for a few months and will not renew it in the future.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;c. Discontinue the use of Huawei Cloud storage service until the whole family has updated their phones to Huawei phones.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;d. Continue to use Onedrive as a backup option for family files and use its photo feature less frequently.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;e. Abandon the use of Aliyun Cloud and Baidu Cloud. In such services where network file sharing is the main application scenario, it is okay to download network resources occasionally, but storing important family and personal files is too worrying.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;f. Continue to use China Mobile Cloud as a backup for family files and use its photo function appropriately.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;g. Continue to use WPS Cloud as the primary management method for Office documents until 2029, and then see what happens later.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I hope my selection process will help you.&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

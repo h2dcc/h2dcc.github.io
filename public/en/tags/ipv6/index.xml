@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Ipv6 on Hyruo Blog</title>
+        <link>https://hyruo.com/en/tags/ipv6/</link>
+        <description>Recent content in Ipv6 on Hyruo Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Wed, 03 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/en/tags/ipv6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Difficult to enable the IPV6 feature for home broadband</title>
+        <link>https://hyruo.com/en/article/difficult-to-enable-the-ipv6-feature-for-home-broadband/</link>
+        <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/article/difficult-to-enable-the-ipv6-feature-for-home-broadband/</guid>
+        <description>&lt;img src="https://hyruo.com/article/difficult-to-enable-the-ipv6-feature-for-home-broadband/images/network-cable-ethernet-computer-159304.jpeg" alt="Featured image of post Difficult to enable the IPV6 feature for home broadband" /&gt;&lt;p&gt;At the end of last year, China Mobile upgraded the management interface of its optical modem routers to dynamic passwords, making it impossible for users to modify the networking mode using the super passwords circulating on the internet. Yesterday, I called the 10086 customer service hotline, hoping to have China Mobile activate IPV6 for me through their backend. However, the operator said they didn&amp;rsquo;t understand the issue and were not aware of what IPV6 is. The operator replied that they would have a company technician contact me. This morning, a technician from China Mobile called me, saying that enabling IPV6 was part of their business services and advised me to go to a local China Mobile business hall to get it done, or request a technician to come over for maintenance.&lt;br&gt;
+I thought it was a simple matter of having a technician come over and use the dynamic super password they possess to log into the optical modem router&amp;rsquo;s backend and switch from IPV4 to IPV6. So, I called China Mobile&amp;rsquo;s 10086 customer service hotline to report a fault and request a technician to come over for repair. However, the outcome was unexpected.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/difficult-to-enable-the-ipv6-feature-for-home-broadband/images/pexels-photo-6489044.jpeg&#34;
+	width=&#34;1808&#34;
+	height=&#34;1300&#34;
+	srcset=&#34;https://hyruo.com/article/difficult-to-enable-the-ipv6-feature-for-home-broadband/images/pexels-photo-6489044_hu93e7eb6292879a44b4442e3921e32220_187325_480x0_resize_q75_box.jpeg 480w, https://hyruo.com/article/difficult-to-enable-the-ipv6-feature-for-home-broadband/images/pexels-photo-6489044_hu93e7eb6292879a44b4442e3921e32220_187325_1024x0_resize_q75_box.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;gaming gear in a dark room&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;139&#34;
+		data-flex-basis=&#34;333px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;The after-sales technician took one look at my home optical modem router and said that the device was too outdated to support IPV6 gigabit networks. They offered to upgrade it to a 10-gigabit optical modem router for free. I thought, &amp;ldquo;Why not, it&amp;rsquo;s free&amp;rdquo; and agreed to the replacement.&lt;br&gt;
+The problem was that the new optical modem router could not register on China Mobile&amp;rsquo;s network. This led to the following events:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The technician who came over first sought advice from the most technically proficient members of their local team on how to solve the problem. They sent him an offline repair software, but it still didn&amp;rsquo;t work after multiple tests.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The technician then contacted China Mobile&amp;rsquo;s backend support technicians, who advised him to test with another optical modem router to see if it could register. Other devices worked fine, pinpointing the problem to the new 10-gigabit optical modem router.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The technician contacted the manufacturer&amp;rsquo;s technical staff of the optical modem router. They sent him a system upgrade package and extracted the router&amp;rsquo;s system logs. However, after joint analysis by several technicians from the manufacturer, they still couldn&amp;rsquo;t find the cause of the problem. They even tested another identical 10-gigabit optical modem router, which also failed to connect.&lt;br&gt;
+After hours of attempts, the problem still couldn&amp;rsquo;t be resolved. In the end, we had to put it aside temporarily, and the manufacturer said they would send technicians to my home for debugging in a few days.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/difficult-to-enable-the-ipv6-feature-for-home-broadband/images/pexels-photo-9242837.jpeg&#34;
+	width=&#34;1880&#34;
+	height=&#34;1253&#34;
+	srcset=&#34;https://hyruo.com/article/difficult-to-enable-the-ipv6-feature-for-home-broadband/images/pexels-photo-9242837_hu9582d84772e2a64366a9405072f7848e_123885_480x0_resize_q75_box.jpeg 480w, https://hyruo.com/article/difficult-to-enable-the-ipv6-feature-for-home-broadband/images/pexels-photo-9242837_hu9582d84772e2a64366a9405072f7848e_123885_1024x0_resize_q75_box.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;man in blue crew neck t shirt wearing clear protective goggles&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Although the current outcome is not satisfactory, I am still grateful to these technicians. Especially seeing them still working during their lunch break and the fact that the technicians from China Mobile and the optical modem router manufacturer are available 24/7 to assist with any questions, it&amp;rsquo;s really not an easy task.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

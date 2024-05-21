@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Netgear on Hyruo Blog</title>
+        <link>https://hyruo.com/en/tags/netgear/</link>
+        <description>Recent content in Netgear on Hyruo Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/en/tags/netgear/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Why 1000M fiber broadband, sometimes the speed is only 300M</title>
+        <link>https://hyruo.com/en/article/why-1000m-fiber-broadband-sometimes-the-speed-is-only-300m/</link>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/article/why-1000m-fiber-broadband-sometimes-the-speed-is-only-300m/</guid>
+        <description>&lt;img src="https://hyruo.com/article/why-1000m-fiber-broadband-sometimes-the-speed-is-only-300m/images/2023-04-15-155723-1.png" alt="Featured image of post Why 1000M fiber broadband, sometimes the speed is only 300M" /&gt;&lt;p&gt;I wrote this question mainly because I searched all kinds of information on Baidu, and it was basically the same content. There were few articles that clarified this question. Most of them were nonsense. Sarcasm and personal attacks have no idea of solving the problem. Since I just encountered this problem, I will write a solution here.&lt;/p&gt;
+&lt;h2 id=&#34;1-why-is-the-speed-of-1000m-fiber-optic-broadband-only-300m&#34;&gt;1. Why is the speed of 1000M fiber optic broadband only 300M?**
+&lt;/h2&gt;&lt;p&gt;Possible reasons: WAN TO LAN rate limit of the router; hardware acceleration is not enabled on the router.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Confirmation of prerequisites: The network has been upgraded to 1000M optical fiber, the optical modem supports Gigabit output, and the router WAN and LAN ports both support 1000M Gigabit speed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;to&lt;a class=&#34;link&#34; href=&#34;http://Smallnetbuilder.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://Smallnetbuilder.com&lt;/a&gt;Query the router WAN TO LAN rate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;​For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Netgear r7000 WAN TO LAN rate: 931Mbps&lt;br&gt;
+Netgear r6300v2 WAN TO LAN rate: 806Mbps&lt;br&gt;
+ASUS ac68u WAN TO LAN rate: 754.5Mbps&lt;br&gt;
+TP TP-LINK TGR1900 WAN TO LAN rate: 631Mbps&lt;br&gt;
+Netgear r6100 WAN TO LAN rate: 93.1Mbps&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Other no-name routers may have insufficient hardware capabilities, and the WAN to LAN rate itself is low. It is not surprising that the wan port accesses 1000M and the LAN port outputs 300M.`&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Whether to enable NAT hardware acceleration in the router settings.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;According to the actual measurement, when the R6300V2 does not enable NAT hardware acceleration, the WAN port can only input 1000M, and the LAN port can only output 300M.&lt;/p&gt;
+&lt;p&gt;When the NAT hardware acceleration is turned on, the WAN port can input 1000M, and the LAN port can output 800M.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/why-1000m-fiber-broadband-sometimes-the-speed-is-only-300m/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2023-04-15-155318.png&#34;
+	width=&#34;1007&#34;
+	height=&#34;896&#34;
+	srcset=&#34;https://hyruo.com/article/why-1000m-fiber-broadband-sometimes-the-speed-is-only-300m/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2023-04-15-155318_hu433bcd38013f718301f22a42f82fcbb1_75764_480x0_resize_box_3.png 480w, https://hyruo.com/article/why-1000m-fiber-broadband-sometimes-the-speed-is-only-300m/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2023-04-15-155318_hu433bcd38013f718301f22a42f82fcbb1_75764_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;112&#34;
+		data-flex-basis=&#34;269px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-why-is-the-speed-measurement-only-800m-or-920m-for-1000m-fiber-optic-broadband&#34;&gt;2. Why is the speed measurement only 800M or 920M for 1000M fiber optic broadband?
+&lt;/h2&gt;&lt;p&gt;For example, on nga someone asked &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://ngabbs.com/read.php?tid=24003618&amp;amp;rand=981&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Telecom gigabit broadband speed measurement is only 800~900M&lt;/a&gt;&amp;ldquo;Many answers below basically miss the point. The core problem is that the maximum WAN to LAN rate of mainstream 1000M wifi6 routers is only about 920Mbps. You can check the relevant test results on the above website.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/why-1000m-fiber-broadband-sometimes-the-speed-is-only-300m/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2023-04-15-154615-932x1024.png&#34;
+	width=&#34;932&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://hyruo.com/article/why-1000m-fiber-broadband-sometimes-the-speed-is-only-300m/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2023-04-15-154615-932x1024_hu1b74af68cdbc4f8c69df9dd75b231542_318033_480x0_resize_box_3.png 480w, https://hyruo.com/article/why-1000m-fiber-broadband-sometimes-the-speed-is-only-300m/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2023-04-15-154615-932x1024_hu1b74af68cdbc4f8c69df9dd75b231542_318033_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;91&#34;
+		data-flex-basis=&#34;218px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

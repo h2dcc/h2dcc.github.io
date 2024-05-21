@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on Hyruo Blog</title>
+        <link>https://hyruo.com/en/categories/</link>
+        <description>Recent content in Categories on Hyruo Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>law</title>
+        <link>https://hyruo.com/en/categories/law/</link>
+        <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/categories/law/</guid>
+        <description>&lt;img src="https://hyruo.com/categories/%E6%B3%95%E5%BE%8B/pexels-photo-613508.jpg" alt="Featured image of post law" /&gt;</description>
+        </item>
+        <item>
+        <title>life</title>
+        <link>https://hyruo.com/en/categories/life/</link>
+        <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/categories/life/</guid>
+        <description>&lt;img src="https://hyruo.com/categories/%E7%94%9F%E6%B4%BB/pexels-photo-401213.jpg" alt="Featured image of post life" /&gt;</description>
+        </item>
+        <item>
+        <title>society</title>
+        <link>https://hyruo.com/en/categories/society/</link>
+        <pubDate>Mon, 06 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/categories/society/</guid>
+        <description>&lt;img src="https://hyruo.com/categories/%E7%A4%BE%E4%BC%9A/pexels-photo-842339.jpg" alt="Featured image of post society" /&gt;</description>
+        </item>
+        <item>
+        <title>moments</title>
+        <link>https://hyruo.com/en/categories/moments/</link>
+        <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/categories/moments/</guid>
+        <description>&lt;img src="https://hyruo.com/categories/%E6%9C%8B%E5%8F%8B%E5%9C%88/pexels-photo-2837651.jpg" alt="Featured image of post moments" /&gt;</description>
+        </item>
+        <item>
+        <title>network</title>
+        <link>https://hyruo.com/en/categories/network/</link>
+        <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/categories/network/</guid>
+        <description>&lt;img src="https://hyruo.com/categories/it%E4%BA%92%E8%81%94%E7%BD%91/pexels-photo-574069.jpg" alt="Featured image of post network" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
