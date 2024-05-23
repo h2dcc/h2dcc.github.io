@@ -57,7 +57,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: 法学法律工作者 Legal Professional
+        subtitle: 法学法律工作者
         avatar:
             enabled: true
             local: true
