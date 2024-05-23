@@ -57,7 +57,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: 法学法律工作者
+        subtitle: 法学法律工作者 Legal Professional
         avatar:
             enabled: true
             local: true
@@ -221,18 +221,6 @@ menu:
           params:
               icon: weibo
         
-        - identifier: mastodon
-          name: mastodon
-          url: https://mastodon.social/@h2d
-          params:
-              icon: mastodon
-
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com/rpwi
-          params:
-              icon: brand-twitter
-
         - identifier: mail
           name: Email
           url: "mailto:mail@hyruo.com"
