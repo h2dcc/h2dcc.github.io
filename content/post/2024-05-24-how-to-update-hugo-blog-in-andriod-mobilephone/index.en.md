@@ -52,7 +52,7 @@ Weblog is an Android app that supports managing Hugo and HEXO blogs on mobile de
 
 
 ### Code-server
-Code-server is a VSCode-like program that can be deployed online, allowing for direct cloning of Github repositories to create blog files through a browser and submit them via Git. This solution essentially serves as a substitute for Github Codespaces. For use within China, it is recommended to set it up on a VPS in Japan, South Korea, Hong Kong, or Taiwan. Operating through a mobile browser is generally problem-free. Thanks to online deployment, it's convenient to continue writing on multiple devices. The difference lies only in server performance and connection speed. This blog post was written collaboratively on an Android phone and tablet.
+Code-server is a VSCode-like program that can be deployed online, allowing for direct cloning of Github repositories to create blog files through a browser and submit them via Git. This solution essentially serves as a substitute for Github Codespaces. For use within Mainland China, it is recommended to set it up on a VPS in Japan, South Korea, Hong Kong, or Taiwan. Operating through a mobile browser is generally problem-free. Thanks to online deployment, it's convenient to continue writing on multiple devices. The difference lies only in server performance and connection speed. This blog post was written collaboratively on an Android phone and tablet.
 
 ![code-server](codeserver.jpg)
 
