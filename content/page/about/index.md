@@ -7,7 +7,7 @@ aliases:
   - contact
 menu:
     main: 
-        weight: -90
+        weight: -40
         params:
             icon: user
 ---

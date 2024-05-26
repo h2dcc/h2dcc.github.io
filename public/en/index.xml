@@ -7,7 +7,112 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>by Hyruo, All Rights Reserved.</copyright>
-        <lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 24 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to Update a Hugo Blog on an Android Phone</title>
+        <link>https://hyruo.com/en/article/how-to-update-a-hugo-blog-on-an-android-phone/</link>
+        <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/article/how-to-update-a-hugo-blog-on-an-android-phone/</guid>
+        <description>&lt;img src="https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/hugo.png" alt="Featured image of post How to Update a Hugo Blog on an Android Phone" /&gt;&lt;p&gt;It is well-known that the process of publishing a blog has always been cumbersome due to the absence of backend solutions in static blog programs like HUGO, HEXO, and Jekyll. Previously, I used various methods to update my blog, but all of them required a PC.&lt;/p&gt;
+&lt;h2 id=&#34;pc-method&#34;&gt;PC Method
+&lt;/h2&gt;&lt;h3 id=&#34;vscodegithub&#34;&gt;VSCODE+Github
+&lt;/h3&gt;&lt;p&gt;My initial approach was to edit in VSCODE, generate static files in the Public directory locally using the Hugo command, and then submit them to Github Pages for direct publication. Later, I found the Hugo generation process too cumbersome, so I switched to editing and directly submitting to Github, then using Github Actions to generate blog files and publish them to Github Pages.&lt;/p&gt;
+&lt;p&gt;Since all images on this site are hosted on Github, and due to the well-known issues with the speed of accessing Github Pages, I eventually abandoned the Github Actions + Github Pages solution in favor of automatic deployment through Vercel or Cloudflare Pages.&lt;/p&gt;
+&lt;h3 id=&#34;obsidiangithub&#34;&gt;Obsidian+Github
+&lt;/h3&gt;&lt;p&gt;Obsidian is an excellent note-taking software with a very large plugin library. With Obsidian + quickadd plugin + Git plugin, it&amp;rsquo;s very convenient to directly submit blog posts to Github from Obsidian. However, the issue is that Obsidian can only publish article content and cannot modify other site settings. Managing the Posts directory of Hugo directly with Obsidian feels odd, and unless a dedicated blog repository is created, there&amp;rsquo;s a constant risk of confusing note content with blog content during the management process.&lt;/p&gt;
+&lt;h3 id=&#34;joplingithub&#34;&gt;Joplin+Github
+&lt;/h3&gt;&lt;p&gt;Joplin is also a very good open-source note-taking software. Although Joplin has fewer plugins, there is one that can directly publish to Github Pages, called Pages Publisher &lt;a class=&#34;link&#34; href=&#34;https://github.com/ylc395/joplin-plugin-pages-publisher&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pages Publisher&lt;/a&gt;. However, this plugin is used by fewer people and currently only offers a very basic blog theme.&lt;/p&gt;
+&lt;p&gt;Nevertheless, all these methods inevitably require the use of a PC.&lt;/p&gt;
+&lt;h2 id=&#34;mobile-method&#34;&gt;Mobile Method
+&lt;/h2&gt;&lt;h3 id=&#34;github-code&#34;&gt;Github Code
+&lt;/h3&gt;&lt;p&gt;Github repositories allow for direct creation and modification of files. However, the inconvenience with this method is that direct access to Github from within China is not always reliable. The worst scenario is editing halfway through, only to have the page reset due to network issues. Github Codespaces faces the same issue.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/codespaces.png&#34;
+	width=&#34;996&#34;
+	height=&#34;526&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/codespaces_hu144d15b126d2fcb227a1c39faae435ff_128523_480x0_resize_box_3.png 480w, https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/codespaces_hu144d15b126d2fcb227a1c39faae435ff_128523_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;codespaces&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;454px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;stackedit&#34;&gt;StackEdit
+&lt;/h3&gt;&lt;p&gt;Stackedit is an excellent online Markdown editor that can be privately deployed and linked to Github repositories, with information stored in browser Cookies. I&amp;rsquo;ve tried editing simple information on my phone through Stackedit and submitting updates to Github. The main drawback of this method is that it cannot submit images, making it suitable only for situations where no images are needed or when using a third-party image library.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/stackedit.jpg&#34;
+	width=&#34;1968&#34;
+	height=&#34;1092&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/stackedit_hu609bdde264d0cf5a7e75097180327694_303514_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/stackedit_hu609bdde264d0cf5a7e75097180327694_303514_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;stackedit&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;180&#34;
+		data-flex-basis=&#34;432px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Having suffered significant setbacks with image libraries since 2008, and upon cleaning up my Wordpress blog in 2018, I found that nearly 500 out of 900 images on the site had been lost due to issues with external image libraries. Even self-built image libraries have left me lacking confidence. Managing them separately always feels prone to problems.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;weblog-app&#34;&gt;Weblog App
+&lt;/h3&gt;&lt;p&gt;Weblog is an Android app that supports managing Hugo and HEXO blogs on mobile devices. It includes built-in Hugo and Hexo environments and Git, allowing for convenient blog setup, static file generation, and webpage previews on the phone. It can easily publish to Github via Git. However, due to Hexo&amp;rsquo;s lower efficiency, it is recommended to use it with Hugo. The main issue with this solution is that it only supports creating MD files and does not allow uploading photos within the app. To upload photos, one must use the Android&amp;rsquo;s native file manager or a third-party file management tool.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/weblog2.jpg&#34;
+	width=&#34;1078&#34;
+	height=&#34;1004&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/weblog2_hu24148091c7a99a48fc1aa833c9e4a1b4_197990_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/weblog2_hu24148091c7a99a48fc1aa833c9e4a1b4_197990_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;weblog&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;107&#34;
+		data-flex-basis=&#34;257px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;code-server&#34;&gt;Code-server
+&lt;/h3&gt;&lt;p&gt;Code-server is a VSCode-like program that can be deployed online, allowing for direct cloning of Github repositories to create blog files through a browser and submit them via Git. This solution essentially serves as a substitute for Github Codespaces. For use within Mainland China, it is recommended to set it up on a VPS in Japan, South Korea, Hong Kong, or Taiwan. Operating through a mobile browser is generally problem-free. Thanks to online deployment, it&amp;rsquo;s convenient to continue writing on multiple devices. The difference lies only in server performance and connection speed. This blog post was written collaboratively on an Android phone and tablet.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/codeserver.jpg&#34;
+	width=&#34;2800&#34;
+	height=&#34;1660&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/codeserver_hu5fd35d24b090d4d7758a0adfc7ba69dd_951414_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/codeserver_hu5fd35d24b090d4d7758a0adfc7ba69dd_951414_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;code-server&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;168&#34;
+		data-flex-basis=&#34;404px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mgit-app&#34;&gt;Mgit App
+&lt;/h3&gt;&lt;p&gt;Mgit is an Android Git application that easily pulls Github repositories to the local device, allowing for blog writing with a third-party Markdown editor. Many people use Obsidian as their blog editor and sync between their phone and computer using Mgit. The downside is that Mgit seems to have not been updated for a long time, and I encountered an issue on my Vivo X100 phone where I couldn&amp;rsquo;t edit files directly within Mgit.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/weblog.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;692&#34;
+	srcset=&#34;https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/weblog_hu8f9c6f3f5b46204ad9783dc33f3597f7_80596_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/weblog_hu8f9c6f3f5b46204ad9783dc33f3597f7_80596_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;mgit&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;156&#34;
+		data-flex-basis=&#34;374px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;termux&#34;&gt;Termux
+&lt;/h3&gt;&lt;p&gt;I have not personally tried this method, but I&amp;rsquo;ve seen many recommendations for setting up a Linux environment within the Android system. However, if the sole purpose is to update a blog, this approach might be overkill.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Listening to the teachings of a university professor again after 16 years</title>
         <link>https://hyruo.com/en/article/listening-to-the-teachings-of-a-university-professor-again-after-16-years/</link>
         <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
@@ -6757,6 +6862,14 @@ Netgear r6100 WAN TO LAN rate: 93.1Mbps&lt;/p&gt;
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://hyruo.com/en/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Thinks</title>
+        <link>https://hyruo.com/en/thinks/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/thinks/</guid>
         <description></description>
         </item>
         

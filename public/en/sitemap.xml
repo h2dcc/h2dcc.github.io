@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hyruo.com/en/</loc>
-    <lastmod>2024-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -15,8 +15,14 @@
                 href="https://hyruo.com/en/"
                 />
   </url><url>
+    <loc>https://hyruo.com/en/tags/android/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyruo.com/en/tags/blog/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hyruo.com/en/categories/</loc>
-    <lastmod>2024-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -26,6 +32,61 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hyruo.com/en/categories/"
+                />
+  </url><url>
+    <loc>https://hyruo.com/en/article/how-to-update-a-hugo-blog-on-an-android-phone/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hyruo.com/article/how-to-update-a-hugo-blog-on-an-android-phone/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hyruo.com/en/article/how-to-update-a-hugo-blog-on-an-android-phone/"
+                />
+  </url><url>
+    <loc>https://hyruo.com/en/tags/hugo/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hyruo.com/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hyruo.com/en/tags/hugo/"
+                />
+  </url><url>
+    <loc>https://hyruo.com/en/categories/network/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyruo.com/en/post/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hyruo.com/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hyruo.com/en/post/"
+                />
+  </url><url>
+    <loc>https://hyruo.com/en/tags/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hyruo.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hyruo.com/en/tags/"
                 />
   </url><url>
     <loc>https://hyruo.com/en/tags/foshan-university/</loc>
@@ -53,34 +114,8 @@
                 href="https://hyruo.com/en/article/listening-to-the-teachings-of-a-university-professor-again-after-16-years/"
                 />
   </url><url>
-    <loc>https://hyruo.com/en/post/</loc>
-    <lastmod>2024-05-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://hyruo.com/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hyruo.com/en/post/"
-                />
-  </url><url>
     <loc>https://hyruo.com/en/tags/professor/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hyruo.com/en/tags/</loc>
-    <lastmod>2024-05-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://hyruo.com/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hyruo.com/en/tags/"
-                />
   </url><url>
     <loc>https://hyruo.com/en/tags/female-elite/</loc>
     <lastmod>2024-05-16T00:00:00+00:00</lastmod>
@@ -339,9 +374,6 @@
                 hreflang="en"
                 href="https://hyruo.com/en/tags/ipv6/"
                 />
-  </url><url>
-    <loc>https://hyruo.com/en/categories/network/</loc>
-    <lastmod>2024-04-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyruo.com/en/tags/collective-land/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
@@ -1568,6 +1600,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hyruo.com/en/search/"
+                />
+  </url><url>
+    <loc>https://hyruo.com/en/thinks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hyruo.com/thinks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hyruo.com/en/thinks/"
                 />
   </url>
 </urlset>

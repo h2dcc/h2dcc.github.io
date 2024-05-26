@@ -215,6 +215,12 @@ menu:
           params:
               icon: zhihu
 
+        - identifier: Steam
+          name: steam
+          url: https://steamcommunity.com/id/modidi
+          params:
+              icon: steam
+        
         - identifier: weibo
           name: weibo
           url: https://weibo.com/benovo

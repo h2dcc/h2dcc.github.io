@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>by Hyruo, All Rights Reserved.</copyright>
-        <lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 24 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>IT互联网</title>
+        <link>https://hyruo.com/categories/it%E4%BA%92%E8%81%94%E7%BD%91/</link>
+        <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/categories/it%E4%BA%92%E8%81%94%E7%BD%91/</guid>
+        <description>&lt;img src="https://hyruo.com/categories/it%E4%BA%92%E8%81%94%E7%BD%91/pexels-photo-574069.jpg" alt="Featured image of post IT互联网" /&gt;</description>
+        </item>
+        <item>
         <title>法律</title>
         <link>https://hyruo.com/categories/%E6%B3%95%E5%BE%8B/</link>
         <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
@@ -40,12 +48,20 @@
         <description>&lt;img src="https://hyruo.com/categories/%E6%9C%8B%E5%8F%8B%E5%9C%88/pexels-photo-2837651.jpg" alt="Featured image of post 朋友圈" /&gt;</description>
         </item>
         <item>
-        <title>IT互联网</title>
-        <link>https://hyruo.com/categories/it%E4%BA%92%E8%81%94%E7%BD%91/</link>
-        <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
+        <title>thinks</title>
+        <link>https://hyruo.com/categories/thinks/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://hyruo.com/categories/it%E4%BA%92%E8%81%94%E7%BD%91/</guid>
-        <description>&lt;img src="https://hyruo.com/categories/it%E4%BA%92%E8%81%94%E7%BD%91/pexels-photo-574069.jpg" alt="Featured image of post IT互联网" /&gt;</description>
+        <guid>https://hyruo.com/categories/thinks/</guid>
+        <description>&lt;img src="https://hyruo.com/categories/thinks/think.jpg" alt="Featured image of post thinks" /&gt;</description>
+        </item>
+        <item>
+        <title>想法</title>
+        <link>https://hyruo.com/categories/%E6%83%B3%E6%B3%95/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/categories/%E6%83%B3%E6%B3%95/</guid>
+        <description>&lt;img src="https://hyruo.com/categories/%E6%83%B3%E6%B3%95/think.jpg" alt="Featured image of post 想法" /&gt;</description>
         </item>
         
     </channel>

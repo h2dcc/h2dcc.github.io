@@ -124,6 +124,14 @@
         <guid>https://hyruo.com/en/search/</guid>
         <description></description>
         </item>
+        <item>
+        <title>Thinks</title>
+        <link>https://hyruo.com/en/thinks/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/thinks/</guid>
+        <description></description>
+        </item>
         
     </channel>
 </rss>
