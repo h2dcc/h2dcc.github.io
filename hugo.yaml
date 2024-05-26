@@ -261,3 +261,7 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+
+services:
+    RSS:
+        Limit: 10
