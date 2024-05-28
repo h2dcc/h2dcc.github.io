@@ -99,9 +99,6 @@
                 href="https://hyruo.com/article/listening-to-the-teachings-of-a-university-professor-again-after-16-years/"
                 />
   </url><url>
-    <loc>https://hyruo.com/categories/%E6%B3%95%E5%BE%8B/</loc>
-    <lastmod>2024-05-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hyruo.com/tags/%E6%B3%95%E5%AD%A6/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -178,6 +175,9 @@
                 hreflang="zh-cn"
                 href="https://hyruo.com/article/about-chinese-village-structure-that-i-held-for-thirty-years/"
                 />
+  </url><url>
+    <loc>https://hyruo.com/categories/%E6%B3%95%E5%BE%8B/</loc>
+    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyruo.com/tags/%E5%A5%B3%E5%B9%B2%E9%83%A8/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
@@ -333,10 +333,10 @@
                 href="https://hyruo.com/article/soda-music-a-simple-practical-and-smart-music-platform/"
                 />
   </url><url>
-    <loc>https://hyruo.com/categories/%E6%9C%8B%E5%8F%8B%E5%9C%88/</loc>
+    <loc>https://hyruo.com/tags/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2024-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hyruo.com/tags/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90/</loc>
+    <loc>https://hyruo.com/categories/%E7%9E%AC%E9%97%B4/</loc>
     <lastmod>2024-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyruo.com/tags/%E8%89%BE%E7%BE%8E%E7%89%B9/</loc>
@@ -1586,8 +1586,6 @@
                 href="https://hyruo.com/article/hello-ifosu/"
                 />
   </url><url>
-    <loc>https://hyruo.com/categories/thinks/</loc>
-  </url><url>
     <loc>https://hyruo.com/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1622,20 +1620,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://hyruo.com/search/"
-                />
-  </url><url>
-    <loc>https://hyruo.com/categories/%E6%83%B3%E6%B3%95/</loc>
-  </url><url>
-    <loc>https://hyruo.com/thinks/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hyruo.com/en/thinks/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://hyruo.com/thinks/"
                 />
   </url>
 </urlset>

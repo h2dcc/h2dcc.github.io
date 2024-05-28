@@ -3,7 +3,7 @@ title: "光环5中文版"
 date: "2016-02-24"
 slug: "halo-5-chinese-version"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "光环5"
 image: "images/wp-1456327522481-1.png"

@@ -3,7 +3,7 @@ title: "一所荒废多年的学校"
 date: "2022-08-20"
 slug: "a-school-that-has-been-abandoned-for-many-years"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "学校"
 image: "images/IMG_20231020_080346.jpg"

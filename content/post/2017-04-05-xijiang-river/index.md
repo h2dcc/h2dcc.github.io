@@ -3,7 +3,7 @@ title: "西江边的远望"
 date: "2017-04-05"
 slug: "xijiang-river"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "西江"
 image: "images/IMG_20230419_064951-scaled-1.webp"

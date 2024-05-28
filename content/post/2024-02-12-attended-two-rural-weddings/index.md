@@ -3,7 +3,7 @@ title: "参加两场农村婚礼"
 date: "2024-02-12"
 slug: "attended-two-rural-weddings"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "婚礼"
 image: "images/IMG_20240331_225552.jpg"

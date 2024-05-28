@@ -3,7 +3,6 @@ title: "The reason why China lags behind the West"
 date: "2009-09-06"
 slug: "the-reason-why-china-lags-behind-the-west"
 categories: 
-  - "network"
   - "society"
 image: "images/o-GREAT-WALL-OF-CHINA-facebook-jpg-1.webp"
 tags: 

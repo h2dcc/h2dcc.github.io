@@ -3,7 +3,7 @@ title: "肇庆七星岩景区"
 date: "2023-11-24"
 slug: "seven-star-rock-in-zhaoqing-city"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "七星岩"
 image: "images/IMG_20231124_210944.jpg"

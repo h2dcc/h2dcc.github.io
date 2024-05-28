@@ -3,7 +3,7 @@ title: "一次长途旅行"
 date: "2017-01-18"
 slug: "commemorates-the-first-long-distance-trip"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 image: "images/IMG_20230419_005456-scaled-1.webp"
 ---
 

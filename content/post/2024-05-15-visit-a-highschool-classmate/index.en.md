@@ -3,7 +3,7 @@ title: "Visit a highschool female classmate"
 date: "2024-05-16"
 slug: "visit-a-highschool-classmate"
 categories: 
-  - "Life"
+  - "life"
 tags:   
   - "Manufacturing"
   - "Female Elite"

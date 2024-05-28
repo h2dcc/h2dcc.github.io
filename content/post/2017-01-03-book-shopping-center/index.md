@@ -3,7 +3,7 @@ title: "楼下新开的购书中心"
 date: "2017-01-03"
 slug: "book-shopping-center"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 image: "images/img_2564-1-jpg-1.webp"
 ---
 

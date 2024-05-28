@@ -3,7 +3,7 @@ title: "肇庆紫云谷景区"
 date: "2023-11-23"
 slug: "zhaoqing-ziyun-valley-scenic-area"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "肇庆"
 image: "images/IMG_20231123_120244.jpg"

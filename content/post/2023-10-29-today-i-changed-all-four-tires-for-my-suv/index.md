@@ -3,7 +3,7 @@ title: "今天更换了4条SUV轮胎"
 date: "2023-10-29"
 slug: "today-i-changed-all-four-tires-for-my-suv"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "SUV"
   - "轮胎"

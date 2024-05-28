@@ -3,7 +3,7 @@ title: "带小孩回乡过年"
 date: "2024-02-17"
 slug: "bringing-the-children-back-to-hometown-for-the-chinese-lunar-new-year"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "春节"
 image: "images/img_20240331_2345022099467833951581131.jpg"

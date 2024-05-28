@@ -3,7 +3,7 @@ title: "女儿很喜欢坐校车"
 date: "2023-09-05"
 slug: "hehe-likes-to-take-the-school-bus"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "校车"
 image: "images/IMG_20230905_064146-1-scaled.jpg"

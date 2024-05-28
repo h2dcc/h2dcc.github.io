@@ -3,7 +3,7 @@ title: "天空之镜"
 date: "2023-09-30"
 slug: "hehe-and-dodo-like-this-skymirror"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "天空之镜"
 image: "images/IMG_20231020_072900-1.jpg"

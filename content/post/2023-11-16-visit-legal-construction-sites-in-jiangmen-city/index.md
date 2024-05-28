@@ -3,7 +3,7 @@ title: "参观江门法治设施情况"
 date: "2023-11-16"
 slug: "visit-legal-construction-sites-in-jiangmen-city"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "江门"
   - "法治建设"

@@ -3,7 +3,7 @@ title: "疑似买到个假电风扇但又没有证据"
 date: "2024-04-04"
 slug: "suspected-of-buying-a-fake-electric-fan-but-had-no-evidence"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "艾美特"
   - "美的"

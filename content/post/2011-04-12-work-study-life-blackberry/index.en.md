@@ -3,7 +3,6 @@ title: "The relationship between work, study, life and BlackBerry"
 date: "2011-04-12"
 slug: "work-study-life-blackberry"
 categories: 
-  - "life"
   - "network"
 tags: 
   - "blackberry"

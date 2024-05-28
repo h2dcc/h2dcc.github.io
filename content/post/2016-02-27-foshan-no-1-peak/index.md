@@ -3,7 +3,7 @@ title: "佛山第一峰"
 date: "2016-02-27"
 slug: "foshan-no-1-peak"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "佛山"
 image: "images/wp-1456627860122-jpg-1.webp"

@@ -3,7 +3,7 @@ title: "旧式中国农村建筑"
 date: "2023-01-25"
 slug: "old-fashion-chinese-countryside-house"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 image: "images/IMG_20230419_001548_batch_0_1681834841322-jpg-1.webp"
 ---
 

@@ -3,7 +3,7 @@ title: "曾国藩故居"
 date: "2016-02-08"
 slug: "zeng-guofan-former-residence"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "曾国藩"
 image: "images/wp-1455632202631-jpg-1.webp"

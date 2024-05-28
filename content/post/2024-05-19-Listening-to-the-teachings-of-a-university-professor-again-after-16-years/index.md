@@ -4,7 +4,6 @@ date: "2024-05-19"
 slug: "Listening-to-the-teachings-of-a-university-professor-again-after-16-years"
 categories: 
   - "生活"
-  - "法律"
 tags:   
   - "佛山大学"
   - "教授"

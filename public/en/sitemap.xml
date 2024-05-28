@@ -92,9 +92,6 @@
     <loc>https://hyruo.com/en/tags/foshan-university/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hyruo.com/en/categories/law/</loc>
-    <lastmod>2024-05-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hyruo.com/en/tags/law/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -193,6 +190,9 @@
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyruo.com/en/tags/female-workers/</loc>
+    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyruo.com/en/categories/law/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyruo.com/en/tags/retirement-age/</loc>
@@ -1600,18 +1600,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hyruo.com/en/search/"
-                />
-  </url><url>
-    <loc>https://hyruo.com/en/thinks/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://hyruo.com/thinks/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hyruo.com/en/thinks/"
                 />
   </url>
 </urlset>

@@ -3,8 +3,7 @@ title: "Listening to the teachings of a university professor again after 16 year
 date: "2024-05-19"
 slug: "Listening-to-the-teachings-of-a-university-professor-again-after-16-years"
 categories: 
-  - "Life"
-  - "Law"
+  - "life"
 tags:   
   - "Foshan University"
   - "professor"

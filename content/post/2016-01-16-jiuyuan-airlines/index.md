@@ -3,7 +3,7 @@ title: "九元航空"
 date: "2016-01-16"
 slug: "jiuyuan-airlines"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 image: "images/wp-1454303335316-jpg-1.webp"
 ---
 

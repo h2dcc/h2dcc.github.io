@@ -3,7 +3,7 @@ title: "参观佛山金融高新区"
 date: "2016-11-10"
 slug: "visit-foshan-financial-high-tech-zone"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "佛山"
 image: "images/img_2158-jpg-1.webp"

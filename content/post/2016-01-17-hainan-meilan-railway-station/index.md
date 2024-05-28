@@ -3,7 +3,7 @@ title: "海口美兰火车站"
 date: "2016-01-17"
 slug: "hainan-meilan-railway-station"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "海南"
 image: "images/wp-1454303744010-jpg-1.webp"

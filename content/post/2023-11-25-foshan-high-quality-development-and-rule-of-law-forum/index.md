@@ -3,7 +3,7 @@ title: "佛山高质量发展法治论坛"
 date: "2023-11-25"
 slug: "foshan-high-quality-development-and-rule-of-law-forum"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "破产法"
   - "佛山"

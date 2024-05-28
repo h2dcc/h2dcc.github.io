@@ -3,7 +3,7 @@ title: "广东盈香生态园"
 date: "2016-03-12"
 slug: "guangdong-yingxiang-ecological-park"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 image: "images/wp-1457880802126-jpg-1.webp"
 ---
 

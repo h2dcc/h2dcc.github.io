@@ -3,7 +3,6 @@ title: "黑莓与工作和生活的关系"
 date: "2011-04-12"
 slug: "work-study-life-blackberry"
 categories: 
-  - "生活"
   - "IT互联网"
 tags: 
   - "黑莓"

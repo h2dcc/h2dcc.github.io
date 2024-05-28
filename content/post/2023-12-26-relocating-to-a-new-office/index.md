@@ -3,7 +3,7 @@ title: "搬到新的办公室"
 date: "2023-12-26"
 slug: "relocating-to-a-new-office"
 categories: 
-  - "朋友圈"
+  - "瞬间"
 tags: 
   - "办公室"
 image: "images/img_20240401_0701524116642598829169110.jpg"

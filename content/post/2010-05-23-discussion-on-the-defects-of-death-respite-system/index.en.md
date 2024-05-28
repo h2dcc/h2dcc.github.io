@@ -4,7 +4,6 @@ date: "2010-05-23"
 slug: "discussion-on-the-defects-of-death-respite-system"
 categories: 
   - "law"
-  - "society"
 tags: 
   - "death-reprieve-system"
 image: "images/nirbhaya-death-penalty-jpg-1.webp"
