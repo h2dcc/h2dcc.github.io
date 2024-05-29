@@ -1,0 +1,33 @@
+{
+  "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=300, stale-while-revalidate=59"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "max-age=300"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "max-age=300"
+        }
+      ]
+    },
+    {
+      "source": "(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=86400, max-age=86400"
+        }, {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "max-age=3600"
+        }
+      ]
+    }
+  ]
+}
