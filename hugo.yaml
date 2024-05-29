@@ -215,11 +215,11 @@ menu:
           params:
               icon: zhihu
 
-        - identifier: Steam
-          name: steam
-          url: https://steamcommunity.com/id/modidi
+        - identifier: RSS
+          name: RSS
+          url: https://hyruo.com/index.xml
           params:
-              icon: steam
+              icon: rss
         
         - identifier: weibo
           name: weibo
