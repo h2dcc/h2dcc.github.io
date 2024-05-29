@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hyruo.com/en/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -15,14 +15,11 @@
                 href="https://hyruo.com/en/"
                 />
   </url><url>
-    <loc>https://hyruo.com/en/tags/android/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hyruo.com/en/tags/blog/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <loc>https://hyruo.com/en/tags/advocacy/</loc>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyruo.com/en/categories/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -33,6 +30,57 @@
                 hreflang="en"
                 href="https://hyruo.com/en/categories/"
                 />
+  </url><url>
+    <loc>https://hyruo.com/en/categories/law/</loc>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyruo.com/en/tags/legal-popularization/</loc>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyruo.com/en/post/</loc>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hyruo.com/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hyruo.com/en/post/"
+                />
+  </url><url>
+    <loc>https://hyruo.com/en/tags/</loc>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hyruo.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hyruo.com/en/tags/"
+                />
+  </url><url>
+    <loc>https://hyruo.com/en/article/the-risks-with-case-based-methods-in-legal-popularization-efforts/</loc>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hyruo.com/article/the-risks-with-case-based-methods-in-legal-popularization-efforts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hyruo.com/en/article/the-risks-with-case-based-methods-in-legal-popularization-efforts/"
+                />
+  </url><url>
+    <loc>https://hyruo.com/en/tags/android/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyruo.com/en/tags/blog/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyruo.com/en/article/how-to-update-a-hugo-blog-on-an-android-phone/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
@@ -62,32 +110,6 @@
   </url><url>
     <loc>https://hyruo.com/en/categories/network/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hyruo.com/en/post/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://hyruo.com/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hyruo.com/en/post/"
-                />
-  </url><url>
-    <loc>https://hyruo.com/en/tags/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://hyruo.com/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hyruo.com/en/tags/"
-                />
   </url><url>
     <loc>https://hyruo.com/en/tags/foshan-university/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
@@ -190,9 +212,6 @@
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyruo.com/en/tags/female-workers/</loc>
-    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hyruo.com/en/categories/law/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyruo.com/en/tags/retirement-age/</loc>
