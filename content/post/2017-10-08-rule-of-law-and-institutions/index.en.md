@@ -6,7 +6,7 @@ categories:
   - "law"
 tags: 
   - "law"
-image: "images/146362_ec6ba4c5fe453330bdafc1bc881690ef-jpg-1.webp"
+image: "pexels-photo-8112201.webp"
 ---
 
 Having nothing to do today, I found a copy of the political gains and losses in China written by Qian Mu from the bookshelf. The content of the book was written in the 1950s. The usage of some historical terms is slightly different from that in contemporary China. 

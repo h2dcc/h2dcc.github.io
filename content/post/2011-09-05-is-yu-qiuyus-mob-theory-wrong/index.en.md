@@ -6,7 +6,7 @@ categories:
   - "society"
 tags: 
   - "yu-qiuyu"
-image: "images/yqy-jpg-1.webp"
+image: "pexels-photo-7265995.webp"
 ---
 
 Recently, there has been a little more content about Yu Qiuyu on Weibo, among which the following two are more representative:

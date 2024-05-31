@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>校园网 on 海若博客</title>
+        <link>https://hyruo.com/tags/%E6%A0%A1%E5%9B%AD%E7%BD%91/</link>
+        <description>Recent content in 校园网 on 海若博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Fri, 31 Dec 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/tags/%E6%A0%A1%E5%9B%AD%E7%BD%91/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>学校防火墙</title>
+        <link>https://hyruo.com/article/2010-12-31-fosu-firewall/</link>
+        <pubDate>Fri, 31 Dec 2010 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2010-12-31-fosu-firewall/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2010-12-31-fosu-firewall/R4.jpg" alt="Featured image of post 学校防火墙" /&gt;&lt;p&gt;此文于10月份在白兰缘发表，现修正后保存过来.&lt;/p&gt;
+&lt;p&gt;今天一个小问题搞了我好几个小时了，强烈怀疑是学校防火墙在搞鬼..&lt;/p&gt;
+&lt;p&gt;事情经过是这样子：&lt;/p&gt;
+&lt;p&gt;我某个VPS下安装了若干子站点，平台包括但不限于phpwind wordpress drupal joomla 等等，我记得之前几个月一直都是没有任何问题的，但今天在某个网站下新建页面、输入Google Gadgets小工具的代码时，竟然发生页面被重置，也就是页面立即断开，显示无法连接服务器，与Twitter等被GFWed的页面一模一样。&lt;/p&gt;
+&lt;p&gt;我一开始以为是网站后台配置有问题，使劲捣鼓了一两个小时，最后确定：该VPS下所有的网站网页都不能添加这类小工具；&lt;/p&gt;
+&lt;p&gt;由此，我转而思索，是否是apache有限制呢？ 于是换了另一个主机再测试：仍然是不能添加任何小工具的代码（HTML代码）；&lt;/p&gt;
+&lt;p&gt;这时，常识告诉我，莫非是Google小工具的gmodules.com这一网站被河蟹导致？&lt;/p&gt;
+&lt;p&gt;可惜，同样的测试在我本地Xmapp架构搭建的wordpress平台中却没有这个问题。&lt;/p&gt;
+&lt;p&gt;非常费解&amp;hellip;&lt;/p&gt;
+&lt;p&gt;接着我又测试了其他代码，诸如百度地图api，google reader shared item等等，均发现一旦填写完代码后点击提交按钮，立马会引发连接重置&amp;hellip;&lt;/p&gt;
+&lt;p&gt;吃完饭，到了傍晚，我终于开始怀疑到起了校园网或者说校园网路由器的问题。&lt;/p&gt;
+&lt;p&gt;首先我使用SSH等代理软件打开网页并上传代码，没有任何意外的，代码成功在页面上执行了；其次，我找了校园网内的同学远程协助，发现在他电脑也无法上传代码，只要提交代码就会引发页面重置。&lt;/p&gt;
+&lt;p&gt;后来，经过详细测试发现，只要是HTML模式下，输入含有&lt;code&gt;&amp;lt;script src=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt; 或者&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt; 代码并提交，均会发生页面被重置的情况，无论SRC后面是什么链接 ，或者单单前面这段代码就会如此。&lt;/p&gt;
+&lt;p&gt;我一点不怀疑学校防火墙肯定设置了某些“敏感词”过滤，一旦触发则会引起网络断开，但至于为什么连HTML客户端脚本都被设置进去，实在是费解！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

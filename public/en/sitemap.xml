@@ -1346,22 +1346,6 @@
                 href="https://hyruo.com/en/article/briefings-of-integrated-law-enforcement-work-in-parts-of-the-country/"
                 />
   </url><url>
-    <loc>https://hyruo.com/en/article/perspective-the-first-of-the-central-decision-on-promoting-the-rule-of-law/</loc>
-    <lastmod>2014-10-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://hyruo.com/article/perspective-the-first-of-the-central-decision-on-promoting-the-rule-of-law/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hyruo.com/en/article/perspective-the-first-of-the-central-decision-on-promoting-the-rule-of-law/"
-                />
-  </url><url>
-    <loc>https://hyruo.com/en/tags/rule-of-law/</loc>
-    <lastmod>2014-10-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hyruo.com/en/article/traffic-accident-case-research/</loc>
     <lastmod>2014-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -1585,7 +1569,7 @@
                 />
   </url><url>
     <loc>https://hyruo.com/en/article/hello-ifosu/</loc>
-    <lastmod>2008-08-21T00:00:00+00:00</lastmod>
+    <lastmod>2008-05-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -1595,6 +1579,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hyruo.com/en/article/hello-ifosu/"
+                />
+  </url><url>
+    <loc>https://hyruo.com/en/tags/wordpress/</loc>
+    <lastmod>2008-05-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hyruo.com/tags/wordpress/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hyruo.com/en/tags/wordpress/"
                 />
   </url><url>
     <loc>https://hyruo.com/en/links/</loc>

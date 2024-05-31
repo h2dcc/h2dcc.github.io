@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pm2-5 on 海若博客</title>
+        <link>https://hyruo.com/tags/pm2-5/</link>
+        <description>Recent content in Pm2-5 on 海若博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Thu, 05 Mar 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/tags/pm2-5/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2014年佛山空气质量情况</title>
+        <link>https://hyruo.com/article/2015-03-05-2014-foshan-air/</link>
+        <pubDate>Thu, 05 Mar 2015 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2015-03-05-2014-foshan-air/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2015-03-05-2014-foshan-air/pexels-photo-459728.jpeg" alt="Featured image of post 2014年佛山空气质量情况" /&gt;&lt;p&gt;从环保部&lt;a class=&#34;link&#34; href=&#34;http://datacenter.mep.gov.cn/report/air_daily/airCityMain.jsp?city=%B7%F0%C9%BD%CA%D0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;网站&lt;/a&gt;上将佛山市2014年全年监测数据逐月抠了下来，并进行了粗略统计，2014年全年，佛山有36%的天数，空气质量为优，52%的天数，空气质量为良，两者合计占88%。总共有33天，处于轻度污染水平，13天属于中度污染。&lt;/p&gt;
+&lt;p&gt;另外，从&lt;a class=&#34;link&#34; href=&#34;http://air.epmap.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://air.epmap.org/&lt;/a&gt;这个网站，下载到2014年4月11日至2015年3月5日，佛山市各个环保监测站的全部监测数据，再次进行简单统计，如下：&lt;/p&gt;
+&lt;p&gt;可以看到的是，佛山虽然是珠三角环境最差的城市，但即使按照世界卫生组织第一阶段（目前的国标）的PM2.5控制方案，佛山全年PM2.5达标情况也接近90%了。而如果按照美国标准（WHO第三阶段标准），那佛山则只有55%的时间达标。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2015-03-05-2014-foshan-air/images/foshan.jpg&#34;
+	width=&#34;1506&#34;
+	height=&#34;821&#34;
+	srcset=&#34;https://hyruo.com/article/2015-03-05-2014-foshan-air/images/foshan_hua06085bb19cf2548d4a731b4c8d9c977_206477_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2015-03-05-2014-foshan-air/images/foshan_hua06085bb19cf2548d4a731b4c8d9c977_206477_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;foshan&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;440px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;下载的数据太多，但分析完上边两个图后发现，其实自己真是多虑了，在当前这个经济发展水平下，如果一个城市的空气质量90%的时间都能达标，那还需要担心什么呢？真没啥必要纠结这个了，最后统计下本地空气污染时间与空气优秀的时间段情况，供户外活动参考。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2015-03-05-2014-foshan-air/images/foshan2.jpg&#34;
+	width=&#34;892&#34;
+	height=&#34;441&#34;
+	srcset=&#34;https://hyruo.com/article/2015-03-05-2014-foshan-air/images/foshan2_huc153d0e6ac5e1ef86ba639038acc0d84_47584_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2015-03-05-2014-foshan-air/images/foshan2_huc153d0e6ac5e1ef86ba639038acc0d84_47584_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;202&#34;
+		data-flex-basis=&#34;485px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

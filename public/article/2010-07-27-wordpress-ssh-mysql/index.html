@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="两年来，我的wp几乎是在搬迁中度过的，最近抓抓发起号召blogfans群员又合租了一个vps，Virpus提供的，7美刀/月，25G空间，1">
+<title>Wordpres及数据库使用SSH搬迁的简单方法</title>
+
+<link rel='canonical' href='https://hyruo.com/article/2010-07-27-wordpress-ssh-mysql/'>
+
+<link rel="stylesheet" href="/scss/style.min.e8c7fca7d1c9294aa7a4f3426c225ee26540f7d94e39be0b5a4a5c8a49ca5a25.css"><meta property='og:title' content="Wordpres及数据库使用SSH搬迁的简单方法">
+<meta property='og:description' content="两年来，我的wp几乎是在搬迁中度过的，最近抓抓发起号召blogfans群员又合租了一个vps，Virpus提供的，7美刀/月，25G空间，1">
+<meta property='og:url' content='https://hyruo.com/article/2010-07-27-wordpress-ssh-mysql/'>
+<meta property='og:site_name' content='海若博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='putty' /><meta property='article:tag' content='ssh' /><meta property='article:tag' content='数据库迁移' /><meta property='article:published_time' content='2010-07-27T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2010-07-27T00:00:00&#43;00:00'/><meta property='og:image' content='https://hyruo.com/article/2010-07-27-wordpress-ssh-mysql/SSH.jpg' />
+<meta name="twitter:title" content="Wordpres及数据库使用SSH搬迁的简单方法">
+<meta name="twitter:description" content="两年来，我的wp几乎是在搬迁中度过的，最近抓抓发起号召blogfans群员又合租了一个vps，Virpus提供的，7美刀/月，25G空间，1"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://hyruo.com/article/2010-07-27-wordpress-ssh-mysql/SSH.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
+<style>
+    :root {
+        --article-font-family: "HarmonyOS_Regular", var(--base-font-family);
+    }
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    
+			customFont.href = "https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css";
+		    
+			customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu698e6481e382b7430117d6568731f48e_67900_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">海若博客</a></h1>
+            <h2 class="site-description">法学法律工作者</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='mailto:mail@hyruo.com'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+  <path d="M3 7l9 6l9 -6" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://fosu.cc'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://hyruo.com/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://weibo.com/benovo'
+                        target="_blank"
+                        title="weibo"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-weibo" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M19 14.127c0 3.073 -3.502 5.873 -8 5.873c-4.126 0 -8 -2.224 -8 -5.565c0 -1.78 .984 -3.737 2.7 -5.567c2.362 -2.51 5.193 -3.687 6.551 -2.238c.415 .44 .752 1.39 .749 2.062c2 -1.615 4.308 .387 3.5 2.693c1.26 .557 2.5 .538 2.5 2.742z" />
+  <path d="M15 4h1a5 5 0 0 1 5 5v1" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.zhihu.com/people/rpwi'
+                        target="_blank"
+                        title="Zhihu"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-zhihu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M14 6h6v12h-2l-2 2l-1 -2h-1z" />
+  <path d="M4 12h6.5" />
+  <path d="M10.5 6h-5" />
+  <path d="M6 4c-.5 2.5 -1.5 3.5 -2.5 4.5" />
+  <path d="M8 6v7c0 4.5 -2 5.5 -4 7" />
+  <path d="M11 18l-3 -5" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://hyruo.com/" selected>中文</option>
+                                
+                                    <option value="https://hyruo.com/en/" >English</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/article/2010-07-27-wordpress-ssh-mysql/">
+                <img src="/article/2010-07-27-wordpress-ssh-mysql/SSH_hue571b0cdd044bb009c30bfa482e2e5f5_231228_800x0_resize_q75_box.jpg"
+                        srcset="/article/2010-07-27-wordpress-ssh-mysql/SSH_hue571b0cdd044bb009c30bfa482e2e5f5_231228_800x0_resize_q75_box.jpg 800w, /article/2010-07-27-wordpress-ssh-mysql/SSH_hue571b0cdd044bb009c30bfa482e2e5f5_231228_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post Wordpres及数据库使用SSH搬迁的简单方法" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/it%E4%BA%92%E8%81%94%E7%BD%91/" >
+                IT互联网
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/article/2010-07-27-wordpress-ssh-mysql/">Wordpres及数据库使用SSH搬迁的简单方法</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jul 27, 2010</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>两年来，我的wp几乎是在搬迁中度过的，最近抓抓发起号召blogfans群员又合租了一个vps，Virpus提供的，7美刀/月，25G空间，100M带宽1600G流量；划为10份，由于正在优惠期，所以大概每人7.5美刀/年.</p>
+<p>之前的主机是荷兰/葡萄牙，DA面板主机，仍然留下一个wp站点在那里，搬迁后的面板使用的是Kloxo，数据库均为MYSQL5.x(当然，4.x也是一样可以的)。</p>
+<p>由于本人使用的校园网经常出现网络丢包，所以不得以所有操作均得在线进行，好在在线方式本来就是最简单便捷的。</p>
+<p><strong>1.工具准备：</strong></p>
+<p>可能需要的工具有Putty、cuteftp(如果习惯这种方式)；</p>
+<p>putty是免费的ssh与talnet工具。</p>
+<p><strong>下载地址：</strong><a class="link" href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html"  target="_blank" rel="noopener"
+    ><strong>putty</strong></a></p>
+<p>进入原网站后台，选择备份整个网站（如果是英文，一般就是Creat backup项目），稍等片刻便可以进文件管理系统查看了。由于DA默认将备份的tar.gz文件保存在根目录下的backup文件夹，所以需要将其剪切或者复制到原网站的目录下，例如我将这个xxx.tar.gz剪切到了faxue.info/wordpress/uploads/下面，之所这样做的原因是能让这个xxx.tar.gz有一个理所当然的下载url.</p>
+<p><strong>2.使用putty将网站备份下载到新主机</strong></p>
+<p>打开putty,直接填写新主机的IP地址，然后选择“SSH”模式，点击“open”或者按回车就可以进入如DOS的操作界面了。</p>
+<p>login as: admin（输入新主机用户名）</p>
+<p><a class="link" href="mailto:admin@208.89.212.251" >admin@208.89.212.251</a>‘s password: abc123 （输入新主机密码，这里输入的时候，操作界面是不会显示的，输完密码直接回车）</p>
+<p>显示如下内容则成功登录：</p>
+<blockquote>
+<p>login as: admin
+<a class="link" href="mailto:admin@208.89.212.251" >admin@208.89.212.251</a>&rsquo;s password:<br>
+Last login: Tue Jul 27 12:03:06 2010 from 61.142.209.146<br>
+[admine@vip ~]$</p>
+</blockquote>
+<p>输入“ls”打开根目录，或者还可以使用“cd admin.tk”进入文件夹.</p>
+<p>然后使用“wget” 命令将刚才备份的xxx,tar.gz下载到新主机：</p>
+<blockquote>
+<p>wget <a class="link" href="http://admin.tk/wordpress/uoloads/xxx.tar.gz"  target="_blank" rel="noopener"
+    >http://admin.tk/wordpress/uoloads/xxx.tar.gz</a></p>
+</blockquote>
+<p>120MB的文件，压缩之后是40多MB，大概几秒钟就下载过来了吧…</p>
+<p>下载完成后请删除原主机下的备份文件，因为移动后别人也可以下载啦，里面可保存着config.php之类的敏感信息</p>
+<p><strong>3.解压</strong></p>
+<p>使用文件管理器将xxx.tar.gz移动到某个文件夹解压，然后都是些复制剪切的工作，将新主机下的文件目录，按照原主机的目录模式编排好就完成大部分工作了。</p>
+<p><strong>4.上传sql文件</strong></p>
+<p>解压后找到备份的数据库文件，一般是backup文件夹内，认清数据库的名字，例如我的是faxue_blog.sql，使用“mysql”命令上传数据库文件：</p>
+<p>先在putty中使用“cd”命令进入faxue_blog.sql文件所在的文件夹，</p>
+<blockquote>
+<p>cd faxue.info/domain/public_html/backup</p>
+</blockquote>
+<p>然后使用如下命令上传数据库：</p>
+<blockquote>
+<p>mysql -ufaxue –pabc123 faxue_blog &lt; faxue_blog.sql</p>
+</blockquote>
+<p>形式为：mysql -u用户名 -p密码 数据库名 &lt; 需要上传数据库的文件名.sql</p>
+<p>当然，这里的用户名、密码都是新数据库中的，建议提前在新主机的数据库管理中新建与原数据库相同名字的数据库，免得之后还得修改config.php。不过，如果你之前主机的用户名和新主机用户名不一样，之后还是得修改config.php。</p>
+<p><strong>到这里，基本上问题也就解决，修改A记录即成功。</strong></p>
+<p>下面的都是个人问题，不一定都能遇上：</p>
+<p>1.我的原主机下绑定了N个子域名，安装了N个程序，wordpress、joomla、drupal、Gregarius等等，并且均为多个子网站使用同一数据库，只是不同前缀。使用上述方法，可以很方便的将之前网站所有资料搬迁过来。当然多个数据库的情况下，最后一步上传的工作就得做多次了。</p>
+<p>2.原来主机下的数据库用户名与新主机数据库的用户名不同，之前的都是bensky_，而新的均为faxue_，所以所有网站、子网站都需要在上传之后将config程序中的数据库信息更新，不过数据库的表名前缀是不用换的，前后一致的。</p>
+<p>3.遇上Vistapanel真是偶的一大杯具，因为vistapanel这种平台，只能解压而不能压缩还不支持fxp，使得我在byethost.com与xtreemhost.com上的网站无法备份过来(唯一的方法是将这两个主机上的所有文件全部下载到本地，然后再上传，没那个心情去弄.)，只能继续在那上面蹂躏了。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/putty/">Putty</a>
+        
+            <a href="/tags/ssh/">Ssh</a>
+        
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/">数据库迁移</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>All textual works on this website are protected by copyright, and the authors reserve all rights. The photos on this website, unless specifically stated, licensed under the CC BY-NC-ND 4.0 license.</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/article/2017-10-07-corner/">
+        
+        
+            <div class="article-image">
+                <img src="/article/2017-10-07-corner/pexels-photo-4126743.15196e20b528493fb16963d5121a0704_hu216095e1260f05b21b7abf7f303b3d32_231056_250x150_fill_q75_h2_box_smart1_2.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 角落的声音"
+                        data-key="2017-10-07-corner" 
+                        data-hash="md5-FRluILUoST&#43;xaWPVEhoHBA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">角落的声音</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/article/2016-08-05-gigabyte/">
+        
+        
+            <div class="article-image">
+                <img src="/article/2016-08-05-gigabyte/images/img_1184-1.d1a7042e95651f37f400827c7c0786fc_hua8b740db82bde253c284e427950619e1_379856_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 技嘉H61主板"
+                        data-key="2016-08-05-gigabyte" 
+                        data-hash="md5-0acELpVlHzf0AIJ8fAeG/A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">技嘉H61主板</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/article/2016-03-22-samsung/">
+        
+        
+            <div class="article-image">
+                <img src="/article/2016-03-22-samsung/images/wp-1458647373385.f2444df84dea2dfb1efb1d92a8c7e0b4_hu917ca295283c85cf96f51eb52ce5e481_535929_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 彻底解决三星gpsd和lli_pm_wlock耗电问题"
+                        data-key="2016-03-22-samsung" 
+                        data-hash="md5-8kRN&#43;E3qLfse&#43;x2SqMfgtA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">彻底解决三星gpsd和lli_pm_wlock耗电问题</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/article/2014-11-15-ios8/">
+        
+        
+            <div class="article-image">
+                <img src="/article/2014-11-15-ios8/maxresdefault.9f887b21e133809e237d53d14a4de003_hu66b361ab7d40588d1de68e5c90db4198_90696_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 忍痛升级IOS8"
+                        data-key="2014-11-15-ios8" 
+                        data-hash="md5-n4h7IeEzgJ4jfVPRSk3gAw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">忍痛升级IOS8</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/article/2014-05-14-xiaomi/">
+        
+        
+            <div class="article-image">
+                <img src="/article/2014-05-14-xiaomi/security-protec.dc56a00813a666880841663e60df093f_hu7d43fa5ec45a87774e1618037c36f7b2_142640_250x150_fill_q75_h2_box_smart1_2.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 小米泄露用户账号"
+                        data-key="2014-05-14-xiaomi" 
+                        data-hash="md5-3FagCBOmZogIQWY&#43;YN8JPw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小米泄露用户账号</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/twikoo.fosu.cc',
+        el: '#tcomment',})
+</script>
+
+    
+
+    <footer class="site-footer">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <section class="copyright">
+        &copy; 
+        
+            2008 - 
+        
+        2024 by Hyruo, All Rights Reserved.
+    </section>
+    
+    <section class="powerby">
+        Built with Hugo & Stack, Powered by Github.<br />
+        共 249 篇文章, 总计 453153 字.
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

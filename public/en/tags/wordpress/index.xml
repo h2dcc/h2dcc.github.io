@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Wordpress on Hyruo Blog</title>
+        <link>https://hyruo.com/en/tags/wordpress/</link>
+        <description>Recent content in Wordpress on Hyruo Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Wed, 21 May 2008 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/en/tags/wordpress/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hello, ifosu.com!</title>
+        <link>https://hyruo.com/en/article/hello-ifosu/</link>
+        <pubDate>Wed, 21 May 2008 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/en/article/hello-ifosu/</guid>
+        <description>&lt;img src="https://hyruo.com/article/hello-ifosu/images/thumb-1920-776272-jpg-1.webp" alt="Featured image of post Hello, ifosu.com!" /&gt;&lt;p&gt;After more than ten hours of learning from scratch, I finally opened my first website:&lt;a class=&#34;link&#34; href=&#34;https://hyruo.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;www.ifosu.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here I would like to give special thanks to Zhuozhuo. If he hadn’t sent a last-minute message to provide free hosting space for this website, I would really rent a server from Xinye Online!&lt;/p&gt;
+&lt;p&gt;Likewise, I would also like to thank my friends around me, whether they are brothers and sisters who share thick and thin, or distant friends who have never met. In the future, I will have to rely on everyone&amp;rsquo;s strong support so that I can make better progress! @&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/hello-ifosu/images/4643828179_109de7ed3e_o.jpg&#34;
+	width=&#34;500&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://hyruo.com/article/hello-ifosu/images/4643828179_109de7ed3e_o_hu78b5979965def093b298dcd5d36c8c9c_20235_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/hello-ifosu/images/4643828179_109de7ed3e_o_hu78b5979965def093b298dcd5d36c8c9c_20235_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;When each sunrise, we start a new.&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Looking back on the initial period, it can be described as both excitement and depression:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The excitement is that most of the time when you encounter difficulties, you can find answers on Google and Bing;&lt;/p&gt;
+&lt;p&gt;The frustrating thing is that even if I find the answer myself, I don&amp;rsquo;t know where to start. What&amp;rsquo;s more, due to excitement, confusion and depression, IIS5.1 occupied port 80 when dealing with the Apache component of XAMPP, so I uninstalled all system components by mistake, and reinstalled the computer as a result, which took a lot of time.&lt;/p&gt;
+&lt;p&gt;Learning from &amp;ldquo;zero&amp;rdquo; is indeed difficult.&lt;/p&gt;
+&lt;p&gt;I remember learning static webpage production, html language, C#, etc. when I was a freshman. I also downloaded tutorials for Invincible PhotoShop in private, but it seems that since the completion of the basic computer course exam, all the knowledge I have learned has been left behind. Haven&amp;rsquo;t felt anything yet.&lt;/p&gt;
+&lt;p&gt;Before I knew it, it was already four o&amp;rsquo;clock in the morning, Brother Gou was still chatting with the girls, and my eyes were already hurting, recalling the time from the night before to now, I couldn&amp;rsquo;t help but sigh!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;20% time did 100% things, 80% time did meaningless things&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ling Ling finally figured it out, and I have enough detours. For jobs like uploading websites, I first used the method of uploading extracurricular assignments in the computer course taught by teacher Guo Li when I was a freshman. I just click on the entire file Clip upload, but the wordpress installation program has not been uploaded in 40 minutes. Fortunately, I learned that DirectAdmin supports the compressed package in xxx.tar.gz format after being reminded by Wuhu Juanke at this time, which will also save me in the next work It took no less than a few hours.&lt;/p&gt;
+&lt;p&gt;As the saying goes, &amp;ldquo;Never be arrogant in victory and not discouraged in defeat&amp;rdquo; is a more appropriate attitude towards life, but it is a pity that I fell under its skirt again..&lt;/p&gt;
+&lt;p&gt;The problems that occurred probably have the following aspects: 1. I don’t know what Mysql is, and I repeatedly make mistakes in filling in the database user, and I continue to find other versions of wp to upload without knowing it; 2. The level of E text is not high, and I don’t know enough about the options in the WP background Thorough, resulting in frequent errors in the settings, and had to reinstall if there were too many errors; 3. Still do not understand E text, set site redirection in DirectAdmin, causing an endless loop of address resolution, and reinstalled in desperation; 4. In the background option, set WordPress with blog They were all changed to the domain name address, resulting in an error on the page. In desperation, I had to continue to reinstall; 5. Unauthorized modification of .htaccess caused an endless loop again, and I had no choice but to reinstall; Upload it, but forget that you only need to upload the Chinese Sinicization plug-in, and then delete all of them&amp;hellip;..&lt;/p&gt;
+&lt;p&gt;At the last moment, there was still a problem, but the reason was not directly because of myself, but because of an error in downloading the plug-in, which caused the background to completely crash&amp;hellip; (full of garbled characters)&lt;/p&gt;
+&lt;p&gt;The reason is that there is an error in the functions.php of EOS under themes (this plug-in was updated today, it is estimated that the author is different from the background program I use), fortunately, I have built xampp locally before, and downloaded and imported an earlier version of the EOS theme , open cutftp, overwrite functions.php, the world is finally peaceful!&lt;/p&gt;
+&lt;p&gt;Incidentally, I want to explain that I am going to build this site as a blog type site for the time being, not only because of my respect and support for Zappao and the WordPress blog sharing plan, but also because I am limited to my level and can only rely on shared resources on the Internet for the time being. To build such a kind of website that is not very technical.&lt;/p&gt;
+&lt;p&gt;Choosing a domain name is a very difficult thing. The reason for choosing ifosu.com is because the abbreviation of my university is FOSU. I will introduce these in detail in the days to come.&lt;/p&gt;
+&lt;p&gt;Finally, it should be noted that this website temporarily uses the EOS theme recommended by ipack and made by sebastianrs. Due to time constraints, only akismet, Ozh&amp;rsquo; Admin Drop Down Menu and One Click Plugin Updater are installed in the plugins.&lt;/p&gt;
+&lt;p&gt;After opening the message reply function, you only need to fill in the user name and email address to reply.&lt;/p&gt;
+&lt;p&gt;If you have any comments or suggestions, I will try my best to modify them within my ability.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

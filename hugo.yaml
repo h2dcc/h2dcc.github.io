@@ -1,7 +1,7 @@
 baseurl: https://hyruo.com
 languageCode: zh-Hans
 theme: hugo-theme-stack
-paginate: 5
+paginate: 8
 title: 海若博客
 copyright: by Hyruo, All Rights Reserved.
 
@@ -165,7 +165,7 @@ params:
                   limit: 10
             - type: tag-cloud
               params:
-                  limit: 10
+                  limit: 20
         page:
             - type: toc
 
@@ -179,9 +179,9 @@ params:
 
     defaultImage:
         opengraph:
-            enabled: false
-            local: false
-            src:
+            enabled: true
+            local: true
+            src: img/law.jpeg
 
     colorScheme:
         # Display toggle

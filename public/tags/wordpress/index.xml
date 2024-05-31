@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Wordpress on 海若博客</title>
+        <link>https://hyruo.com/tags/wordpress/</link>
+        <description>Recent content in Wordpress on 海若博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Fri, 07 Jan 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/tags/wordpress/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>用Wordpress打造你的网络记事本</title>
+        <link>https://hyruo.com/article/2011-01-07-wordpress-notepad/</link>
+        <pubDate>Fri, 07 Jan 2011 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2011-01-07-wordpress-notepad/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2011-01-07-wordpress-notepad/wordpress.jpg" alt="Featured image of post 用Wordpress打造你的网络记事本" /&gt;&lt;p&gt;Wordpress的强大之处在于你随便拿它做个神马站都不会觉得有太大压力，互联网上绝大多数应用都可以在wp平台下利用各种扩展实现目的，仅有的弱点可能就在于执行效率与二次开发的难度上面。&lt;/p&gt;
+&lt;p&gt;本人一度在记事本这个问题上纠结很久，面对evernote、麦库、Googlenotepad、Googlereader、Foxnotepad&amp;hellip;.等工具无所适从，到头来只得自己用wordpress折腾个算了。&lt;/p&gt;
+&lt;p&gt;我的要求其实很简单：&lt;strong&gt;能够满足快速摘要的要求！无论是在PC还是在移动生活中。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;所幸的是，这个要求很容易就能够实现了。&lt;/p&gt;
+&lt;p&gt;下面是我实现这个要求的一些基本方法总结：&lt;/p&gt;
+&lt;h2 id=&#34;平台搭建&#34;&gt;平台搭建：
+&lt;/h2&gt;&lt;h3 id=&#34;一在已有的wordpress博客中添加微博记事本应用&#34;&gt;一，在已有的Wordpress博客中添加微博/记事本应用：
+&lt;/h3&gt;&lt;p&gt;方法是无数的，我介绍的这种是很懒很懒的方法：&lt;/p&gt;
+&lt;p&gt;1,新建一个分类，命名为“微博”，记下这个分类的数字ID；&lt;/p&gt;
+&lt;p&gt;2,复制主题文件下的page.php改名为microblog.php，在文件最顶头加上下列说明&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;?php /\*Template Name: Microblog\*/ ?&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;3,在div class=“entry”之前插入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;?php $lastposts = get\_posts(&amp;#39;numberposts=3&amp;amp;category=410&amp;#39;); foreach($lastposts as $post) : setup\_postdata($post); ?&amp;gt; &amp;lt;h2&amp;gt;&amp;lt;a href=&amp;#34;&amp;lt;?php the\_permalink(); ?&amp;gt;&amp;#34; title=&amp;#34;&amp;lt;?php the\_title(); ?&amp;gt;&amp;#34;&amp;gt; &amp;lt;?php the\_title(); ?&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt; &amp;lt;div&amp;gt; &amp;lt;?php the\_date(); ?&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;?php the\_content(); ?&amp;gt; &amp;lt;?php \_e(&amp;#39;by&amp;#39;); ?&amp;gt; &amp;lt;?php  the\_author(); ?&amp;gt; &amp;lt;?php comments\_popup\_link (&amp;#39;No Comments &amp;amp;#187;&amp;#39;, &amp;#39;1 Comment &amp;amp;#187;&amp;#39;, &amp;#39;% Comments &amp;amp;#187;&amp;#39;); ?&amp;gt; &amp;lt;?php edit\_post\_link(&amp;#39;Edit&amp;#39;, &amp;#39; &amp;amp;#124; &amp;#39;, &amp;#39;&amp;#39;); ?&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;?php endforeach; ?&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;(注:第二行的“numberpost”代表页面显示记事条目多少、&amp;ldquo;category&amp;quot;后面的数字即第一步中的数字ID)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;函数扩充用法:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;参考1:&lt;a class=&#34;link&#34; href=&#34;http://codex.wordpress.org/Function_Reference/get_posts&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://codex.wordpress.org/Function_Reference/get_posts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考2:&lt;a class=&#34;link&#34; href=&#34;http://www.wordpress.la/codex-get_posts.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.wordpress.la/codex-get_posts.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;4,后台新建一个标题为“微博”的页面，内容空白，选择模板为&amp;quot;Microblog&amp;rdquo;，保存&lt;/p&gt;
+&lt;p&gt;5,将index.php以及archive.php的&lt;code&gt;&amp;lt;?php if(have\_posts()) : ?&amp;gt;&amp;lt;?php while(have\_posts()) : the\_post();?&amp;gt;&lt;/code&gt;前添加&lt;code&gt;&amp;lt;?php query\_posts($query\_string . &#39;&amp;amp;cat=-410&#39;); ?&amp;gt;&lt;/code&gt;。数字410仍旧是上边的分类ID，目的是在首页及归档页面文章显示时排除微博，免得扰乱页面。&lt;/p&gt;
+&lt;h3 id=&#34;二在新的wordpress博客中添加微博记事本应用&#34;&gt;二，在新的wordpress博客中添加微博/记事本应用：
+&lt;/h3&gt;&lt;p&gt;其实介绍了第一个方法也就没有必要再介绍如何在一个新的wordpress环境下折腾这个问题了。&lt;/p&gt;
+&lt;p&gt;但与兼容在一个既有平台不同的是，新的wordpress对于主题是没有限制的，所以完全不必像上面那样去折腾模板神马的，直接新建一个wordpress即可搞定。&lt;/p&gt;
+&lt;p&gt;1，新建一个wordpress站点；&lt;/p&gt;
+&lt;p&gt;2，下载安装p2、gtd或者其他你认为适合作为微博/记事本的主题；&lt;/p&gt;
+&lt;h2 id=&#34;快捷发布&#34;&gt;快捷发布：
+&lt;/h2&gt;&lt;h3 id=&#34;一电子邮件发布&#34;&gt;一，电子邮件发布：
+&lt;/h3&gt;&lt;p&gt;wordpress的电子邮件发布无疑是最方便的更新方式之一。但长期以来wordpress.org平台在这方面做得并不够好，倒是.com平台更加人性化些，本人一度因为搞不定电子邮件发布功能而一气之下跑去wordpress.com瞎折腾了。&lt;/p&gt;
+&lt;p&gt;Wordpress的&lt;strong&gt;电子邮件发布需要的一个插件是postie&lt;/strong&gt;，因为全是英文界面，可以看看不倒翁的这个教程：&lt;a class=&#34;link&#34; href=&#34;http://www.spiaas.com/mood/650.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.spiaas.com/mood/650.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;配置完电子邮件发布，剩下的事情就是手机方便的进行发布了。&lt;/p&gt;
+&lt;p&gt;黑莓平台推荐使用&lt;a class=&#34;link&#34; href=&#34;http://berrymail.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Berrymail&lt;/a&gt;服务，其他手机请自行搜索最便捷的电子邮件方案。&lt;/p&gt;
+&lt;p&gt;黑莓上发送电子邮件比短信更加快捷方便，这个是毫无疑问的，如果说手机上有比发短信更快捷的记事方式，我也无话可说了。&lt;/p&gt;
+&lt;p&gt;PC端的快捷电子邮件发布方式首推Firefox插件&lt;a class=&#34;link&#34; href=&#34;https://addons.mozilla.org/zh-CN/firefox/addon/3102/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Emailthis!&lt;/a&gt;或者&lt;a class=&#34;link&#34; href=&#34;https://addons.mozilla.org/zh-CN/firefox/addon/10300/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Emailyourself&lt;/a&gt;，此两者都能很便捷的在网络上对文字进行摘要并发送到指定的电子邮箱。&lt;/p&gt;
+&lt;p&gt;但实际上，由于电子邮件的安全性问题，所以很难说像麦库、GReader一样在浏览器设置一个按键直接把网络上的文字作摘要进行保存，但好在PC端我们还有比Emailthis更加快捷的方式。&lt;/p&gt;
+&lt;h3 id=&#34;二其他快捷发布方式&#34;&gt;二，其他快捷发布方式：
+&lt;/h3&gt;&lt;p&gt;什么Windows live writer就不说了，操作很慢，步骤也多，不符合要求，用wlw还不如word快，保存一个word的blog模板到快捷方式，粘贴就可以发布了，比wlw方便得多。&lt;/p&gt;
+&lt;p&gt;这里推荐的客户端依然是浏览器插件：&lt;a class=&#34;link&#34; href=&#34;https://addons.mozilla.org/zh-CN/firefox/addon/1730/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ScribeFire&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用scribefire把网站信息配置好，每当遇到需要记下来的东西，直接鼠标右键“Scribefire”发布，再点确认发布即可。&lt;/p&gt;
+&lt;p&gt;其次推荐的是浏览器插件：&lt;a class=&#34;link&#34; href=&#34;https://addons.mozilla.org/zh-CN/firefox/addon/13572/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;quickfox notes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;配置好信息后，按右键选择需要保存的文字选择发送到“快捷笔记本”，再次右键点击内容即可启用电子邮件发布到博客。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>您好, ifosu.com !</title>
+        <link>https://hyruo.com/article/hello-ifosu/</link>
+        <pubDate>Wed, 21 May 2008 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/hello-ifosu/</guid>
+        <description>&lt;img src="https://hyruo.com/article/hello-ifosu/images/thumb-1920-776272-jpg-1.webp" alt="Featured image of post 您好, ifosu.com !" /&gt;&lt;p&gt;经过十多小时从零开始的学习，我终于开通了自己的第一个网站：&lt;a class=&#34;link&#34; href=&#34;http://hyruo.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;www.ifosu.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在这里我要特别感谢抓抓，要是没有他在最后一刻发出的消息免费提供了本网站的主机空间，我就真的去租新业在线的服务器啦!&lt;/p&gt;
+&lt;p&gt;同样我也要感谢身边的朋友，不管是风雨与共的兄弟姐妹，还是素未谋面的远方朋友。今后还得靠大家大力支持，我才能有更好的进步喔!@&lt;/p&gt;
+&lt;p&gt;[&lt;img src=&#34;https://hyruo.com/article/hello-ifosu/images/4643828179_109de7ed3e_o.jpg&#34;
+	width=&#34;500&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://hyruo.com/article/hello-ifosu/images/4643828179_109de7ed3e_o_hu78b5979965def093b298dcd5d36c8c9c_20235_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/hello-ifosu/images/4643828179_109de7ed3e_o_hu78b5979965def093b298dcd5d36c8c9c_20235_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When each sunrise ，we start a new .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;回想起最初的这段时间，可谓兴奋与郁闷并重：&lt;/p&gt;
+&lt;p&gt;兴奋的是，大多数时候当遇到困难时都能在谷歌、必应上找到答案；&lt;/p&gt;
+&lt;p&gt;郁闷的是，即使自己找到了答案也不知从何开始。更有甚至就是由于太兴奋疑惑太郁闷的缘故，在处理XAMPP的Apache组件时由于IIS5.1占用了80端口，因而手误把所有系统组件卸载光了，结果重装了电脑，费时颇多。&lt;/p&gt;
+&lt;p&gt;从“零”开始学习，确实困难重重。&lt;/p&gt;
+&lt;p&gt;我记得大一时有学静态网页制作、html语言、C#等，无敌PhotoShop也曾在私底下下载教程硬啃过，但似乎自从计算机基础课程考试完毕，所有学过的知识全已抛诸脑后，至今无丝毫感觉。&lt;/p&gt;
+&lt;p&gt;不知不觉已经到了凌晨四点了，苟哥还在跟女孩子语聊，而我的眼睛早已刺得生痛，回想起从前晚到现在的这段时间，不禁一阵慨叹！&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;20%的时间做了100%的事情，80%的时间都做了无意义的事情&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;零零总总算起来，自己都的弯路也够多的了，像上传网站这种工作，我一开始用的方法是大一时郭俐老师教的计算机课程上传课外作业那种模式，直接点击整个文件夹上传，结果40分钟还没把wordpress的安装程序upload完，幸好此时经五湖倦客提醒才知道DirectAdmin有支持xxx.tar.gz格式的压缩包，这也在接下来的工作为我省下了不下几个小时时间。&lt;/p&gt;
+&lt;p&gt;俗话说，“胜不骄败不馁”才是一种较为妥帖的人生态度，可惜我再次倒在它裙下..&lt;/p&gt;
+&lt;p&gt;出现的问题大概有这些方面：1，不懂什么是Mysql，反复在填写数据库user处出错，无知下继续找其他版本wp上传；2，E文水平不高，对于WP后台的选项认识、了解不够透彻，导致设置常出错，错误多了就只得重新装过；3，还是不懂E文，在DirectAdmin里面设置了site redirection,引起地址解析死循环，无奈之下重装；4，后台选项中将wordpress与blog皆改为域名地址，导致页面出错，无奈下，只得继续重装；5，擅自修改.htaccess再次引发死循环，无奈下重装；6，倒数第二次终于觉悟了，还是找个中文版wp上传吧，却忘了其实只用上传中文汉化插件，而全部删除再来&amp;hellip;&amp;hellip;..&lt;/p&gt;
+&lt;p&gt;最后时刻，还是出了问题，但原因则不是直接由于自己，而是下载插件出错，导致后台全面崩溃&amp;hellip; （尽是乱码）&lt;/p&gt;
+&lt;p&gt;究其原因是themes下EOS的fuctions.php出错（这个插件是今天更新的，估计作者与我用的后台程式不同），幸好我之前在本地有搭建xampp，下载导入过更早时期的EOS主题版本，打开cutftp，覆盖掉了fuctions.php，世界终于一片太平！&lt;/p&gt;
+&lt;p&gt;附带想说明的是，我准备暂时将本站作为博客类型的网站来建设，不仅是本人对抓抓和WordPress博客共享计划的尊重与支持，也是限制于本人水平，暂时只能依赖网路共享资源来搭建这样一类不是很高技术含量的网站。&lt;/p&gt;
+&lt;p&gt;选域名是个很困难的事情，之所以选择bensky.cn，当然是受到各方影响了，这些在以后的日子里，我将详细介绍的。&lt;/p&gt;
+&lt;p&gt;最后需要说明的是，本网站暂时采用的是ipack推荐的由sebastianrs制作的EOS主题，插件由于时间关系只安装了akismet、Ozh&amp;rsquo; Admin Drop Down Menu和One Click Plugin Updater.&lt;/p&gt;
+&lt;p&gt;开通了留言回复功能，只需要填写用户名、邮箱就能回复，&lt;/p&gt;
+&lt;p&gt;大家如果有什么意见或者建议，我将尽可能在能力范围内予以修改。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

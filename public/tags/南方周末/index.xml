@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>南方周末 on 海若博客</title>
+        <link>https://hyruo.com/tags/%E5%8D%97%E6%96%B9%E5%91%A8%E6%9C%AB/</link>
+        <description>Recent content in 南方周末 on 海若博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Mon, 21 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/tags/%E5%8D%97%E6%96%B9%E5%91%A8%E6%9C%AB/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>解决改版后南方周末网站的RSS订阅问题</title>
+        <link>https://hyruo.com/article/2014-04-21-rss/</link>
+        <pubDate>Mon, 21 Apr 2014 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2014-04-21-rss/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2014-04-21-rss/digital-signage-rss-feed.jpg" alt="Featured image of post 解决改版后南方周末网站的RSS订阅问题" /&gt;&lt;p&gt;南方周末网站，在改版后取消了RSS订阅服务，由此对于广大依赖RSS阅读器来进行日常阅读的网民来说非常的不便。&lt;/p&gt;
+&lt;p&gt;网络上能搜索到的南方周末RSS源（如鲜果、newsblur、feedburner等）基本上都是南周改版以前的RSS，只能输出改版以前的老文章。&lt;/p&gt;
+&lt;p&gt;作为一个RSS阅读器的重度用户，为了解决南周RSS订阅问题，特地搜索了一下RSS自定义抓取服务，发现feed43.com这个运营了8年的网站居然现在还在免费提供RSS自定义抓取服务，确实是业界良心（比起GoogleReader这种坑爹货，简直太良心了）。&lt;/p&gt;
+&lt;p&gt;于是在feed43.com注册用户，并开始着手编辑南方周末的RSS抓取代码。&lt;/p&gt;
+&lt;p&gt;经过一番查看，发现南方周末的一级文章栏目分为9个，分别是新闻、文化、科技、图片、社会、经济、社会、评论、时政（其中“图片”这个分类已经有一年多没有过更新了，估计是改版遗留问题），这9个页面的网页地址为/contents/5 - /contents/13。&lt;/p&gt;
+&lt;p&gt;把所有网址记下后，在feed43上逐个添加（见文末），之后得到对应的xml格式rss地址，可以编辑标题和链接名字。&lt;/p&gt;
+&lt;p&gt;这里把已经制作好的8个rss源贴上：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &amp;lt;opml version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;head&amp;gt;&amp;lt;title&amp;gt;南方周末&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;outline text=&amp;#34;南方周末&amp;#34;&amp;gt; &amp;lt;outline text=&amp;#34;南方周末-文化&amp;#34; xmlUrl=&amp;#34;http://feed43.com/infzmclut.xml&amp;#34;/&amp;gt; &amp;lt;outline text=&amp;#34;南方周末-新闻&amp;#34; xmlUrl=&amp;#34;http://feed43.com/infzmnews.xml&amp;#34;/&amp;gt; &amp;lt;outline text=&amp;#34;南方周末-时政&amp;#34; xmlUrl=&amp;#34;http://feed43.com/infzmpolitcs.xml&amp;#34;/&amp;gt; &amp;lt;outline text=&amp;#34;南方周末-生活&amp;#34; xmlUrl=&amp;#34;http://feed43.com/infzmlife.xml&amp;#34;/&amp;gt; &amp;lt;outline text=&amp;#34;南方周末-社会&amp;#34; xmlUrl=&amp;#34;http://feed43.com/infzmsocio.xml&amp;#34;/&amp;gt; &amp;lt;outline text=&amp;#34;南方周末-科技&amp;#34; xmlUrl=&amp;#34;http://feed43.com/infzmtech.xml&amp;#34;/&amp;gt; &amp;lt;outline text=&amp;#34;南方周末-经济&amp;#34; xmlUrl=&amp;#34;http://feed43.com/infzmeco.xml&amp;#34;/&amp;gt; &amp;lt;outline text=&amp;#34;南方周末-评论&amp;#34; xmlUrl=&amp;#34;http://feed43.com/infzmcomments.xml&amp;#34;/&amp;gt; &amp;lt;/outline&amp;gt; &amp;lt;/body&amp;gt;&amp;lt;/opml&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;把上边代码复制到记事本，另存为*.xml文件即可导入到各类RSS阅读器，也可直接复制中间的链接，比如“时政”的RSS页面地址就是feed43.com/infzmpolitcs.xml 。&lt;/p&gt;
+&lt;p&gt;当然，由于feed43本身只能抓取一个固定页面的更新，所以这里抓取的文章都只是标题和文章简要内容，如果需要全文RSS输出，只能依赖各种RSS阅读器自带的抓取功能，比如NewsBlur的高级用户就支持。如果想免费实现全文抓取，可以试试使用NewsBlur或者国内NewsZeit的手机客户端，虽然全文网页输出是这两家RSS服务商的高级功能，但在手机客户端上却没有此限制，唯一的问题是，手机客户端只支持64个RSS源。个人建议RSS重度使用者可以尝试购买NewsBlur或者NewsZeit的收费服务，24刀/50元人民币一年，并不贵。&lt;/p&gt;
+&lt;p&gt;在阅读器上的效果如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2014-04-21-rss/images/5.jpg&#34;
+	width=&#34;1361&#34;
+	height=&#34;686&#34;
+	srcset=&#34;https://hyruo.com/article/2014-04-21-rss/images/5_huafb406a4bcbb76a12e00b9924e67a778_258744_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2014-04-21-rss/images/5_huafb406a4bcbb76a12e00b9924e67a778_258744_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;5&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;198&#34;
+		data-flex-basis=&#34;476px&#34;
+	
+&gt;电脑WEB页面&lt;/p&gt;
+&lt;p&gt; &lt;img src=&#34;https://hyruo.com/article/2014-04-21-rss/images/p1.png&#34;
+	width=&#34;640&#34;
+	height=&#34;1136&#34;
+	srcset=&#34;https://hyruo.com/article/2014-04-21-rss/images/p1_hu6489c9673b9c279aab856cb591acd35c_152137_480x0_resize_box_3.png 480w, https://hyruo.com/article/2014-04-21-rss/images/p1_hu6489c9673b9c279aab856cb591acd35c_152137_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;p1&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;手机客户端界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2014-04-21-rss/images/p3.png&#34;
+	width=&#34;640&#34;
+	height=&#34;1136&#34;
+	srcset=&#34;https://hyruo.com/article/2014-04-21-rss/images/p3_hu54c4fac8ee77ba57d4c0e4d9c5398a2b_110296_480x0_resize_box_3.png 480w, https://hyruo.com/article/2014-04-21-rss/images/p3_hu54c4fac8ee77ba57d4c0e4d9c5398a2b_110296_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;p3&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;手机客户端界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2014-04-21-rss/images/p2.png&#34;
+	width=&#34;640&#34;
+	height=&#34;1136&#34;
+	srcset=&#34;https://hyruo.com/article/2014-04-21-rss/images/p2_huc1cfb9c75116ce4f8c53665e034c7c3d_468658_480x0_resize_box_3.png 480w, https://hyruo.com/article/2014-04-21-rss/images/p2_huc1cfb9c75116ce4f8c53665e034c7c3d_468658_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;p2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;手机客户端界面&lt;/p&gt;
+&lt;p&gt;FEED43.com添加订阅代码部分：&lt;/p&gt;
+&lt;p&gt;南方周末网页源码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;article class=&amp;#34;listContent clearfix&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;articleTitle&amp;#34;&amp;gt;&amp;lt;h&amp;gt;&amp;lt;a href=&amp;#34;http://www.infzm.com/content/100060&amp;#34; target=&amp;#34;\_blank&amp;#34;&amp;gt;《百年孤独》作者马尔克斯逝世&amp;lt;/a&amp;gt;&amp;lt;/h&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;clearfix&amp;#34;&amp;gt; &amp;lt;div id=&amp;#34;left&amp;#34; &amp;gt; &amp;lt;p class=&amp;#34;articleInfo&amp;#34; style=&amp;#34;width:100%&amp;#34;&amp;gt;作者 综合 2014-04-18 12:40:22&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#39;intro&amp;#39; style=&amp;#34;width:100%&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;http://www.infzm.com/content/100060&amp;#34; target=&amp;#34;\_blank&amp;#34;&amp;gt;“在马尔克斯创造的这个天地里，可能死神是最重要的幕后导演。但是，这位作家通过作品所流露出的感伤情绪，在令人毛骨悚然并且感到生动与真实的同时，却表现出一种生命力。”——1982年，加西亚·马尔克斯获诺贝尔文学奖，这是颁奖词。加西亚·马尔克斯4月17日下午因病去世，享年87岁。&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;截取代码为：{%}为所需截取动态部分，{*}为省略部分。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;div class=&amp;#34;articleTitle&amp;#34;&amp;gt;{\*}href=&amp;#34;{%}&amp;#34;{\*}target=&amp;#34;\_blank&amp;#34;&amp;gt;{%}&amp;lt;/a&amp;gt;{\*} style=&amp;#34;width:100%&amp;#34;&amp;gt;{%}&amp;lt;/p&amp;gt;{\*} href=&amp;#34;{%}&amp;#34; target=&amp;#34;\_blank&amp;#34;&amp;gt;{%}&amp;lt;/a&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2014-04-21-rss/images/1.jpg&#34;
+	width=&#34;693&#34;
+	height=&#34;530&#34;
+	srcset=&#34;https://hyruo.com/article/2014-04-21-rss/images/1_hu260f61bddb1d26ef8fe1fe61983882ef_125253_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2014-04-21-rss/images/1_hu260f61bddb1d26ef8fe1fe61983882ef_125253_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;1&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;313px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;第一步，添加需要订阅的页面地址，设置为utf-8编码&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2014-04-21-rss/images/2.jpg&#34;
+	width=&#34;680&#34;
+	height=&#34;364&#34;
+	srcset=&#34;https://hyruo.com/article/2014-04-21-rss/images/2_huab78f1ba8f67f792ee9b28576e6727f7_44486_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2014-04-21-rss/images/2_huab78f1ba8f67f792ee9b28576e6727f7_44486_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;186&#34;
+		data-flex-basis=&#34;448px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;第二步，编辑标题、链接、文章内容调取代码&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2014-04-21-rss/images/3.jpg&#34;
+	width=&#34;674&#34;
+	height=&#34;588&#34;
+	srcset=&#34;https://hyruo.com/article/2014-04-21-rss/images/3_huc0ebbffeb92cd3c9ae6c021c89b5ddf1_53566_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2014-04-21-rss/images/3_huc0ebbffeb92cd3c9ae6c021c89b5ddf1_53566_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;3&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;114&#34;
+		data-flex-basis=&#34;275px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;第三步、填写RSS源信息，以及调取内容的代码。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

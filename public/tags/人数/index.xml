@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>人数 on 海若博客</title>
+        <link>https://hyruo.com/tags/%E4%BA%BA%E6%95%B0/</link>
+        <description>Recent content in 人数 on 海若博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Tue, 21 Apr 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/tags/%E4%BA%BA%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>佛山市与部分其他地区公务员人数和对应GDP对比</title>
+        <link>https://hyruo.com/article/2015-04-21-gdp/</link>
+        <pubDate>Tue, 21 Apr 2015 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2015-04-21-gdp/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2015-04-21-gdp/gdp.jpg" alt="Featured image of post 佛山市与部分其他地区公务员人数和对应GDP对比" /&gt;&lt;p&gt;中午趁着闲暇，做了个表格，采用的都是公开数据，对比一下佛山与部分其他地区公务员人数和GDP数据。 需要说明的是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;人口数据取的是2013-2014年公开常住人口数据；&lt;/li&gt;
+&lt;li&gt;公务员人数，国内的按照各地十二五人才规划中，14-15年数据；国外的按照wikipedia上2013-2015年数据；&lt;/li&gt;
+&lt;li&gt;国内GDP按国内2014年数据，国外按wikipedia国际汇率由美元按6.12比率换算成人民币；&lt;/li&gt;
+&lt;li&gt;美国、日本等国家公务员人数计算方式与中国存在很大差距，美国计算公务员人数接近2400万，只要是财政负担的人员均计算在内。而中国的公务员只统计党政机关具有公务员法定义身份的人员，2014年约730万。&lt;/li&gt;
+&lt;li&gt;英国的公务员涵盖人员与中国对的公务员的定义范围非常接近，从数据上来看，佛山部分地区以及深圳等地已经基本达到该国比例水平，其实，以人均GDP来看，国内部分领先城市追赶上英美平均水平，应该也只需要二三十年了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2015-04-21-gdp/images/publicservants.jpg&#34;
+	width=&#34;462&#34;
+	height=&#34;463&#34;
+	srcset=&#34;https://hyruo.com/article/2015-04-21-gdp/images/publicservants_huc2ed96e6f5c9e0cfdd214b2bedd74bd3_115982_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2015-04-21-gdp/images/publicservants_huc2ed96e6f5c9e0cfdd214b2bedd74bd3_115982_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;publicservants&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;99&#34;
+		data-flex-basis=&#34;239px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

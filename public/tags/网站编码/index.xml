@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>网站编码 on 海若博客</title>
+        <link>https://hyruo.com/tags/%E7%BD%91%E7%AB%99%E7%BC%96%E7%A0%81/</link>
+        <description>Recent content in 网站编码 on 海若博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Sat, 11 Dec 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/tags/%E7%BD%91%E7%AB%99%E7%BC%96%E7%A0%81/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>从系统语言编码丢失及联想开的问题</title>
+        <link>https://hyruo.com/article/2010-12-11-mlang/</link>
+        <pubDate>Sat, 11 Dec 2010 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2010-12-11-mlang/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2010-12-11-mlang/code-coder-codes-2194062.jpg" alt="Featured image of post 从系统语言编码丢失及联想开的问题" /&gt;&lt;p&gt;下午一同学电话我，说电脑出了严重问题。&lt;/p&gt;
+&lt;p&gt;现象描述如下：&lt;/p&gt;
+&lt;p&gt;1，浏览器打开百度、新浪、网易、腾讯等页面时均显示乱码；&lt;/p&gt;
+&lt;p&gt;2，浏览器——查看——编码选项下，只有“从左到又的文档”和“从右到左的文档”两项，各种UTF-8、GBK等编码均消失；&lt;/p&gt;
+&lt;p&gt;3，打开QQ后，只见到两个输入框和选择框，登录后整个QQ上不显示任何文字。&lt;/p&gt;
+&lt;p&gt;4，万能的firefox可以正常使用，任何网站均无乱码现象&lt;/p&gt;
+&lt;p&gt;拿到电脑，第一反应当然是编码文件丢失了。由于之前也没有类似经验，先找了找控制面板内的语言工具，看看是否有类似选项开关，没有结果。&lt;/p&gt;
+&lt;p&gt;同学告知，他是在用360卸载了某些无厘头文件后出现的故障。&lt;/p&gt;
+&lt;p&gt;上网搜索一番，得知编码文件是某些DLL控制的，寻思着是否是卸载软件时，360是否将某些DLL给注销掉了。&lt;/p&gt;
+&lt;p&gt;于是尝试整体重新注册DLL，即运行-CMD-for %1 in (%windir%system32*.dll) do regsvr32.exe /s %1&lt;/p&gt;
+&lt;p&gt;但是问题仍然没有解决。&lt;/p&gt;
+&lt;p&gt;继续上网搜索，发现XP系统下，控制编码的DLL只有mlang.dll一项，&lt;/p&gt;
+&lt;p&gt;于是进入zhaodll.com搜索并下载之，然后替换system32下同名文件。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由于一些系统的安全设置比较高，但好在XP系统不如WIN 7那般变态（system32下很多文件的权限都是trustedinstaller），先改掉文件名，再替换之即可。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;替换后当然还得再次注册这个DLL文件，运行-regsvr32 mlang.dll就可以了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小结：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1，编码出错是一个常见的问题，网站设计者在建立网站选择编码的过程中应当有所顾虑，选择UNICODE(UTF-8)是比较理性和符合国际潮流的。&lt;/p&gt;
+&lt;p&gt;2，UTF8是国际编码，它的通用性比较好，外国人或者如上问题的用户也可以浏览网站。&lt;/p&gt;
+&lt;p&gt;3，GBK是国家编码，通用性比UTF8差，不过UTF8占用的数据库比GBK大，UTF-8中的中文占3个字节。&lt;/p&gt;
+&lt;p&gt;4，在Discuz等强烈依赖于GBK编码的平台（费解，几乎多数插件都是GBK），还是用GBK更理性些；但wordpress之流，绝对是UTF-8最为合适。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小知识：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1，&lt;strong&gt;GB2312&lt;/strong&gt;包含6763个汉字，&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1980年颁布了《信息交换用汉字编码字符集&amp;ndash;基本集》的国标交换码，国家标准号为：GB2312-80，选入了 6763个汉字，分为两级，一级字库中有3755个，是常用汉字，二级字库中有3008个，是次常用汉字；还选入了682个字符，包含有数字、一般符号、拉丁字母、日本假名、希腊字母、俄文字母、拼音符号、注音字母等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2，****GBK是&lt;/strong&gt;GB2312&lt;strong&gt;的扩充，大约22014汉字&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;中、日、韩三国共同制定了《CJK统一汉字编码字符集》，其国际标准号为：ISO/IEC10646，国家标准号为：GB13000-90，该汉字编码字符集就是通常人们所说的大字符集，它编入了20902个汉字，收集了大陆一二级字库中的简体字，台湾《通用汉字标准交换码》中的繁体字，58个香港特别用字和92个延边地区朝鲜族“吏读”字，甚至涵盖了日文与韩文中的通用汉字，满足了方方面面的需要。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3，GB18030是BGK的扩充，大约27000汉字。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2000年3月，国家信息产业部和质量技术监督局在北京联合发布了两项新标准，一项叫做《信息技术和信息交换用汉字编码字符集、基本集的扩充》，国家标准号：GB18030-2000，收录了27533个汉字，还收录了藏、蒙、维等主要少数民族的文字，以期一举解决邮政、户政、金融、地理信息系统等生僻 汉字与主要少数民族语言的输入。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4，BIG5是繁体中文编码，大约13000汉字&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;港澳台地区普遍使用台湾的《通用汉字标准交换码》，地区标准号为：CNS11643， 选入了13 000多个繁体汉字，这就是人们讲的BIG5码，或叫大五码。 钱码的“海外繁体版”编入了BIG5字库，能输入13 000多个繁体汉字。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5，UTF-8(Unicode)包含全世界所有国家需要用到的字符&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Unicode于1992年6月通过DIS（Draf International Standard），目前版本V2.0于1996公布，内容包含符号6811个，汉字20902个，韩文拼音11172个，造字区6400个，保留 20249个，共计65534个。Unicode编码后的大小是一样的.例如一个英文字母 &amp;ldquo;a&amp;rdquo; 和　一个汉字 &amp;ldquo;好&amp;rdquo;，编码后都是占用的空间大小是一样的，都是两个字节！&lt;/p&gt;
+&lt;p&gt;附有意思的几篇关于编码的文章于这里：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://note.sdo.com/u/1377503605#/c/i6MBR~jgeuKpnM01o000OO&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://note.sdo.com/u/1377503605#/c/i6MBR~jgeuKpnM01o000OO&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

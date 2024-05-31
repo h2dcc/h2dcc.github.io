@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Firefox on 海若博客</title>
+        <link>https://hyruo.com/tags/firefox/</link>
+        <description>Recent content in Firefox on 海若博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Sat, 06 Aug 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/tags/firefox/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>电脑使黑莓移动网络上网的一些问题</title>
+        <link>https://hyruo.com/article/2011-08-06-blackberry-thinkpad/</link>
+        <pubDate>Sat, 06 Aug 2011 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2011-08-06-blackberry-thinkpad/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2011-08-06-blackberry-thinkpad/blackberry-10.jpg" alt="Featured image of post 电脑使黑莓移动网络上网的一些问题" /&gt;&lt;p&gt;平常很少呆在宿舍，所以网线什么的，目前也就没有太大必要，偶尔临时需要上网都是用Blackberry来进行操作。&lt;/p&gt;
+&lt;p&gt;但手机上网毕竟是有一定的局限性，比如说晚上把笔记本扛回宿舍，闲来无事想跟着Foorbar2000学唱唱歌，发现不能联网下载歌词，煞是扫兴。于是把手机用USB线连接到电脑，打开Blackberry Desktop Software（就是以前的DM），启用移动网络即可方便的使电脑使用手机网络上网。&lt;/p&gt;
+&lt;p&gt;使用一个小时有余，中间还Google了一阵，发现只用了602K流量，还是算比较理想的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/21.jpg&#34;
+	width=&#34;801&#34;
+	height=&#34;601&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/21_hu7f9672422dc8859ecf79d13169be8b18_142260_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/21_hu7f9672422dc8859ecf79d13169be8b18_142260_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;下面就是一些个人在使用中的心得吧：&lt;/p&gt;
+&lt;h2 id=&#34;1连接&#34;&gt;&lt;strong&gt;1.连接：&lt;/strong&gt;
+&lt;/h2&gt;&lt;p&gt;打开6.0版本的DM后，选择“工具”下面的“移动Internet设置”，在“配置文件”中（如上图）选择China Mobile（移动）、China Telecom（电信）、China Unicom（联通），然后选择确定即可，用户名、密码、其他命令都是不用填写的。&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/9.jpg&#34;
+	width=&#34;264&#34;
+	height=&#34;413&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/9_hu3b512aee583045e861cb6c25e63e6841_25375_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/9_hu3b512aee583045e861cb6c25e63e6841_25375_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;63&#34;
+		data-flex-basis=&#34;153px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;设置好ISP后，只需要点击左下角的“移动Internet”就能连网了，这时候电脑会自动弹出一个网络选择窗口，一般情况选择“家庭网络”。&lt;/p&gt;
+&lt;p&gt;网络连接完成后我们会看到当前连接到网络为拨号网络:China Mobile。&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;2网络浏览&#34;&gt;&lt;strong&gt;2. 网络浏览：&lt;/strong&gt;
+&lt;/h2&gt;&lt;p&gt;其实也没必要多此一举在PC上使用手机网络来浏览网页，但无可非议的是，电脑上的浏览器确实比手机上的强太多。&lt;/p&gt;
+&lt;p&gt;如果手机流量资源像我这样不是特别丰富的话，可以考虑使用Opera Mobile浏览器Windows版本（流量不够就不下载了），或者我下面介绍到的Firefox。&lt;/p&gt;
+&lt;p&gt;在电脑上安装好Firefox，在附加组件里面搜索“user agent switcher”，并进行安装，安装完选择iphone或者其他型号手机，这个插件能使Firefox在联网时，被各种网络服务器识别为手机浏览器，从而传输适合手机浏览的，省流量的页面。&lt;/p&gt;
+&lt;p&gt;开启插件选择Iphone后，登录QQ邮箱后的页面即自动变成触屏版，微博也是如此。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/10.jpg&#34;
+	width=&#34;544&#34;
+	height=&#34;631&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/10_hub30383c97a9b2b4f0ea6d805b3e82a76_69455_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/10_hub30383c97a9b2b4f0ea6d805b3e82a76_69455_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;86&#34;
+		data-flex-basis=&#34;206px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/7.jpg&#34;
+	width=&#34;486&#34;
+	height=&#34;701&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/7_hu9d8de8263c5afe757609eaf7403f237e_92041_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/7_hu9d8de8263c5afe757609eaf7403f237e_92041_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;69&#34;
+		data-flex-basis=&#34;166px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;3qq使用&#34;&gt;&lt;strong&gt;3.QQ使用&lt;/strong&gt;
+&lt;/h2&gt;&lt;p&gt;由于移动网络本质上与日常网络是没有什么差别的，所以QQ、SSH、各种代理，都是可以正常使用的，囿于手机网络的传输速度，我选择使用TM2009（没有新版本QQ那么多后台小程序，看起来就不怎么耗流量），并在登录后立马把所有QQ群消息屏蔽，否则数十个超级高级群在后台接收消息，将是一个浪费流量的无底洞。&lt;/p&gt;
+&lt;p&gt;也可以考虑使用腾讯的Web mini QQ（http://w.qq.com），一个极为简洁的登录和使用界面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/12.jpg&#34;
+	width=&#34;508&#34;
+	height=&#34;388&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/12_hu6e1dd2c6270f6576057dc3d092dd54a3_48681_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/12_hu6e1dd2c6270f6576057dc3d092dd54a3_48681_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;314px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;## &lt;strong&gt;4.电脑后台配置&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在启用移动网络之前，最好确认电脑后台的360、杀毒软件、自动更新等程序都是关闭的，否则移动网络流量是完全经不起这些后台程序蹂躏的。&lt;/p&gt;
+&lt;p&gt;流量特别吃紧，还可以把浏览器中的“自动载入图片”功能禁用，毕竟日常的网页流量，图片传输占用了其中一大部分资源。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/4.jpg&#34;
+	width=&#34;511&#34;
+	height=&#34;478&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/4_hu9de40998ba225a13e50f1e87fb27f668_60797_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/4_hu9de40998ba225a13e50f1e87fb27f668_60797_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;106&#34;
+		data-flex-basis=&#34;256px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/11.jpg&#34;
+	width=&#34;1678&#34;
+	height=&#34;1120&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/11_hua6142fd22b3adaf5c29230ae871226ba_228989_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/11_hua6142fd22b3adaf5c29230ae871226ba_228989_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;149&#34;
+		data-flex-basis=&#34;359px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>为什么用Firefox</title>
+        <link>https://hyruo.com/article/2010-12-15-firefox/</link>
+        <pubDate>Wed, 15 Dec 2010 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2010-12-15-firefox/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2010-12-15-firefox/fiefox2.jpg" alt="Featured image of post 为什么用Firefox" /&gt;&lt;p&gt;男人的第一次给了IE不要紧，你还是得谈恋爱的；&lt;/p&gt;
+&lt;p&gt;其实在这个过程中，稀里糊涂的葬送第一次以至于终身不可自拔的大有人在，也不必太在意了。&lt;/p&gt;
+&lt;p&gt;美丽性感的OPERA显然最带给你最甜美的青春记忆，但非常遗憾的是，华美的OPERA并不能满足你所有的需求，过于保守的她甚至设置了一系列苛刻条件想让你在她的规制下与之终老；&lt;/p&gt;
+&lt;p&gt;你一怒之下抛弃了她，并在思索了七七四十九天之后终于明白一个千古年来颠扑不灭的真理：过生活的老婆还是简单朴素的好.&lt;/p&gt;
+&lt;p&gt;CHROME适时的出现，恰巧添补了你空虚的心灵，你迫不及待地与之建立起深厚的感情。&lt;/p&gt;
+&lt;p&gt;她是那么高效勤快任劳任怨地给你做牛做马。而你也是那么痴情郎意地认为这就是人生的终极归宿。&lt;/p&gt;
+&lt;p&gt;虽然老婆的姿色和性格与其他女人大不相同而让你有时难以捉磨；&lt;/p&gt;
+&lt;p&gt;虽然老婆偶尔也会因为你过于前卫的性理念而显得在有些动作上不那么合作；&lt;/p&gt;
+&lt;p&gt;虽然老婆也很难胜任你想让她做的一些稀奇古怪的事情；&lt;/p&gt;
+&lt;p&gt;虽然老婆也经常会因为遭受你过度蹂躏折磨导致精神压力大而崩溃；&lt;/p&gt;
+&lt;p&gt;她在与你生活的多年时间一直让你沾沾自喜倍长面子&lt;/p&gt;
+&lt;p&gt;但，突然有一天你居然又发现了一个真理：浏览器就不是个人！&lt;/p&gt;
+&lt;p&gt;话说，真理之所以是真理，就在于它不是这么容易和经常被人类发现的。&lt;/p&gt;
+&lt;p&gt;而你却是那么自信自豪自大地发现，自己竟然是这么的绝顶聪明，用了多年时间悟出了别人早在幼儿园就能轻松理解掌握并且能创造出的&amp;quot;真理&amp;quot;。&lt;/p&gt;
+&lt;p&gt;这也就是普通人最可悲的地方：历史车轮滚滚而过，不断重复的是往日的悲剧。&lt;/p&gt;
+&lt;p&gt;悟出&amp;quot;真理&amp;quot;后，你不得不回想起这一生与她走过路途中的点滴。&lt;/p&gt;
+&lt;p&gt;惊然发现，自己竟然忽略了曾经多少次前人语老人言的忠告，在零乱的记忆中，你依稀记起了一个他们共同的言语无一不指向同一个令你曾无数次彷徨疑豁的名字：FIREFOX.&lt;/p&gt;
+&lt;p&gt;这是一个初看规规矩矩，实则内心火热与强大，能满足你任何可以想象到需求的浏览器。&lt;/p&gt;
+&lt;p&gt;可遗憾的是，行走世间，大都得多少经历上述那么些事情，才能真正懂得。&lt;/p&gt;
+&lt;p&gt;或许这也就是FireFox最迷人的地方。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

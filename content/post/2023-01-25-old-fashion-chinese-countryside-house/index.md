@@ -19,7 +19,7 @@ in Shuangfeng country,Hunan Province , build in 1860s
 
 </figure>
 
-<!--more-->
+ 
 
 <figure>
 

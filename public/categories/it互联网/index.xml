@@ -880,34 +880,215 @@ TP-LINK TGR1900 WAN TO LAN速率: 631Mbps
         <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
         
         <guid>https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/</guid>
-        <description>&lt;img src="https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/2-4-jpg-1.webp" alt="Featured image of post 一个较为经济的蓝牙使用方案" /&gt;&lt;p&gt;本文暂未提供中文版本，您可以点击上边链接查看英文版本。&lt;/p&gt;
+        <description>&lt;img src="https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/2-4-jpg-1.webp" alt="Featured image of post 一个较为经济的蓝牙使用方案" /&gt;&lt;p&gt;随着iPhone和安卓相继把3.5mm音频接口取消，蓝牙设备迎来了新一轮爆发。最近在玩腾讯新出的绝地求生：刺激战场，多年浸淫fps的基础还在，上手也很快，80%都能进前10名。但这游戏有一个非常不友好的问题——耗电极快，iPhone 7P 100%电量，只开默认效果每局平均20分钟耗电约20%-25%，满电量也就够玩1个多小时。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/23-jpg.webp&#34;
+	width=&#34;629&#34;
+	height=&#34;575&#34;
+	srcset=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/23-jpg_hu42441cb2b36c709a169f63631774ddc4_37674_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/23-jpg_hu42441cb2b36c709a169f63631774ddc4_37674_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;109&#34;
+		data-flex-basis=&#34;262px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;FPS游戏最基本的需求是——耳机。但现在的iPhone在使用有线耳机后，毫无疑问无法再边游戏边充电了，强迫用户升级蓝牙耳机。&lt;/p&gt;
+&lt;p&gt;蓝牙耳机并不是刚需，airpods虽好，但就本人这个需求来说，性价比太低，运动蓝牙耳机早有sony sbh70，还有个吃灰很久的漫步者，但试了下，玩FPS这种需要强定位感的游戏，耳塞相比全包裹式耳机还是有很大差距。刚好自己还有个吃灰很久的SHP9500，当年号称是1000元以下耳机的性价比之王，于是想着将其利用起来，作为吃鸡耳机使用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/133904654-jpg.webp&#34;
+	width=&#34;495&#34;
+	height=&#34;323&#34;
+	srcset=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/133904654-jpg_hu087e5d9fd9b4e569ed71c56980088daf_27072_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/133904654-jpg_hu087e5d9fd9b4e569ed71c56980088daf_27072_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;367px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;于是开始找蓝牙接收器。&lt;/p&gt;
+&lt;p&gt;多年前在玩监听音箱的阶段，曾关注过蓝牙接收器领域，那时候用i-audio的Z2作为音源，接不记得牌子的功放和M-audio的bx5a音箱玩，刚好播放器也带蓝牙功能，并且据说还支持当时热门的aptX协议，于是上网买过一款天逸BTS-1的蓝牙接收器。但后来证实这个接收器有虚假广告嫌疑，经过详细抓包测试，接收器实际上并不支持aptX。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/09_COWON_1-jpg.webp&#34;
+	width=&#34;500&#34;
+	height=&#34;353&#34;
+	srcset=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/09_COWON_1-jpg_hu1bb0d9e331609b10138068424d0f8fbc_12188_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/09_COWON_1-jpg_hu1bb0d9e331609b10138068424d0f8fbc_12188_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;141&#34;
+		data-flex-basis=&#34;339px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;经过多年发展，aptX已经从神坛走下，原来的CSR公司也早就被高通收购，现在新出的高通芯片，估计大多数都能支持aptX了。但是aptX还是保持了原来的传统，在aptx.com网站上详细列出了授权的所有厂商和产品。经过一番查找，发现绿联这个国产平民品牌倒是有不少产品在列的，于是果断下单。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/recev-1024x665.webp&#34;
+	width=&#34;1024&#34;
+	height=&#34;665&#34;
+	srcset=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/recev-1024x665_hu3e2a11b26b0ff6ac8701eac0d88fd78e_37430_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/recev-1024x665_hu3e2a11b26b0ff6ac8701eac0d88fd78e_37430_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;369px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;选择的是最小巧的两款——CM150和CM124，一个发射器、一个接收器，不同用途。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/5-1024x313.webp&#34;
+	width=&#34;1024&#34;
+	height=&#34;313&#34;
+	srcset=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/5-1024x313_huc57b4d95d2a915b9c66cce220cc2f625_12764_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/5-1024x313_huc57b4d95d2a915b9c66cce220cc2f625_12764_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;327&#34;
+		data-flex-basis=&#34;785px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;接收器当然就是用在前边SHP9500上，将有线耳机改造为蓝牙耳机，而发射器则用于Yamaha SLG200s，可以方便接入家里几个蓝牙音箱和耳机了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/timg-jpg.webp&#34;
+	width=&#34;790&#34;
+	height=&#34;525&#34;
+	srcset=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/timg-jpg_hu56f60af52bdc40541f82b286dac77e1d_96548_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/timg-jpg_hu56f60af52bdc40541f82b286dac77e1d_96548_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;361px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;不过，其实aptX对iPhone是没卵用的功能，因为iPhone只支持AAC和SBC，但接收器+发送器都支持aptX，则可以方便的将Yamaha SLG200s无线连接了，毕竟aptX已经是蓝牙的巅峰。绿联的这两款接收器、发射器默认支持顺序也是aptX、AAC和SBC，所以丝毫不用担心传输标准问题。&lt;/p&gt;
+&lt;p&gt;但在实际使用中还是发现一点问题，像吉他这种，用蓝牙转发信号，偶尔还是会有点卡，就像之前为了实现在客厅用HTPC小钢炮玩游戏，而升级的Razer堡垒神蛛，纵使有着感人的价格，也并没有带来流畅的体验，在便携性和使用效果之间，还是得作出一些牺牲的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/o3nsph-2351-jpg.webp&#34;
+	width=&#34;720&#34;
+	height=&#34;480&#34;
+	srcset=&#34;https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/o3nsph-2351-jpg_hu3151a44ca83b415be507449d2b880188_22556_480x0_resize_q75_h2_box_2.webp 480w, https://hyruo.com/article/a-more-economical-bluetooth-solution-for-everyday-use/images/o3nsph-2351-jpg_hu3151a44ca83b415be507449d2b880188_22556_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>使用PPT制作一个IOS7的动态钟表图形</title>
-        <link>https://hyruo.com/article/use-ppt-to-make-a-dynamic-clock-like-ios7/</link>
-        <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
+        <title>角落的声音</title>
+        <link>https://hyruo.com/article/2017-10-07-corner/</link>
+        <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
         
-        <guid>https://hyruo.com/article/use-ppt-to-make-a-dynamic-clock-like-ios7/</guid>
-        <description>&lt;img src="https://hyruo.com/article/use-ppt-to-make-a-dynamic-clock-like-ios7/images/clock-icon-live-1.png" alt="Featured image of post 使用PPT制作一个IOS7的动态钟表图形" /&gt;&lt;p&gt;本文暂未提供中文版本，您可以点击上边链接查看英文版本。&lt;/p&gt;
+        <guid>https://hyruo.com/article/2017-10-07-corner/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2017-10-07-corner/pexels-photo-4126743.webp" alt="Featured image of post 角落的声音" /&gt;&lt;ul&gt;
+&lt;li&gt;网络环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当前既是最好的网络时代，也是最惨的时代。许多人在被现实虐的遍体鳞伤后，很多思想和文字只能停留在内心深处，停留在茶余饭后，见不得光，更上不得网，或许那微信群里边每天无数发出去后瞬间留下撤销二字的背影，可以作为最好的诠释。憋着，别说。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;大V时代&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;网络上的话语权是被操纵的，被引导的，被少数人牵着鼻子走的。当我们还在探究事情真相之时，大V们一个捕风捉影，一个不经意的贴标签，一个强行的视线转移就可以将亿万人的舆论带偏，事实的真相往往不重要，普通人能找到发泄渠道，少数人能秀出精神优越，不同见解能进一步将社会割裂固化就行了。&lt;/p&gt;
+&lt;p&gt;大V时代另一个问题是普通人很难发声，除非该发声能被大V利用。或许是个错觉，普通人一直以来就没能在网络上占据一席之地，一直都是边缘角色。大v一个转发就能收获无数赞誉，一个取关关评就能让事情盖棺论定，颇有QQ群管理全员禁言抢红包的风范。&lt;/p&gt;
+&lt;p&gt;一些行业内的，专业性的事情，普通人插不上话，只能跟着看热闹。热闹过后，啥都没能剩下，偶尔记起其中碎片，终究也只是碎片。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;真假声音&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主流媒体就是一群人以媒体作为吃饭的工具然后自封的称号。到底什么叫主流媒体，在现在这个时代已经很难界定。从业人员整天在自Hi，实际上绝大多数信息都是数据垃圾，无人问津，只能呆在角落。&lt;/p&gt;
+&lt;p&gt;很多行业都以正面宣传质量作为类KPI工具，又在哪级媒体露面，又被什么媒体采访，实际上都是自娱自乐，相互利用一番，各取所需完成任务了事。不禁想起以前一句老话：民主就是作秀。哪怕观众忍不住，那也得憋着。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;忠言逆耳&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;大吹大擂，报喜不报忧，好大喜功不知道什么时候开始成了网络信息标配，双重标准，皇帝新衣，掩耳盗铃各种啼笑皆非的画面充斥网络平台。宣传是政治的工具，政治的基础却是人心。&lt;/p&gt;
+&lt;p&gt;每一个人都是这魔幻现实的参与者，见证者，但也只是过把瘾，留不下任何波澜，如草芥，如浮云，历史车轮往复向前，从来都一样。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;谣言盛行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;谣言止于智者，可惜智者千虑必有百失。智商与传谣毫无联系，人在面对自己不懂的领域，天然怀有畏惧恐慌之心，智商再高也怕菜刀，大众性的恐慌就是菜刀。&lt;/p&gt;
+&lt;p&gt;谣言来源于信息不对称，传谣来源于不信任，信息不透明，信息被操控，谣言盛行，难以回应，藏着掖着。竞争对手利用谣言影响决策，割裂大众心理，人心难聚。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2017-10-07-corner/images/img_0542.jpg&#34;
+	width=&#34;400&#34;
+	height=&#34;222&#34;
+	srcset=&#34;https://hyruo.com/article/2017-10-07-corner/images/img_0542_hu20de3052e2fa9ed135a723358c15c446_16247_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2017-10-07-corner/images/img_0542_hu20de3052e2fa9ed135a723358c15c446_16247_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;180&#34;
+		data-flex-basis=&#34;432px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>使用PPT制作一个彩色圆圈动画</title>
-        <link>https://hyruo.com/article/use-powerpoint-making-a-simple-ring-color-circle/</link>
-        <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+        <title>技嘉H61主板</title>
+        <link>https://hyruo.com/article/2016-08-05-gigabyte/</link>
+        <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
         
-        <guid>https://hyruo.com/article/use-powerpoint-making-a-simple-ring-color-circle/</guid>
-        <description>&lt;img src="https://hyruo.com/article/use-powerpoint-making-a-simple-ring-color-circle/images/m-3-jpg-1.webp" alt="Featured image of post 使用PPT制作一个彩色圆圈动画" /&gt;&lt;p&gt;本文暂未提供中文版本，您可以点击上边链接查看英文版本。&lt;/p&gt;
+        <guid>https://hyruo.com/article/2016-08-05-gigabyte/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2016-08-05-gigabyte/images/img_1184-1.jpg" alt="Featured image of post 技嘉H61主板" /&gt;&lt;p&gt;未知原因，这块技嘉主板出现了多次故障，那些USB3.0驱动不兼容都是小事了，SATA3接口出问题才是核心，之前因为升级win8.1和win10系统，导致SATA3的控制芯片驱动长期不兼容，使得HDD一直100%占有率，由于是双硬盘，一直没留意到HDD的问题，等到发现时，硬盘已经基本报废。后来，陆续因为这个驱动问题，多次导致系统报废，最后换了硬盘，换回SATA2接口，续命至昨日，终于是因未知原因毁掉了bios芯片，整块主板进入报废状态。&lt;/p&gt;
+&lt;p&gt;[&lt;img src=&#34;https://hyruo.com/article/2016-08-05-gigabyte/images/img_1184.jpg&#34;
+	width=&#34;1100&#34;
+	height=&#34;824&#34;
+	srcset=&#34;https://hyruo.com/article/2016-08-05-gigabyte/images/img_1184_hua8b740db82bde253c284e427950619e1_379856_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2016-08-05-gigabyte/images/img_1184_hua8b740db82bde253c284e427950619e1_379856_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;]&lt;/p&gt;
+&lt;p&gt;H61本不支持sata3和usb3.0，技嘉弄了几个第三方芯片才实现，然而几年过来，这个平台真是用得心力憔悴。当初选H61真是太失误了，没有考虑到升级需求，导致后来各种局限。&lt;/p&gt;
+&lt;p&gt;1是LGA1155接口，一开始买的是G620的CPU，用了一段时间升级到E3-1230v2，虽然后者性能现在还可以用，但无奈市面上已经几乎没有支持LGA1155接口的主板，如欲升级，CPU只能换。&lt;/p&gt;
+&lt;p&gt;2是H61只支持到DDR3-1333，如果升级电脑，也必须换掉。&lt;/p&gt;
+&lt;p&gt;无奈下，只能继续购买H61的主板。但不知道什么原因，现在市面上留存的几块H61主板，都已经恢复了基础规格，均只搭载SATA2/USB2.0接口，价格也都在300上下，估计能再战几年吧。传输速度问题，只能忍忍了。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>黑莓与工作和生活的关系</title>
-        <link>https://hyruo.com/article/work-study-life-blackberry/</link>
-        <pubDate>Tue, 12 Apr 2011 00:00:00 +0000</pubDate>
+        <title>彻底解决三星gpsd和lli_pm_wlock耗电问题</title>
+        <link>https://hyruo.com/article/2016-03-22-samsung/</link>
+        <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
         
-        <guid>https://hyruo.com/article/work-study-life-blackberry/</guid>
-        <description>&lt;img src="https://hyruo.com/article/work-study-life-blackberry/images/2009814115601-jpg-1.webp" alt="Featured image of post 黑莓与工作和生活的关系" /&gt;&lt;p&gt;本文暂未提供中文版本，您可以点击上边链接查看英文版本。&lt;/p&gt;
+        <guid>https://hyruo.com/article/2016-03-22-samsung/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2016-03-22-samsung/images/wp-1458647373385.png" alt="Featured image of post 彻底解决三星gpsd和lli_pm_wlock耗电问题" /&gt;&lt;p&gt;三星的安卓手机经常会有莫名耗电快的情况，经过使用better battery stats查看，罪魁祸首就是gpsd与lli_pm_wlock，这两个进程加起来待机一个小时就得耗电10%以上，经过多番查找终于找到解决办法。&lt;/p&gt;
+&lt;h2 id=&#34;gpsd&#34;&gt;gpsd
+&lt;/h2&gt;&lt;p&gt;这个原因就是很多app会自动激发定位功能，即使在关闭定位、禁用app调用定位权限掉也没用，app自然会在后台激活gpsd不断尝试定位。解决办法是将gpsd文件设置权限，按照链接中做法，使用gscript控制gpsd开关。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2016-03-22-samsung/images/wp-1458644099541.png&#34;
+	width=&#34;800&#34;
+	height=&#34;1422&#34;
+	srcset=&#34;https://hyruo.com/article/2016-03-22-samsung/images/wp-1458644099541_hubae408dd63cef9dd4d3404f2c705a2a9_158975_480x0_resize_box_3.png 480w, https://hyruo.com/article/2016-03-22-samsung/images/wp-1458644099541_hubae408dd63cef9dd4d3404f2c705a2a9_158975_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://download.csdn.net/detail/o8xv0123/6881219?web=web&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://download.csdn.net/detail/o8xv0123/6881219?web=web&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;lli_pm_wlock&#34;&gt;lli_pm_wlock
+&lt;/h2&gt;&lt;p&gt;这是个待机进程，本意是节电的，但是在某种特殊情况下，比如当设置手机信号为仅限4G或者3G，它会不断搜索信号，造成耗电量飙升，解决办法是将手机信号设置为和当地实际情况相符，4G的一定要设置4g/3g/2g自动选择。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2016-03-22-samsung/images/wp-1458644118713.png&#34;
+	width=&#34;800&#34;
+	height=&#34;1422&#34;
+	srcset=&#34;https://hyruo.com/article/2016-03-22-samsung/images/wp-1458644118713_hu32278cc5a86639ff8c0c55152d803c15_94021_480x0_resize_box_3.png 480w, https://hyruo.com/article/2016-03-22-samsung/images/wp-1458644118713_hu32278cc5a86639ff8c0c55152d803c15_94021_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://forum.xda-developers.com/showpost.php?p=62519112&amp;amp;postcount=1254&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://forum.xda-developers.com/showpost.php?p=62519112&amp;postcount=1254&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         

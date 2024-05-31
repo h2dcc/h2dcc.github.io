@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Thinkpad on 海若博客</title>
+        <link>https://hyruo.com/tags/thinkpad/</link>
+        <description>Recent content in Thinkpad on 海若博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>by Hyruo, All Rights Reserved.</copyright>
+        <lastBuildDate>Sat, 06 Aug 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://hyruo.com/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>电脑使黑莓移动网络上网的一些问题</title>
+        <link>https://hyruo.com/article/2011-08-06-blackberry-thinkpad/</link>
+        <pubDate>Sat, 06 Aug 2011 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2011-08-06-blackberry-thinkpad/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2011-08-06-blackberry-thinkpad/blackberry-10.jpg" alt="Featured image of post 电脑使黑莓移动网络上网的一些问题" /&gt;&lt;p&gt;平常很少呆在宿舍，所以网线什么的，目前也就没有太大必要，偶尔临时需要上网都是用Blackberry来进行操作。&lt;/p&gt;
+&lt;p&gt;但手机上网毕竟是有一定的局限性，比如说晚上把笔记本扛回宿舍，闲来无事想跟着Foorbar2000学唱唱歌，发现不能联网下载歌词，煞是扫兴。于是把手机用USB线连接到电脑，打开Blackberry Desktop Software（就是以前的DM），启用移动网络即可方便的使电脑使用手机网络上网。&lt;/p&gt;
+&lt;p&gt;使用一个小时有余，中间还Google了一阵，发现只用了602K流量，还是算比较理想的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/21.jpg&#34;
+	width=&#34;801&#34;
+	height=&#34;601&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/21_hu7f9672422dc8859ecf79d13169be8b18_142260_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/21_hu7f9672422dc8859ecf79d13169be8b18_142260_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;下面就是一些个人在使用中的心得吧：&lt;/p&gt;
+&lt;h2 id=&#34;1连接&#34;&gt;&lt;strong&gt;1.连接：&lt;/strong&gt;
+&lt;/h2&gt;&lt;p&gt;打开6.0版本的DM后，选择“工具”下面的“移动Internet设置”，在“配置文件”中（如上图）选择China Mobile（移动）、China Telecom（电信）、China Unicom（联通），然后选择确定即可，用户名、密码、其他命令都是不用填写的。&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/9.jpg&#34;
+	width=&#34;264&#34;
+	height=&#34;413&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/9_hu3b512aee583045e861cb6c25e63e6841_25375_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/9_hu3b512aee583045e861cb6c25e63e6841_25375_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;63&#34;
+		data-flex-basis=&#34;153px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;设置好ISP后，只需要点击左下角的“移动Internet”就能连网了，这时候电脑会自动弹出一个网络选择窗口，一般情况选择“家庭网络”。&lt;/p&gt;
+&lt;p&gt;网络连接完成后我们会看到当前连接到网络为拨号网络:China Mobile。&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;2网络浏览&#34;&gt;&lt;strong&gt;2. 网络浏览：&lt;/strong&gt;
+&lt;/h2&gt;&lt;p&gt;其实也没必要多此一举在PC上使用手机网络来浏览网页，但无可非议的是，电脑上的浏览器确实比手机上的强太多。&lt;/p&gt;
+&lt;p&gt;如果手机流量资源像我这样不是特别丰富的话，可以考虑使用Opera Mobile浏览器Windows版本（流量不够就不下载了），或者我下面介绍到的Firefox。&lt;/p&gt;
+&lt;p&gt;在电脑上安装好Firefox，在附加组件里面搜索“user agent switcher”，并进行安装，安装完选择iphone或者其他型号手机，这个插件能使Firefox在联网时，被各种网络服务器识别为手机浏览器，从而传输适合手机浏览的，省流量的页面。&lt;/p&gt;
+&lt;p&gt;开启插件选择Iphone后，登录QQ邮箱后的页面即自动变成触屏版，微博也是如此。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/10.jpg&#34;
+	width=&#34;544&#34;
+	height=&#34;631&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/10_hub30383c97a9b2b4f0ea6d805b3e82a76_69455_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/10_hub30383c97a9b2b4f0ea6d805b3e82a76_69455_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;86&#34;
+		data-flex-basis=&#34;206px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/7.jpg&#34;
+	width=&#34;486&#34;
+	height=&#34;701&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/7_hu9d8de8263c5afe757609eaf7403f237e_92041_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/7_hu9d8de8263c5afe757609eaf7403f237e_92041_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;69&#34;
+		data-flex-basis=&#34;166px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;3qq使用&#34;&gt;&lt;strong&gt;3.QQ使用&lt;/strong&gt;
+&lt;/h2&gt;&lt;p&gt;由于移动网络本质上与日常网络是没有什么差别的，所以QQ、SSH、各种代理，都是可以正常使用的，囿于手机网络的传输速度，我选择使用TM2009（没有新版本QQ那么多后台小程序，看起来就不怎么耗流量），并在登录后立马把所有QQ群消息屏蔽，否则数十个超级高级群在后台接收消息，将是一个浪费流量的无底洞。&lt;/p&gt;
+&lt;p&gt;也可以考虑使用腾讯的Web mini QQ（http://w.qq.com），一个极为简洁的登录和使用界面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/12.jpg&#34;
+	width=&#34;508&#34;
+	height=&#34;388&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/12_hu6e1dd2c6270f6576057dc3d092dd54a3_48681_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/12_hu6e1dd2c6270f6576057dc3d092dd54a3_48681_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;314px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;## &lt;strong&gt;4.电脑后台配置&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在启用移动网络之前，最好确认电脑后台的360、杀毒软件、自动更新等程序都是关闭的，否则移动网络流量是完全经不起这些后台程序蹂躏的。&lt;/p&gt;
+&lt;p&gt;流量特别吃紧，还可以把浏览器中的“自动载入图片”功能禁用，毕竟日常的网页流量，图片传输占用了其中一大部分资源。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/4.jpg&#34;
+	width=&#34;511&#34;
+	height=&#34;478&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/4_hu9de40998ba225a13e50f1e87fb27f668_60797_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/4_hu9de40998ba225a13e50f1e87fb27f668_60797_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;106&#34;
+		data-flex-basis=&#34;256px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/11.jpg&#34;
+	width=&#34;1678&#34;
+	height=&#34;1120&#34;
+	srcset=&#34;https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/11_hua6142fd22b3adaf5c29230ae871226ba_228989_480x0_resize_q75_box.jpg 480w, https://hyruo.com/article/2011-08-06-blackberry-thinkpad/images/11_hua6142fd22b3adaf5c29230ae871226ba_228989_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;149&#34;
+		data-flex-basis=&#34;359px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>想买个称心的笔记本咋就那么难</title>
+        <link>https://hyruo.com/article/2011-07-10-notebook/</link>
+        <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
+        
+        <guid>https://hyruo.com/article/2011-07-10-notebook/</guid>
+        <description>&lt;img src="https://hyruo.com/article/2011-07-10-notebook/pexels-photo-3550483.webp" alt="Featured image of post 想买个称心的笔记本咋就那么难" /&gt;&lt;p&gt;最近想买个电脑用用，毕竟大多数时候，打发无聊时间还是它靠得住些。&lt;/p&gt;
+&lt;p&gt;我的需求其实也挺简单，外观过得去，能同时开几个比较耗资源的浏览器可以稳定运行即可。说起来简单，要达到要求还真是很有压力。&lt;/p&gt;
+&lt;p&gt;笔记本外观，这是我比较在意的一方面。其一，拉丝和烤漆的我个人是非常反感的工艺，而这是当前多数电脑的标准配置；其二，笔记本如果ABC面颜色不统一，我看着会觉得很难受，而很多电脑都这样。如果单从历史产品来看，我对Thinkpad以及Fujitsu的外观设计最为满意。&lt;/p&gt;
+&lt;p&gt;从品牌角度来看，戴尔和惠普首先排除，质量平庸，服务差，就是个专业卖电脑的，不喜欢；华硕无理由不喜欢，排除；东芝三星索尼，一般都无视它们；宏基跟神舟属一个角色（一个是世界范围的贱价品,一个是天朝内部的贱价品），万不得已不考虑；Thinkpad和富士通是首选；苹果无理由不喜欢；联想和明基是第二考虑对象（历史因素）；其他品牌，无视。&lt;/p&gt;
+&lt;p&gt;从功能上看，A核和I核的都可以，虽然AU性能实在不怎么样，但好歹10来年都是它的忠实粉丝；也不必一定要什么I7I5，实用就可以了，4200＋用了这么些年，从没觉着有压力过；显卡吧，有就有，没有就没有，也没期望玩什么游戏，看个电影不卡就行了，板载GMA一般都能胜任了；内存硬盘啥的都是浮云，想要的时候再自己加。唯一特殊点的要求就是，首选15寸机型。也没考虑太多携带性因素，我可不想趴在桌子上看显示器，基本都在一米开外加无线键鼠，14寸经过长期实践，不能胜任。并且，我对高像素有特殊需求。&lt;/p&gt;
+&lt;p&gt;认真搜索了淘宝上5000以内（工资不高，预算就4000来块），15寸以上的笔记本电脑，仅有Thinkpad SL510R9C进入了我预购菜单，淘宝售价4000出头。于是吧，跑去电脑城，一找，没有，只有A66款的SL510，而且售价3800明显偏贵，更加悲催的是，我竟然才知道，这玩意分辨率居然是1366x768，严重郁闷，幸好当时头脑没发热，没买。。。&lt;/p&gt;
+&lt;p&gt;后来也想过干脆买Playbook或者ipad2以及android系统之类的平板，但那些玩具多数时候并不能胜任我现在对于PC上应用的需求，而且我对那些触屏类的游戏又不感冒。&lt;/p&gt;
+&lt;p&gt;还曾考虑过上网本，经过多番仔细查找，除了thinkpad x100外，没几个外观上看起来符合我心里预期的，加上一般上网本的U实在难扛目前各种浏览器＋flash插件非常耗资源的应用，所以作罢。&lt;/p&gt;
+&lt;p&gt;疼！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
