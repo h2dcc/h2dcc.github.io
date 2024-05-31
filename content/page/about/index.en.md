@@ -18,10 +18,10 @@ menu:
 ## About the author
 
 ### Public Service Lawyer
-After passing the national judicial examination in 2013, I became a public service lawyer in Foshan city.
+After passing the national judicial examination in 2018, I became a public service lawyer in Foshan city.
 
 ### Law Society Cadre
-After joining the Chinese Law Society in 2016, I work part-time at the Foshan Law Society since 2019.
+After joining the Chinese Law Society in 2019, I work part-time at the Foshan Law Society since 2019.
 
 ### Legal Advisor
 Since 2020 , I have served as a legal advisor to a government department in Foshan City.
