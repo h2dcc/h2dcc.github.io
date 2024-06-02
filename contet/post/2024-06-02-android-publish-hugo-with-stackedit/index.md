@@ -28,13 +28,17 @@ image: "EM51KUwyZUTymVfq.webp"
 
 StackEdit自带有编辑器工具栏，但是在手机竖版网页中，这些编辑工具默认只显示前两个（主要看手机屏幕最小宽度设置，安卓设置方法是系统设置——开发者选项——最小宽度设置），但在横屏使用后，编辑器工具栏可以显示所有工具选项。或者，使用浏览器的桌面模式，也能实现同样的效果。
 
+![stackedit](./imgs/7K8Z7gYcjgHx9Prp.jpeg)
+
+
+
 ### 使用手机内置浏览器等其他浏览器上传
 
 在我的VIVO手机内置浏览器中，当我打开StackEdit编辑器时，可以直接将手机内剪贴板中的图片粘贴到编辑器中，包括从手机图库、网页、微信等APP中复制的图片，均能粘贴。
 
 另外我也测试了其他常用Firefox, Chrome浏览器，但这两者均不支持直接粘贴图片。其中，Firefox仅可粘贴从firefox其他网页上复制的图片。
 
-但由于我对VIVO自带浏览器不是很喜欢（每次打开都有广告），所以这种方法对我来说还稍微欠缺一点。
+由于我对VIVO自带浏览器不是很喜欢（每次打开都有广告），所以这种方法对我来说还稍微欠缺一点，还是直接在主流浏览器中横屏使用最方便。
 
 
 ## 如何使用StackEdit发布Hugo博客
@@ -96,8 +100,6 @@ services:
 
 
 
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MjgyMDg2Nl19
+eyJoaXN0b3J5IjpbLTE5MzQwOTEwNTBdfQ==
 -->
