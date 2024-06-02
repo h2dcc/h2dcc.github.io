@@ -25,7 +25,9 @@ image: "/images/EdvA62ldiS6rmuTt.webp"
 
 ### 使用手机内置浏览器等其他浏览器上传
 
-在我的VIVO手机内置浏览器中，当我打开StackEdit编辑器时，ke'y
+在我的VIVO手机内置浏览器中，当我打开StackEdit编辑器时，可以直接将手机内剪贴板中的图片粘贴到编辑器中，包括从手机图库、网页、微信等APP中复制的图片，均能粘贴。
+
+另外我也测试了其他chang
 
 ### 直接使用手机浏览器的桌面模式上传
 
@@ -36,5 +38,5 @@ image: "/images/EdvA62ldiS6rmuTt.webp"
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjYyNDI3MzddfQ==
+eyJoaXN0b3J5IjpbLTE4NzgxNTAyODNdfQ==
 -->
