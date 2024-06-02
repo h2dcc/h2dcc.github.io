@@ -28,7 +28,7 @@ image: "EM51KUwyZUTymVfq.webp"
 
 StackEdit自带有编辑器工具栏，但是在手机竖版网页中，这些编辑工具默认只显示前两个（主要看手机屏幕最小宽度设置，安卓设置方法是系统设置——开发者选项——最小宽度设置），但在横屏使用后，编辑器工具栏可以显示所有工具选项。或者，使用浏览器的桌面模式，也能实现同样的效果。
 
-![stackedit](./imgs/7K8Z7gYcjgHx9Prp.jpeg)
+![stackedit](7K8Z7gYcjgHx9Prp.jpeg)
 
 
 
@@ -107,6 +107,4 @@ services:
 3. StackEdit默认上传图片路径与Hugo有点区别。我在Hugo中图片一般与index.md放在一块，方便管理。Stackedit如果想上传到同路径，需要在每篇文件上传时指定`/content/post/article-pyth/`，如果采取其他`./imgs`之类相对路径，会自动在仓库根目录重新创建路径。
 
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzQwOTEwNTBdfQ==
--->
+> Written with [StackEdit中文版](https://editor.hyruo.com/).
