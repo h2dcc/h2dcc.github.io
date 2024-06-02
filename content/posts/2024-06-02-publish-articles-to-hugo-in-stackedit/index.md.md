@@ -1,17 +1,21 @@
 
 ---
-title: "使用Stackedi"  
-slug: "xiaomi-lock-broken"  
+title: "手机上使用StackEdit发布Hugo博客"  
+slug: "android-publish-hugo-with-stackedit"  
 date: "2024-06-02"  
 categories: 
-  - "瞬间"  
+  - "it互联网"  
 tags: 
-  - "小米"
-  - "智能门锁"
+  - "stackedit"
+  - "hugo"
+  - "andriod"
+  - "edge"
+  - "firefox"
+  - "chrome
 image: "smartlock-17b.jpg"  
 ---
 
 > Written with [StackEdit中文版](https://stackedit.cn/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEzMTIzMTgzXX0=
+eyJoaXN0b3J5IjpbLTIwMTY3NDI3OV19
 -->
