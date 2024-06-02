@@ -29,10 +29,11 @@ image: "/images/EdvA62ldiS6rmuTt.webp"
 
 另外我也测试了其他常用Firefox, Chrome浏览器，但这两者均不支持直接粘贴图片。其中，Firefox仅可粘贴从firefox其他网页上复制的图片。
 
-但由于我对VIVO自带浏览器不是很喜欢（每次打开都有广告），所以这种方法只能说确实可用。
+但由于我对VIVO自带浏览器不是很喜欢（每次打开都有广告），所以这种方法对我来说还稍微欠缺一点。
 
 ### 直接使用手机浏览器的桌面模式上传
 
+StackEdit自带有编辑器工具栏，但是在手机网页中，这些编辑工具默认只显示前几个。
 
 
 
@@ -40,5 +41,5 @@ image: "/images/EdvA62ldiS6rmuTt.webp"
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NjI1OTI1XX0=
+eyJoaXN0b3J5IjpbMTA1MTA3MTU0Ml19
 -->
