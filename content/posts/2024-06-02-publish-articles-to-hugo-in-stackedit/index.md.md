@@ -38,12 +38,47 @@ StackEdit自带有编辑器工具栏，但是在手机竖版网页中，这些�
 
 ## 如何使用StackEdit发布Hugo博客
 
-要使用stackedit，首先需要在自己的服务器部署一个stackedit应用，官方只推荐Docker部署方式，但由于stackedit本身是一个网页版应用，该应用的所有数据都储存在浏览器Cookies中，所以直接使用guanStackedit.cn
+要使用stackedit，首先需要在自己的服务器部署一个stackedit应用，官方只推荐Docker部署方式，但由于stackedit本身是一个网页版应用，该应用的所有数据都储存在浏览器Cookies中，所以直接使用Stackedit.cn官网的编辑器就行了。
+
+### Dockerb
+
+`docker-compose.yml`如下：
+
+```
+version: "3.7"
+services:
+  stackedit:
+    image: mafgwo/stackedit:【docker中央仓库找到最新版本】
+    container_name: stackedit
+    environment:
+      - LISTENING_PORT=8080
+      - ROOT_URL=/
+      - USER_BUCKET_NAME=root
+      - DROPBOX_APP_KEY=【不需要支持则删掉】
+      - DROPBOX_APP_KEY_FULL=【不需要支持则删掉】
+      - GITHUB_CLIENT_ID=【不需要支持则删掉】
+      - GITHUB_CLIENT_SECRET=【不需要支持则删掉】
+      - GITEE_CLIENT_ID=【不需要支持则删掉】
+      - GITEE_CLIENT_SECRET=【不需要支持则删掉】
+      - GOOGLE_CLIENT_ID=【不需要支持则删掉】
+      - GOOGLE_API_KEY=【不需要支持则删掉】
+      - GITEA_CLIENT_ID=【不需要支持则删掉】
+      - GITEA_CLIENT_SECRET=【不需要支持则删掉】
+      - GITEA_URL=【不需要支持则删掉】
+      - GITLAB_CLIENT_ID=【不需要支持则删掉】
+      - GITLAB_CLIENT_SECRET=【不需要支持则删掉】
+      - GITLAB_URL=【不需要支持则删掉】
+    ports:
+      - 8080:8080/tcp
+    network_mode: bridge
+    restart: always
+```
+
 
 
 > Written with [StackEdit中文版](https://stackedit.cn/).
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDkxMDgwNTFdfQ==
+eyJoaXN0b3J5IjpbMTM4MDIzNTgzMV19
 -->
