@@ -76,12 +76,14 @@ services:
 
 ### 绑定自己的仓库
 
-本文假定用户已经完成了Hugo在Github的部署工作。接下来，只需要在stackedit中绑定github仓库中自己的hugo目录ji
+本文假定用户已经完成了Hugo在Github的部署工作。接下来，只需要在stackedit中绑定github仓库中自己的hugo目录即可。
+
+
 
 
 > Written with [StackEdit中文版](https://stackedit.cn/).
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NTcwODUwNV19
+eyJoaXN0b3J5IjpbLTg5ODM4Njg4OF19
 -->
