@@ -25,7 +25,7 @@ image: "/images/EdvA62ldiS6rmuTt.webp"
 
 ### 直接使用手机浏览器横屏或桌面模式上传
 
-StackEdit自带有编辑器工具栏，但是在手机竖版网页中，这些编辑工具默认只显示前两个（或三四个，主要看手机）。
+StackEdit自带有编辑器工具栏，但是在手机竖版网页中，这些编辑工具默认只显示前两个（主要看手机屏幕最小宽度设置，安卓设置方法是系统设置——开发者选项——最小宽度设置），但在横屏使用后，编辑器工具栏可以显示所有工具选项。
 
 ### 使用手机内置浏览器等其他浏览器上传
 
@@ -39,5 +39,5 @@ StackEdit自带有编辑器工具栏，但是在手机竖版网页中，这些�
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjYzODk2NzFdfQ==
+eyJoaXN0b3J5IjpbMTA2NDg2OTY0M119
 -->
