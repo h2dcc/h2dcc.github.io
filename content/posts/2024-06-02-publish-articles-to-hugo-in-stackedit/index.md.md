@@ -38,12 +38,12 @@ StackEdit自带有编辑器工具栏，但是在手机竖版网页中，这些�
 
 ## 如何使用StackEdit发布Hugo博客
 
-要使用stacked
+要使用stackedit，首先需要在自己的服务器部署一个stackedit应用，官方只推荐Docker部署方式，但由于stackedit本身是一个网页版应用，该应用的所有数据都储存在浏览器Cookies中，所以直接使用guanStackedit.cn
 
 
 > Written with [StackEdit中文版](https://stackedit.cn/).
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjMzMDk3NTNdfQ==
+eyJoaXN0b3J5IjpbLTEyMDkxMDgwNTFdfQ==
 -->
