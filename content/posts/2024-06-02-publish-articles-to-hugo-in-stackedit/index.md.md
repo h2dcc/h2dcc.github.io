@@ -19,7 +19,15 @@ image: "/images/EdvA62ldiS6rmuTt.webp"
 
 > Stackedit是一款非常优秀的在线Markdown编辑器，它可以私有化部署并绑定Github仓库，信息都储存在浏览器Cookies中，我尝试过通过Stackedit在手机编辑简单信息并提交到Github更新。但该方式主要问题在于无法提交图片，只适合不需要图片，或者采用第三方图库时使用。
 
-由于我最开始测试时，使用的是安卓版Edge浏览器，在该浏览器中，确实无法直接粘贴图片。
+## 上传图片问题
+
+由于我最开始测试时，使用的是安卓版Edge浏览器，在该浏览器中，默认的手机版网页中确实无法直接粘贴图片。但在后续的测试中我发现有多个上传图片方法。
+
+### 使用手机内置浏览器上传
+
+### 使用Firefox复制
+
+### 
 
 
 
@@ -28,5 +36,5 @@ image: "/images/EdvA62ldiS6rmuTt.webp"
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTg1MTc5MTddfQ==
+eyJoaXN0b3J5IjpbLTIwNDI0ODQ5NzJdfQ==
 -->
