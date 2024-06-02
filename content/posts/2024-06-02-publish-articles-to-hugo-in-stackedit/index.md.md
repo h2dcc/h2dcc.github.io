@@ -78,6 +78,7 @@ services:
 
 本文假定用户已经完成了Hugo在Github的部署工作。接下来，只需要在stackedit中绑定github仓库中自己的hugo目录即可。
 
+但是我并不建议直接绑定Hugo目录，特别是自动部署的Hugo，因为在写作的过程中，Stackedit会频繁上传文件到github，这会导致自动部署程序在后台不断的重新部署。
 
 
 
@@ -85,5 +86,5 @@ services:
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5ODM4Njg4OF19
+eyJoaXN0b3J5IjpbMTkyNDkzMTcxMV19
 -->
