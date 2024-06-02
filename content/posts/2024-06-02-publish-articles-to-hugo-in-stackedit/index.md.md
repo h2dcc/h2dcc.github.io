@@ -23,11 +23,11 @@ image: "/images/EdvA62ldiS6rmuTt.webp"
 
 由于我最开始测试时，使用的是安卓版Edge浏览器，在该浏览器中，默认的手机版网页中确实无法直接粘贴图片。但在后续的测试中我发现有多个上传图片方法。
 
-### 使用手机内置浏览器上传
+### 使用手机内置浏览器等其他浏览器上传
 
-### 使用Firefox复制
+在我的VIVO手机内置浏览器中，当我打开StackEdit编辑器时，ke'y
 
-### 
+### 直接使用手机浏览器的桌面模式上传
 
 
 
@@ -36,5 +36,5 @@ image: "/images/EdvA62ldiS6rmuTt.webp"
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDI0ODQ5NzJdfQ==
+eyJoaXN0b3J5IjpbLTE2MjYyNDI3MzddfQ==
 -->
