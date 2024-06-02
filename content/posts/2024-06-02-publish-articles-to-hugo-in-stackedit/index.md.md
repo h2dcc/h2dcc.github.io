@@ -40,7 +40,7 @@ StackEdit自带有编辑器工具栏，但是在手机竖版网页中，这些�
 
 要使用stackedit，首先需要在自己的服务器部署一个stackedit应用，官方只推荐Docker部署方式，但由于stackedit本身是一个网页版应用，该应用的所有数据都储存在浏览器Cookies中，所以直接使用Stackedit.cn官网的编辑器就行了。
 
-### Dockerb
+### Docker部署
 
 `docker-compose.yml`如下：
 
@@ -74,11 +74,14 @@ services:
     restart: always
 ```
 
+### 绑定自己的仓库
+
+本文假定用户已经完成了Hugo在Github的部署工作。接下来，只需要在stackedit中绑定github仓库中自己的hugo目录ji
 
 
 > Written with [StackEdit中文版](https://stackedit.cn/).
 
 ![输入图片说明](/images/EdvA62ldiS6rmuTt.webp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MDIzNTgzMV19
+eyJoaXN0b3J5IjpbMjA0NTcwODUwNV19
 -->
