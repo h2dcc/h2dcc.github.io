@@ -18,6 +18,12 @@ links:
     description: 每天进步多一点
     website: https://ahzoo.cn/
     image: https://ahzoo.cn/img/avatar.jpg
+  - title: 酷小呵
+    description: 酷小呵的博客
+    website: https://www.kuhehe.top
+    image: kuxiaohe.jpg
+
+    
 
         
 menu:
