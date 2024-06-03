@@ -104,9 +104,34 @@ services:
 
 总的来说StackEdit确实可以用作手机上的Hugo发布端，但是我在使用过程中还是发现几个问题比较头疼，让我感觉这种方式还是不如code server好用。
 
-1. 我的Hugo Post文件夹较为庞大，当设定Post文件夹作为云空间时，StackEdit会自动将我post文件夹下几百个文件夹全部拉取出来，容易导致浏览器假死，过程比较揪心。
+1. 我的Hugo Post文件夹较为庞大，当设定Post文件夹作为云空间时，StackEdit会自动将我post文件夹下几百个文件夹全部拉取出来，容易导致浏览器假死，过程比较揪心。[^1]
 2. 我的StackEdit应用搭建在甲骨文印度服务器上，通过Cloudflare加速，但连接过程不是很稳定，点击文件区域和设置区域时经常假死。当然，这是我自己的问题，并不是Stackedit的问题。
 3. StackEdit默认上传图片路径与Hugo有点区别。我在Hugo中图片一般与index.md放在一块，方便管理。Stackedit如果想上传到同路径，需要在每篇文件上传时指定`/content/post/article-pyth/`，如果采取其他`./imgs`之类相对路径，会自动在仓库根目录重新创建路径。
+
+[^1]: 这个问题也有另一个解决办法，就是在hugo content目录中，新建另一个文件夹用于存放文章。例如，`content/posts` ，但该方法的问题是会导致文章分散，不利于管理。
+
+如果想在hugo content中设置多个目录存放博客文件，还需要在`hugo.toml`或者`hugo.yaml`进行设置。
+
+```
+# Toml
+[contentTypes]
+  [contentTypes."post"]
+    path = "post"
+  [contentTypes."posts"]
+    path = "posts"
+```
+
+```
+# Stack Theme
+permalinks:
+    post: /post/:slug/
+    posts: /post/:slug/ # 统一页面url
+params:
+    mainSections:
+        - post
+        - posts
+```
+
 
 
 > Written with [StackEdit中文版](https://editor.hyruo.com/).
