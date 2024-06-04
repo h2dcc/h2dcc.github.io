@@ -24,7 +24,8 @@ The problem was that the new optical modem router could not register on China Mo
 3. The technician then contacted China Mobile's backend support technicians, who advised him to test with another optical modem router to see if it could register. Other devices worked fine, pinpointing the problem to the new 10-gigabit optical modem router.
 
 5. The technician contacted the manufacturer's technical staff of the optical modem router. They sent him a system upgrade package and extracted the router's system logs. However, after joint analysis by several technicians from the manufacturer, they still couldn't find the cause of the problem. They even tested another identical 10-gigabit optical modem router, which also failed to connect.  
-    After hours of attempts, the problem still couldn't be resolved. In the end, we had to put it aside temporarily, and the manufacturer said they would send technicians to my home for debugging in a few days.
+
+After hours of attempts, the problem still couldn't be resolved. In the end, we had to put it aside temporarily, and the manufacturer said they would send technicians to my home for debugging in a few days.
 
 ![man in blue crew neck t shirt wearing clear protective goggles](images/pexels-photo-9242837.jpeg)
 

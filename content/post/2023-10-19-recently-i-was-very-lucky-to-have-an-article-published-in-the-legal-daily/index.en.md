@@ -13,7 +13,7 @@ image: "images/Screenshot_20231019_225757-1.jpg"
 
 This is my first time having an article published in the "Legal Daily." The "Legal Daily" is the most important mainstream media in the field of democratic rule of law in China. It is the largest legal information provider and the most influential professional legal media group in China. It was renamed from the "Legal System Daily" in 2020. Being able to have an article published in this newspaper can be considered a fortunate coincidence and a very rare opportunity.
 
-<!--more-->
+
 
 Since I started working, I have published many articles in various newspapers and magazines, including the "Changan" magazine of the Central Political and Legal Affairs Commission, the "Democracy and Rule of Law" weekly of the China Law Society, the "Democracy and Rule of Law" newspaper, the "Southern Daily" and "Southern Rule of Law Report" in Guangdong Province, as well as our local "Foshan Daily" and various internal publications. Today, while chatting with a friend on WeChat, I talked about my past experience in writing, and I realized that writing is not as difficult as I thought.
 

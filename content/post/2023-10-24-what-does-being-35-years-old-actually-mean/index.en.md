@@ -14,7 +14,6 @@ image: "images/IMG_20231024_220627.jpg"
 
 Today is my wife CC's 35th birthday, and in a few months, I will also turn 35. In recent years, the "phenomenon of being 35" has undoubtedly been a very popular topic in China. Taking this opportunity, I would like to briefly share my views on this issue.
 
-<!--more-->
 
 I first heard about the "phenomenon of being 35" around 2009. It was during the summer vacation of my college years when I stayed at my cousin's house in Changsha, Hunan. He told me that he was preparing to apply for the Hunan Provincial Civil Service Exam. However, being born in 1980, he was already approaching 30 years old, and if he couldn't pass the exam, he wouldn't have many opportunities to apply because the age limit for the civil service exam was 35 years old and below. I was quite surprised to hear about this.  
   
