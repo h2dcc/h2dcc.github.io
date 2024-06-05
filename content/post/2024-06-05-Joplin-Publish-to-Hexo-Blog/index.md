@@ -44,10 +44,12 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 2. 在 Joplin 安装 [Publisher插件](https://github.com/rxliuli/joplin-utils/releases/download/joplin-publisher%401.0.0/joplin-publisher.jpl)，绑定 Github Token。
 3. 在 Joplin 笔记上添加 `Blog` 标签，然后点击 Publish to Github 即可。
  
-[![成功发布到 Hexo 博客](default1.png)](https://www.fosu.cc)
+[![成功发布到 Hexo 博客](default1.png)](https://joplin.fosu.cc)
 <br>
 
 > 对于已经使用过 Hexo Hugo 等静态博客的朋友来说，这就是使用 Joplin 创建和发布 Hexo 博客的全部流程。简单到不可思议，全程下来三分钟都不用，还包含 Github Action 的自动部署时间。
+
+
 
 ---
 
@@ -380,6 +382,19 @@ navbar:
 
 ---
 
+### 演示链接
+
+1. **Fluid 主题** 
+
+[joplin.fosu.cc](https://joplin.fosu.cc)
+
+2. **Yet the books 主题**  
+
+[www.fosu.cc](https://fosu.cc)
+
+3. **Pages Publisher 主题**  
+
+[note.fosu.cc](https://note.fosu.cc/)
 
 
 最后，再次感谢两个插件的作者 rxliuli 和 ylc395 , 感谢Joplin Hexo Hugo 社区的众多开发者。世界有你们而变得更美好！

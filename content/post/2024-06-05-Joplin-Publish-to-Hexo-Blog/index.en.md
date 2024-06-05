@@ -1,3 +1,4 @@
+
 ---
 title: "Starting from Scratch: Building and Publishing a Hexo Static Blog with Joplin in 3 Minutes"  
 slug: "joplin-publish-to-hexo-blog"  
@@ -421,6 +422,18 @@ At this point, the website certificate will successfully switch to the default S
 
 
 ---
+
+### DEMO
+
+1. **Hexo Fluid Theme**  
+[joplin.fosu.cc](https://joplin.fosu.cc)
+
+2. **Hexo yet the books theme**  
+[www.fosu.cc](https://fosu.cc)
+
+3. **Pages Publisher theme**  
+[note.fosu.cc](https://note.fosu.cc/)
+
 
 
 Finally, I would like to thank the authors of the two plugins, rxliuli and ylc395, as well as the many developers in the Joplin Hexo Hugo community. The world is a better place because of you!
