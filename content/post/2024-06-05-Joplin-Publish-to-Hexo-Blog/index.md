@@ -148,6 +148,7 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 
 ![Hugo 安装环境](hugo.png)
 <br>
+
 ### 2.使用 VSCODE 等 IDE 软件写博客  
    显然，在写这篇文章的时候我就是在用 Vscode，当然，此前也喜欢用 Notepad++ 或其他编辑器。但由于 Joplin 不支持 Frontmatter 格式，因此无法直接从 Joplin 编辑好博客所需 MD 文件内容，而是需要使用 Vscode 重新加工一遍。  
 
@@ -158,6 +159,8 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 
 ![Vscode](vscode.png)
 <br>
+
+
 ### 3.发布到 Github Gitee 等代码托管平台  
    静态博客文件一般都托管在 Github Gitee 等代码托管平台，但说实话，这些平台平常除了IT互联网行业熟悉，其他网民几乎都没直接接触过。对于如何使用 git 提交文件一头雾水，而且还往往遇到网络不通等疑难问题。特别是今年初 Gitee（码云）直接停止了 Gitee pages 服务，导致国内部署静态博客难度进一步升级。
    
@@ -172,6 +175,7 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 
 ![vercel](vercel.png)
 <br>
+
 ---
 
 ## 使用 Obsidian 笔记软件发布到 Hugo 的方法
@@ -189,8 +193,8 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 
 
 ![Obsidian 插件配置](obsidian.png)
-Obsidian 的插件相比 Joplin 过于复杂
 <br>
+
 ---
 
 ## Joplin 发布文章到 Hexo 后的一些网站配置问题
