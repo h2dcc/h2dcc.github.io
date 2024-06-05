@@ -1,5 +1,5 @@
 ---
-title: "从安装到发布，3分钟使用Joplin搭建一个HEXO静态博客"  
+title: "从零开始，3分钟使用Joplin搭建和发布Hexo静态博客"  
 slug: "joplin-publish-to-hexo-blog"  
 date: "2024-06-05"  
 categories: 
@@ -18,9 +18,17 @@ image: "joplinapp.jpg"
 ---
 
 
-Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用以来，我在 Joplin 上已经记录了数十万字的内容，偶尔也会使用 Joplin 创作一些博客文章。但由于 Joplin 整体用户数不多，插件库不够丰富，将 Joplin 作为发布端直接发布文章到博客一直有很大困难，直到最近看到开发者 [rxliuli](https://blog.rxliuli.com/) 发布的一款新的 Publisher 插件，让我产生了极大的兴趣，故此写下这个教程。也可以直接查看作者的 [插件文档](https://joplin-utils.rxliuli.com/en-US/joplin-publisher/) ，效果是一样的。
+Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用以来，我在 Joplin 上已经记录了数十万字的内容，偶尔也会使用 Joplin 创作一些博客文章。但由于 Joplin 插件库不够丰富，将 Joplin 作为发布端直接发布文章到博客一直有困难，直到最近看到开发者 [rxliuli](https://blog.rxliuli.com/) 发布的一款新的 Publisher 插件，让我产生了极大的兴趣，故此写下这个教程。也可以直接查看作者的 [插件文档](https://joplin-utils.rxliuli.com/en-US/joplin-publisher/) ，效果是一样的。
 
-一个小插曲是，当我在 Joplin 社区论坛看到作者 [发帖](https://discourse.joplinapp.org/t/introduce-the-plugin-joplin-publisher/38383/9) 时，我参照文档操作，结果发现作者在仓库中漏传了 `_config.fluid.yml` 文件，看到帖子后才添加上。之后经我多测试，暂未发现任何问题。
+这么多年来，我很少写网络应用教程，但这次实在出乎意料。我认为此种方式是当下最为便捷和可视化的静态博客应用方案，具有多个显著区别于其他方案的优点：
+
+1. **极速的“零代码”部署静态博客**（ Joplin Publisher 插件)
+2. **极其出色的 Markdown 编辑器**（ Joplin APP )
+3. **极简方式提交静态博客更新**（ Joplin Publisher 插件)
+4. **无需代码知识，无需 VS Code， 无需 Git。** （搭建博客网站后，全程在 Joplin 中操作）
+
+> 一个小插曲是，当我在 Joplin 社区论坛看到作者 [发帖](https://discourse.joplinapp.org/t/introduce-the-plugin-joplin-publisher/38383/9) 时，我参照文档操作，结果发现作者在仓库中漏传了 `_config.fluid.yml` 文件，看到帖子后才添加上。之后经我多次测试，暂未发现其他问题。
+
 
 
 ![My Joplin](myjoplin.png)
@@ -39,13 +47,13 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 [![成功发布到 Hexo 博客](default1.png)](https://www.fosu.cc)
 <br>
 
-> 对于已经使用过 Hexo Hugo 等静态博客的朋友来说，这就是使用Joplin创建和发布 Hexo 博客的全部流程。简单到不可思议，全程下来三分钟都不用，还包含 Github Action 的自动部署时间。
+> 对于已经使用过 Hexo Hugo 等静态博客的朋友来说，这就是使用 Joplin 创建和发布 Hexo 博客的全部流程。简单到不可思议，全程下来三分钟都不用，还包含 Github Action 的自动部署时间。
 
 ---
 
 ## 使用 Joplin 创建和发布 Hexo 博客的具体方法（新手版）
 
-以下是对于新手用户的教程，亦相当之简单。
+以下是新手用户教程，对于零基础用户来说，亦没有什么难度。过程中基本做到“零代码”，且无需使用 VS Code 和 Git 等工具。相信零基础用户可以在 20 分钟内完成。
 
 ### 第一步：安装 Joplin Publisher 插件
 
@@ -61,14 +69,14 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 ### 第二步：创建 Github 仓库
 
 1. **准备账号**  
-   如果没有 Github 账号，可以网上搜索教程注册一个，很简单。登陆后打开 [Joplin Blog Template](https://github.com/joplin-utils/joplin-blog-template) 页面。选择 Use this template, Create a new repository.   
+   如果没有 Github 账号，可以自行注册一个，跟一般网站注册没啥区别，很简单。登陆账号后打开 [Joplin Blog Template](https://github.com/joplin-utils/joplin-blog-template) 页面。选择 Use this template, Create a new repository.   
 
 
 ![Fork仓库](image.png)
 <br>
 
 2. **创建仓库**  
-   在创建仓库页面，填写 Repository name (仓库名称)，名称应以 `.github.io` 结尾，如果是第一次使用 Github page，建议直接填写 `username.github.io` 。 例如，我的用户名是 h2dcc ，则填写 `h2dcc.github.io` 。***此项设置非常重要，除非你想使用自定义域名，否则必须按该格式填写***
+   在创建仓库页面，填写 Repository name (仓库名称)，名称应以 `.github.io` 结尾，如果是第一次使用 Github page，建议直接填写 `username.github.io` 。 例如，我的用户名是 h2dcc ，则填写 `h2dcc.github.io` 。***此项设置非常重要，除非你要使用自定义域名，否则必须按该格式填写***
 
 
 ![创建仓库](image-1.png)
@@ -102,9 +110,11 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 <br>
 
 
-![复制密钥](image-5.png)  
-  复制密钥 *注意：该密钥只会在刚生成时展示这一次，如果错过了，得重新生成一个。*
+![复制密钥](image-5.png)
 <br>
+*注意：该密钥只会在刚生成时展示这一次，如果错过了，得重新生成一个。*
+<br>
+
 2. **在 Joplin 填写 Github 验证密钥**  
 将上一步获取的密钥，连同 Github 用户名， Github 仓库名称填入，这里的仓库名称就是在上边 `第二步` 中 `创建仓库` 的名称。  
 
@@ -125,44 +135,44 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 
 
 ![成功发布到 Hexo 博客](default1.png)  
-  
+<br>
 
-> 以上就是使用 Joplin 发布到 Hexo 静态博客的全部流程，至此一个静态博客的搭建和发布方式就构建好了。
+> 以上就是使用 Joplin 发布到 Hexo 静态博客的全部流程，至此一个静态博客的搭建和发布方式就构建好了。真正做到了全程“零代码”，无需使用 IDE 工具和 Git。
 
-*对于网站基本配置等信息，我放在本文最后一个部分。*
+*对于网站配置等信息，我将放在本文最后一个部分。*
 
 ---
 
-作为对比，下边我再啰嗦一下，简单总结传统笔记发布静态博客的过程。虽然跟本文主题无关，但可以对比一下，看看 Joplin 发布到静态博客究竟有多么简单。
+作为对比，下边我再啰嗦一下，简单总结传统笔记发布静态博客的过程。虽然跟本文主题无关，但可以对比看看 Joplin 发布到静态博客究竟有多么简单。
 
 ## 传统笔记发布到博客模式
 
 
 ###  1.搭建博客环境   
-   像 Hugo Hexo 这类静态博客，我相信绝大多数人都是从本地搭建运行环境开始的。例如 Hugo。  
+   像 Hugo Hexo 这类静态博客，我相信绝大多数人都是从本地搭建运行环境开始的。  
 
    > 我没有系统学习过计算机课程，对很多网络工具的使用都始自于搭建Hugo 博客。    
    
-   遥想当年，我是在看了无数遍 Hugo 官方文档后，才在自己的windows电脑第一次运行起 `hugo server` 。中间经历过不知道多少小问题。对包括 Dart Sass, Git, Go, Mercurial, Chocolatey 等一系列产品都是第一次使用，可想而知中间阻力有多大。光是一个 git 都折腾很久，要么是这里有点问题，要么那里有点问题，总之能在自己电脑上运行起来已经成功一半。
+   遥想当年，我是在看了无数遍 Hugo 官方文档后，才在自己的 Windows 电脑第一次运行起 `hugo server` 。Dart Sass, Git, Go, Mercurial, Chocolatey 等一系列工具都是第一次使用，可想而知中间阻力有多大。光是一个 git 都折腾很久，要么是这里有点问题，要么那里有点问题，总之能在自己电脑上运行起来已经费尽心机。
 
 
 ![Hugo 安装环境](hugo.png)
 <br>
 
-### 2.使用 VSCODE 等 IDE 软件写博客  
-   显然，在写这篇文章的时候我就是在用 Vscode，当然，此前也喜欢用 Notepad++ 或其他编辑器。但由于 Joplin 不支持 Frontmatter 格式，因此无法直接从 Joplin 编辑好博客所需 MD 文件内容，而是需要使用 Vscode 重新加工一遍。  
+### 2.使用 VS Code 等 IDE 软件写博客  
+   显然，在写这篇文章的时候我就是在用 VS Code，此前也喜欢用 Notepad++ 或其他编辑器，另外我还写了一个关于如何在安卓手机上发布 Hugo 博客的教程 [如何在安卓手机发布 Hugo 博客](https://hyruo.com/tags/hugo/)。但由于 Joplin 不支持 Frontmatter 格式，之前无法直接从 Joplin 编辑好博客所需 MD 文件，而是得使用 VS Code 重新加工一遍。  
 
-   > 由于 Joplin 对笔记的存储是数据库存储模式，md文件和图片等引用资源都是分离的。直接复制 Joplin 的笔记到 Vscode 会导致图片链接出现错误。  
+   > 由于 Joplin 对笔记的存储是数据库存储模式，md文件和图片等引用资源都是分离的。直接复制 Joplin 的笔记到 VS Code 会导致图片链接出现错误。  
    
-   但是，对于初学者，特别是非计算机行业人员来说，很容易被 Vscode 这类 IDE 工具所折磨，光是初始设置就让人望而却步。  
+   但是，对于初学者，特别是非计算机行业从业人员或爱好者来说，很容易被 VS Code 这类 IDE 工具所折磨，光是初始设置就让人望而却步。  
 
 
-![Vscode](vscode.png)
+![VS Code](vscode.png)
 <br>
 
 
 ### 3.发布到 Github Gitee 等代码托管平台  
-   静态博客文件一般都托管在 Github Gitee 等代码托管平台，但说实话，这些平台平常除了IT互联网行业熟悉，其他网民几乎都没直接接触过。对于如何使用 git 提交文件一头雾水，而且还往往遇到网络不通等疑难问题。特别是今年初 Gitee（码云）直接停止了 Gitee pages 服务，导致国内部署静态博客难度进一步升级。
+   静态博客文件一般都托管在 Github Gitee 等代码托管平台。但说实话，这些平台平常除了IT互联网行业比较熟悉，其他网民几乎都没直接接触过。对于如何使用 Git 提交文件一头雾水，而且还往往遇到网络不通等疑难问题。特别是今年初 Gitee（码云）直接停止了 Gitee pages 服务，导致在国内平台部署静态博客难度进一步升级。
    
    **将静态网站托管到 Github 一般有三种方式**
 
@@ -170,7 +180,7 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
    
    2. 使用 Github Actions 在线生成静态网站文件。将静态网站的原代码上传到 Github，由 Github 自行编译静态文件并部署。就博客而言，这种方式每次只需要提交新的文章和图片即可，Github 会立即自动生成静态网页文件。  
    
-   3. 使用 Vercel Cloudflare NetLify 等静态部署服务。主要是替代Github Actions，这些服务在监控到 Github 仓库文件变化时，会自动拉取更新生成静态网页。主要区别是在于网络速度方面问题。不过这都是玄学，有时候 Github Pages 比较快，有时候 Cloudlare pages 比较快，没有定数。例如，本博客此刻托管在 Vercel，经测试国内连接速度基本在2秒以内。  
+   3. 使用 Vercel Cloudflare NetLify 等静态部署服务。主要是替代Github Actions，这些服务在监控到 Github 仓库文件变化时，会自动拉取更新生成静态网页。主要区别是在于网络速度方面问题。不过这都是玄学，有时候 Github Pages 比较快，有时候 Cloudlare pages 比较快，没有定数。例如，本博客此刻托管在 Vercel，经测试国内连接速度基本在1秒以内。  
 
 
 ![vercel](vercel.png)
@@ -180,20 +190,65 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 
 ## 使用 Obsidian 笔记软件发布到 Hugo 的方法
 
-   上边这部分我简单介绍了一下使用 Hugo Hexo 等博客的常规方法。作为对比，这里我再介绍一下使用 Obsidian 发布 Hugo 等静态博客的方法。
+   上边这部分我简单介绍了一下使用 Hugo Hexo 静态博客的常规方法。作为对比，这里我再引用一下使用 Obsidian 发布 Hugo 等静态博客的方法。
 
    建议可以直接观看《胡说》博客中的以下三篇文章：
    1. [Hugo 博客写作最佳实践](https://blog.zhangyingwei.com/posts/2022m4d11h19m42s28/)
    2. [ Obsidian + Hugo 最佳配置推荐 ](https://blog.zhangyingwei.com/posts/2022m4d12h13m13s22/)
    3. [ 把 Obsidian 变为 Hugo 博客的集成管理平台 ](https://blog.zhangyingwei.com/posts/2024m1d30h10m7s52/)
 
-  我在上个月曾经尝试过使用这个方法发布博客。但是该方法的一个缺陷是，必须首先自行在 Github 搭建有一个 Hugo 博客。其次，该方法需要依赖 Obsidian 上多个插件运行，而且过程中需要不断调试才能让各个插件之间配合生效，初始配置难度很大。
+  我在上个月曾经尝试过使用这个方法发布博客。但是该方法的一个缺陷是，必须首先在 Github 搭建有一个 Hugo 博客。其次，该方法需要依赖 Obsidian 上多个插件，而且过程中需要不断调试才能让各个插件之间配合生效，初始配置难度很大。
 
-  事实上我放弃使用 Obsidian 来发布 Hugo 的最大原因是我并不喜欢使用 Obsidian，总觉得它的各种插件配置过于复杂，一个最简单的同步功能都得耗费很多精力去维护，不如 Joplin 来得方便。而且使用 Obsidian 发布Hugo 博客还需要由 Obsidian 来接管 Hugo 下的博客目录，并单独创建一个仓库。在使用过程中需要在普通笔记和博客文件仓库间来回切换，否则容易与 Git 仓库混淆产生冲突。
+  事实上我放弃使用 Obsidian 来发布 Hugo 的最大原因是我并不喜欢使用 Obsidian，总觉得它的各种插件配置过于复杂，一个最简单的同步功能都得耗费很多精力去维护，不如 Joplin 来得方便。而且使用 Obsidian 发布Hugo 博客还需要由 Obsidian 来接管 Hugo 下的博客目录，将其单独创建一个仓库，在使用过程中还得在普通笔记仓库和博客文件仓库间来回切换，否则容易与 Git 数据库混淆产生冲突。
 
 
 ![Obsidian 插件配置](obsidian.png)
 <br>
+
+---
+
+## 另一种通过 Joplin 发布到 Github Pages 静态博客的方法  
+
+如果你眼尖可能在上边截图中看到，Joplin 有两款 Publisher 插件，除了上边介绍这款新插件，之前 Joplin 中已经有另一款 Pages Publisher 插件，这款插件我使用过半年时间。但这款插件并没有使用 Hexo Hugo 等静态博客程序，只是一个简单的 Html 静态网站生成器，适合极简主义者。
+
+
+![ Pages Publisher 插件](image-11.png)  
+<br>
+
+### 1.Github Token 配置
+该插件配置同样极为简单，只需要填入 Github Token 即可开始使用。
+
+
+![插件后台设置](image-12.png)  
+<br>
+
+### 2.Github 仓库配置
+
+在 Github 存储仓库部分，填写 Github 用户名，注册 Github 所用邮箱， 仓库名等信息即可。（可以选填自定义域名，如已经在 Github Pages 设置自定义域名，则必填）
+
+
+![插件绑定 github 仓库设置](image-14.png)  
+<br>
+
+### 3.选择文章生成并发布
+
+网站设置部分只需要填写网站名称、图标等简单信息，并搜索选择需要发布的笔记内容即可点击 `Generate` 在本地生成静态网站。可点击 Preview 在本地浏览器预览网页内容，点击 Publish 则将发布到 Github Pages.
+
+
+![网站简单设置](image-13.png)  
+<br>
+
+
+![预览和发布网站](image-15.png)  
+<br>
+
+
+![极简主题风格](publisher.png)  
+<br>
+
+### 4.更改主题
+
+目前该插件除了默认主题外，只有一款用户自建主题。但与原主题几乎没什么区别。主题仓库为 [joplin-plugin-page-publisher-theme ](https://github.com/abbychau/joplin-plugin-page-publisher-theme) ，下载到本地的Joplin插件目录中替换原主题即可。
 
 ---
 
@@ -300,7 +355,7 @@ navbar:
    在将域名绑定到 Github Pages 时，需要将域名设置 A 记录到 Github 的 IP，或者设置 CNAME 到 `username.github.io` ，这里的 `username` 依然是你自己的 Github 用户名。考虑到国内访问的稳定性，推荐使用 CNAME 方式。
 
 3. **在 Github 上绑定域名**
-   即上文中修改仓库设置部分，在下图中 Costom domain 中填入你需要绑定的域名。如果 DNS 记录已经设置成功，在此页面稍等片刻即可绑定成功。 刷新页面，在该页面上方 Github Pages 位置，你应该能看到域名已经成功设置的信息。  
+   即上文中修改仓库设置部分，在下图中 Custom domain 中填入你需要绑定的域名。如果 DNS 记录已经设置成功，在此页面稍等片刻即可绑定成功。 刷新页面，在该页面上方 Github Pages 位置，你应该能看到域名已经成功设置的信息。  
 
 
 ![自定义域名设置](5ee4b85e605e2f73e0c03773a1af6fab.png)
@@ -317,50 +372,6 @@ navbar:
 
 ---
 
-## 另一种通过 Joplin 发布到 Github Pages 静态博客的方法  
 
-如果你眼尖可能在上边截图中看到，Joplin 有两款 Publisher 插件，除了上边介绍这款新插件，之前 Joplin 中已经有另一款 Pages Publisher 插件，这款插件我使用过半年时间。但这款插件并没有使用 Hexo Hugo 等静态博客程序，只是一个简单的 Html 生成应用，只适合极简主义者。
-
-
-![ Pages Publisher 插件](image-11.png)  
-<br>
-
-### 1.Github Token 配置
-该插件配置同样极为简单，只需要填入 Github Token 即可开始使用。
-
-
-![插件后台设置](image-12.png)  
-<br>
-
-### 2.Github 仓库配置
-
-在 Github 存储仓库部分，填写 Github 用户名，注册 Github 所用邮箱， 仓库名等信息即可。（可以选填自定义域名，如已经在 Github Pages 设置自定义域名，则必填）
-
-
-![插件绑定 github 仓库设置](image-14.png)  
-<br>
-
-### 3.选择文章生成并发布
-
-网站设置部分只需要填写网站名称、图标等简单信息，并搜索选择需要发布的笔记内容即可点击 `Generate` 在本地生成静态网站。可点击 Preview 在本地浏览器预览网页内容，点击 Publish 则将发布到 Github Pages.
-
-
-![网站简单设置](image-13.png)  
-<br>
-
-
-![预览和发布网站](image-15.png)  
-<br>
-
-
-![极简主题风格](publisher.png)  
-<br>
-
-### 4.更改主题
-
-目前该插件除了默认主题外，只有一款用户自建主题。但与原主题几乎没什么区别。主题仓库为 [joplin-plugin-page-publisher-theme ](https://github.com/abbychau/joplin-plugin-page-publisher-theme) ，下载到本地的Joplin插件目录中替换原主题即可。
-
-
----
 
 最后，再次感谢两个插件的作者 rxliuli 和 ylc395 , 感谢Joplin Hexo Hugo 社区的众多开发者。世界有你们而变得更美好！
