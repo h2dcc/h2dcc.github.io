@@ -95,7 +95,7 @@ The teacher cited several examples from his own experience, advising us to be fl
 The teacher used examples of students and leaders he has helped and supported over the years to advise us that as we enter middle age, we should start to learn satisfaction and contentment, and not overly concern ourselves with personal gains and losses. After all, as we reach middle age, the harmony of the family, the growth of our children, and our health are often more important than personal advancement. Especially within the system, the time most people can shine in their careers typically does not exceed 15 years. In the marathon of life, there can still be two to three decades after retirement. Even if some have held high positions and had power for a time, facing decades of retirement, if there are problems with the family, children, or their own health, it would all have been in vain.
 
 
-![](5193.jpg)
+![](5196.jpg)
 
 ---
 
