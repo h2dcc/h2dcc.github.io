@@ -25,12 +25,14 @@ Joplin is my favorite open-source note-taking application. Since I started using
 Over the years, I have rarely written tutorials on web applications, but this time it was unexpected. I believe this method is currently the most convenient and visual solution for static blog applications, with several significant advantages over other solutions:  
 
 
-1. **Ultra-fast "zero-code" deployment of a static blog** (Joplin Publisher plugin)  
-2. **Exceptionally excellent Markdown editor** (Joplin APP)  
-3. **Simplest method to submit updates to a static blog** (Joplin Publisher plugin)  
-4. **No need for coding knowledge, no need for VS Code, no need for Git** (After setting up the blog website, all operations are done within Joplin)  
+- **Lightning-fast "zero-code" deployment of static blogs** (deployed via the Joplin Publisher plugin)
+- **Exceptionally excellent Markdown editor** (edited within the Joplin app)
+- **Visual blog category and directory management system** (managed within the Joplin app)
+- **Simplest method for submitting updates to static blogs** (submitted via the Joplin Publisher plugin)
+- **No need to set up Front Matter**(automatically converted by the Joplin Publisher plugin)
+- **Minimalist image referencing and management** (simply paste or drag images into the Joplin editor)
+- **No coding knowledge required, no need for VS Code, no need for Git**. (After setting up the blog website, all operations are performed within Joplin)
 
-> A small anecdote is that when I saw the [author's post]((https://discourse.joplinapp.org/t/introduce-the-plugin-joplin-publisher/38383/9) ) on the Joplin community forum, I followed the documentation and found that the author had inadvertently omitted the `_config.fluid.yml` file in the repository. It was only after seeing the reply that it was added. After multiple tests by me, no other issues have been found so far.  
 
 
 ![My Joplin](myjoplin.png)
@@ -145,13 +147,13 @@ Add a `Blog` tag to the note you want to publish to Hexo, then click "Tools - Pu
 <br>
 
 
-![Successfully Published to the Hexo Blog](default1.png)  
+![Successfully Published to the Hexo Blog](joplin-fosu.png)  
 <br>
 
 > That concludes the entire process of publishing to a Hexo static blog using Joplin. At this point, the setup and publishing method for a static blog are complete. It truly achieves a "zero-code" process, without the need for IDE tools or Git.
 
 
-*For information on website configuration, I will include it in the final section of this article.*
+*For information on website configuration, I will include it in the [final section of this article](#part-last).*
 
 ---
 
@@ -280,7 +282,7 @@ Currently, in addition to the default theme, this plugin only has one user-built
 ---
 
 
-## Website Configuration Issues After Publishing Articles to Hexo with Joplin  
+## Website Configuration Issues After Publishing Articles to Hexo with Joplin {#part-last} 
 
 
 ### Basic Website Settings  
@@ -337,6 +339,7 @@ Since I already have this blog, I don't need to build a website with a complete 
 <br>
 For example, I found the Yet-The-Books theme according to my preferences, which meets my requirements. Then click the link to enter the theme's repository on Github and fork it to your own repository.
 
+> Note: Steps 2-4 below are suggested actions. However, if you do not wish to use Git, you can directly click on "CODE - Download ZIP" on the theme's Github page to download the theme files. Then, extract and copy them to the folder `C:\Users\YourUsername\AppData\Local\joplin-publisher\YourUsername\YourRepositoryName-nodejs\Data\themes` (The actual folder may vary depending on your Joplin installation directory. It is recommended to search for `joplin-publisher` in the Windows File Explorer to confirm the correct location). Afterward, proceed with steps 5-6 as instructed.
 
 2. **Clone the Hexo Repository to Your Local Machine**   
   
@@ -385,7 +388,7 @@ For example, I found the Yet-The-Books theme according to my preferences, which 
 
 
 
-[![theme yet the books](books.jpg)](https://books.fosu.cc) 
+[![theme yet the books](fosu.png)](https://fosu.cc) 
 <br>
 
 ### Binding a Custom Domain to Your Blog

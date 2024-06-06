@@ -46,7 +46,7 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 2. 在 Joplin 安装 [Publisher插件](https://github.com/rxliuli/joplin-utils/releases/download/joplin-publisher%401.0.0/joplin-publisher.jpl)，绑定 Github Token。
 3. 在 Joplin 笔记上添加 `Blog` 标签，然后点击 Publish to Github 即可。
  
-[![成功发布到 Hexo 博客](default1.png)](https://joplin.fosu.cc)
+[![成功发布到 Hexo 博客](joplin-fosu.png)](https://joplin.fosu.cc)
 <br>
 
 > 对于已经使用过 Hexo Hugo 等静态博客的朋友来说，这就是使用 Joplin 创建和发布 Hexo 博客的全部流程。简单到不可思议，全程下来三分钟都不用，还包含 Github Action 的自动部署时间。
@@ -143,7 +143,7 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 
 > 以上就是使用 Joplin 发布到 Hexo 静态博客的全部流程，至此一个静态博客的搭建和发布方式就构建好了。真正做到了全程“零代码”，无需使用 IDE 工具和 Git。
 
-*对于网站配置等信息，我将放在本文最后一个部分。*
+*对于网站配置等信息，我将放在本文[最后一个部分](#part-last)*
 
 ---
 
@@ -256,7 +256,7 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 
 ---
 
-## Joplin 发布文章到 Hexo 后的一些网站配置问题
+## Joplin 发布文章到 Hexo 后的一些网站配置问题 {#part-last}
 
 ### 网站基本设定  
 在Github仓库中找到 `_config.fluid.yml` `_config.yml` 这两个文件。其中，`_config.fluid.yml` 是 Hexo 的 Fluid 主题配置文件；`_config.yml`是 Hexo 的默认配置文件，可以直接在 Github 代码区编辑这两个文件。
@@ -436,7 +436,7 @@ plugins:
    - 在 hexo 仓库中搜索关键词 fluid ，删除 `package.json` `pnpm-lock.yaml` 两个文件中有关fluid部署依赖文件部分代码。
 
 
-[![更换 yet the books 主题后的网站](books.jpg)](https://books.fosu.cc) 
+[![更换 yet the books 主题后的网站](fosu.png)](https://fosu.cc) 
 <br>
 
 ### 给博客绑定自定义域名  
