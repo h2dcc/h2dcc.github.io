@@ -22,10 +22,13 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 
 这么多年来，我很少写网络应用教程，但这次实在出乎意料。我认为此种方式是当下最为便捷和可视化的静态博客应用方案，具有多个显著区别于其他方案的优点：
 
-1. **极速的“零代码”部署静态博客**（ Joplin Publisher 插件)
-2. **极其出色的 Markdown 编辑器**（ Joplin APP )
-3. **极简方式提交静态博客更新**（ Joplin Publisher 插件)
-4. **无需代码知识，无需 VS Code， 无需 Git。** （搭建博客网站后，全程在 Joplin 中操作）
+1. **极速的“零代码”部署静态博客**（ Joplin Publisher 插件部署)
+2. **极其出色的 Markdown 编辑器**（ Joplin APP 编辑 )
+3. **可视化博客分类目录管理系统**（ Joplin APP 管理)
+4. **极简方式提交静态博客更新**（ Joplin Publisher 插件提交)
+5. **无需设置 Front Matter**（ Joplin Publisher 插件自动转换 )
+6. **极简的图片引用和管理**（ 粘贴或拉取到 Joplin 编辑栏）
+7. **无需代码知识，无需 VS Code， 无需 Git。** （搭建博客网站后，全程在 Joplin 中操作）
 
 > 一个小插曲是，当我在 Joplin 社区论坛看到作者 [发帖](https://discourse.joplinapp.org/t/introduce-the-plugin-joplin-publisher/38383/9) 时，我参照文档操作，结果发现作者在仓库中漏传了 `_config.fluid.yml` 文件，看到帖子后才添加上。之后经我多次测试，暂未发现其他问题。
 
@@ -241,7 +244,7 @@ Joplin 是我最喜欢的一款开源笔记应用，自从 2018 年开始使用�
 <br>
 
 
-![预览和发布网站](image-15.png)  
+![预览和发布网站](image-25.png)  
 <br>
 
 
@@ -292,11 +295,87 @@ navbar:
   blog_title: "佛苏笔记"
 ```
 
+### 博客文章管理
+在 Joplin 中管理博客非常容易，所见所得毫无门槛可言。
+
+![Joplin 笔记管理](image-16.png)
+
+#### 可视化目录管理 
+*此部分不是必须步骤。* 你可以依托自己在 Joplin 中的笔记本设置不作任何更改，Joplin Publisher 插件将自动提取带有 `blog` 标签的文章所在笔记本目录并作为博客目录发布。当然你也可以像我一样在 Joplin 中单独创建几个用于发布到博客的笔记本。例如上图，我创建了 5 个中文标题的笔记本，并在其中两个笔记本下继续创建了多个笔记本。在提交到博客后的显示结果如下：
+
+
+![网站文章结构显示](image-17.png)
 <br>
 
-### 更换其他主题（需要使用到git)  
+#### 图片管理  
+*此部分都是无感操作。* 事实上在使用 Joplin 的过程中，一般用户根本感知不到图片管理的存在，因为这存粹是多余的步骤。用户只需要在 Joplin 的笔记编辑器中粘贴自己想要的图片上去，或者从文件夹直接将图片拉到 Joplin 的编辑器即可，Joplin 会在后台自动处理图片的“软链接”，并将其作为附件存储在 Joplin 数据库。而 Publisher 插件会自动将图片找出来上传到 Hexo 博客。对于图片设置，Joplin 中也可以借助可视化编辑器对图片进行拉大、缩小等调整，或者启用兼容的其他 Markdown 语法进行快速调整，以及调用第三方编辑器进行编辑等。
 
-由于我已经有了本博客，所以并不需再建设一个完全博客风格的网站。我的想法是，借助我的 Joplin 笔记软件，将自己的一些读书笔记发出来，这样的话，使用 Fluid 主题就不是很合适了。如果你没有这方面需求，可以无视这部分，并且更换主题貌似只能使用git，除非将主题文件通过网页逐个上传。
+#### 网络同步 
+Joplin 有着极其出色的在线同步功能，无需像 Obsidian 那样繁琐的设置，而且所有笔记都带版本控制和历史记录功能，可以很方便的在手机、平板等其他客户端进行同步写作，只是发布到博客目前只能在 PC 端实现。
+
+#### 博客文章设置  
+*此部分没必要在意。*Joplin 笔记支持标签、时间修改，但 Joplin 明确不支持 Front Matter 设置，因此无法在 Joplin 笔记中单独设置博客文件的一些个性化信息，主要包括网址的固定链接、评论控制和特色图这三个。由于Joplin 采用数据库方式存储笔记，同时可配合文件加密功能，所以每篇笔记的原始 ID 都是随机名，Joplin Publisher 插件提取时也采用的是该随机名称，如果不是有强迫症，其实也没必要修改这个。评论控制功能，个人感觉也没必要单独文章去控制，特色图片问题下文将提到。
+
+
+![修改文章设置](image-18.png)
+<br>
+
+#### 博客特色图片和缩略图设置
+目前对于从 Joplin 发布到 Hexo 的博客，没有太好的博客特色图片设置办法。一个可行的思路是通过修改 Hexo 和博客主题文件，将每篇文章的第一张图片自动拉取作为特色图片，并以此生成文章缩略图。我没有测试这种做法，因为暂时不需要这个，找 DeepSeek Ai 提供方案如下，当然，你也可以用其他 Ai 或搜索其他类似教程进行修改。
+
+
+1. 创建一个新的Hexo插件。你可以通过运行以下命令来创建一个新的插件：
+
+```bash
+hexo new "pull-first-image"
+```
+
+这将在`scripts`文件夹下创建一个新的插件文件夹。
+
+2. 在新创建的插件文件夹中，创建一个新的JavaScript文件，例如`index.js`。
+
+3. 在`index.js`文件中，你可以使用正则表达式来匹配文章内容中的第一张图片。以下是一个简单的示例：
+
+```javascript
+'use strict';
+
+const cheerio = require('cheerio');
+
+hexo.extend.filter.register('before_post_render', function(data) {
+  const $ = cheerio.load(data.content, {
+    decodeEntities: false
+  });
+
+  const firstImage = $('img').first();
+
+  if (firstImage.length > 0) {
+    const src = firstImage.attr('src');
+    data.featured_image = src;
+    data.thumbnail = src; // 如果你还想设置缩略图
+  }
+
+  return data;
+});
+```
+
+4. 在你的Hexo配置文件`_config.yml`中，添加以下配置来启用你的插件：
+
+```yaml
+plugins:
+  - pull-first-image
+```
+
+5. 最后，你需要在你的主题中显示特色图片和缩略图。这取决于你的主题如何处理这些数据。通常，你可以在模板文件中使用`post.featured_image`和`post.thumbnail`变量来访问这些数据。
+
+请注意，这个插件假设你的文章中的第一张图片是通过`<img>`标签引入的。如果你的文章使用了其他方式来引入图片（例如Markdown的图片语法），你可能需要调整正则表达式或使用其他方法来匹配图片。
+
+此外，这个插件没有处理图片的复制或移动。如果你想将这些图片复制到你的`public`文件夹中，你可能需要使用其他插件或工具来完成这个任务。
+
+
+
+### 更换其他主题  
+
+由于我已经有了本博客，所以并不需再建设一个完全博客风格的网站。我的想法是，借助我的 Joplin 笔记软件，将自己的一些读书笔记发出来，这样的话，使用 Fluid 主题就不是很合适了。如果你没有这方面需求，可以无视这部分内容。
 
 1. **在 [ Hexo 官网](https://hexo.io/themes/) 查找你想要的主题**  
 
@@ -304,6 +383,10 @@ navbar:
 ![hexo 主题库](image-10.png)
 <br>
 例如，我根据自己喜好查找到这个 Yet-The-Books 主题比较符合自己的要求。然后点击链接进入主题在 Github 上的仓库，fork到自己仓库。
+
+> **重要提示**：以下第 2-4 步为建议操作。但如果你不想使用 Git ，可以直接在主题 Github 页面点击 `CODE`-`Download ZIP`，把主题文件下载下来，然后将其解压复制到 `C:\Users\你的用户名\AppData\Local\joplin-publisher\你的用户名\你的仓库名-nodejs\Data\themes` 文件夹（*受你的 Joplin 安装目录影响，这里也可能是其他文件夹，建议用 `joplin-publisher` 为关键词在 Windows 文件管理器中搜索确认*），再按第 5-6 步操作即可。
+
+<br>
 
 2. **克隆 Hexo 仓库到本地**  
   
@@ -384,17 +467,11 @@ navbar:
 
 ### 演示链接
 
-1. **Fluid 主题** 
+1. **Fluid 主题** -  [https:/joplin.fosu.cc](https://joplin.fosu.cc)
 
-[joplin.fosu.cc](https://joplin.fosu.cc)
+2. **Yet the books 主题** -  [https://www.fosu.cc](https://fosu.cc)
 
-2. **Yet the books 主题**  
-
-[www.fosu.cc](https://fosu.cc)
-
-3. **Pages Publisher 主题**  
-
-[note.fosu.cc](https://note.fosu.cc/)
+3. **Pages Publisher 主题** -  [https://note.fosu.cc](https://note.fosu.cc/)
 
 
-最后，再次感谢两个插件的作者 rxliuli 和 ylc395 , 感谢Joplin Hexo Hugo 社区的众多开发者。世界有你们而变得更美好！
+> 最后，再次感谢两个插件的作者 rxliuli 和 ylc395 , 感谢Joplin Hexo Hugo 社区的众多开发者。世界有你们而变得更美好！

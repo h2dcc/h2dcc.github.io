@@ -265,7 +265,7 @@ The website settings only need to fill in simple information such as the website
 <br>
 
 
-![Preview and Publish Website](image-15.png)  
+![Preview and Publish Website](image-25.png)  
 <br>
 
 
