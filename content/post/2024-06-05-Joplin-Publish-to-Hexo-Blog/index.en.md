@@ -48,7 +48,7 @@ Creating and publishing a Hexo blog with Joplin is incredibly straightforward, r
 2. Install the [Publisher plugin](https://github.com/rxliuli/joplin-utils/releases/download/joplin-publisher%401.0.0/joplin-publisher.jpl) in Joplin and bind it to a Github Token.  
 3. Add a `Blog` tag to your Joplin notes, and then click "Publish to Github."。  
  
-[![Successfully publishing to Hexo blog](default1.png)](https://www.fosu.cc)
+[![Successfully publishing to Hexo blog](joplin-fosu.png)](https://www.fosu.cc)
 <br>
 
 > For those who have experience with static blogs like Hexo or Hugo, this is the entire process of creating and publishing a Hexo blog using Joplin. It's unbelievably simple, taking less than three minutes in total, including the time for Github Actions to handle auto-deployment.
