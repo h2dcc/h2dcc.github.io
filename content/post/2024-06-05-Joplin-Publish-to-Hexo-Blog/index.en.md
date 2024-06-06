@@ -325,9 +325,9 @@ navbar:
 
 <br>
 
-### Changing to Another Theme (Requires Git)  
+### Changing to Another Theme
 
-Since I already have this blog, I don't need to build a website with a complete blog style. My idea is to use my Joplin note-taking software to publish some of my reading notes. In this case, the Fluid theme is not very suitable. If you don't have this need, you can ignore this part, and it seems that changing themes can only be done using Git, unless you upload the theme files one by one through the web page.
+Since I already have this blog, I don't need to build a website with a complete blog style. My idea is to use my Joplin note-taking software to publish some of my reading notes. In this case, the Fluid theme is not very suitable. If you don't have this need, you can ignore this part.
 
 
 1. **Find the Theme You Want on the [Hexo Official Website](https://hexo.io/themes/)**  
