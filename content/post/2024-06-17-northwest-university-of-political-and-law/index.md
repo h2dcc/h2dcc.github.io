@@ -1,5 +1,5 @@
 ---
-title: "到西北政法大学参加培训·首次西安之旅"  
+title: "到西北政法大学参加培训·首次西安之行"  
 slug: "study-in-northwest-university-of-political-and-law"  
 date: "2024-06-17"  
 categories: 
