@@ -15,7 +15,7 @@ image: "images/thumb-1920-776272-jpg-1.webp"
 
 同样我也要感谢身边的朋友，不管是风雨与共的兄弟姐妹，还是素未谋面的远方朋友。今后还得靠大家大力支持，我才能有更好的进步喔!@
 
-[![](images/4643828179_109de7ed3e_o.jpg "Sunrise")]
+![](images/4643828179_109de7ed3e_o.jpg "Sunrise")
 
 > When each sunrise ，we start a new .
 
