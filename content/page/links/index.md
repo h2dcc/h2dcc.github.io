@@ -22,7 +22,10 @@ links:
     description: 酷小呵的博客
     website: https://www.kuhehe.top
     image: kuxiaohe.jpg
-
+  - title: 王旭阳个人博客
+    description: 全栈工程师一枚,Java,Golang,Python,Web,运维技术分享。
+    website: https://www.wxy97.com
+    image: image.png
     
 
         
