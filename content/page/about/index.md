@@ -152,4 +152,26 @@ menu:
 ![](image-3.png)
 
 
-如有其他疑问请联系：[mail@fosu.cc](mailto:mail@fosu.cc)
+### 其他配置
+
+
+
+1. **静态资源**  
+字体：`HarmonyOS_Regular` , 哔哩哔哩 CDN: `s1.hdslb.com/bfs/static/jinkela/long/font/regular.css`    
+CSS/JS： `cdn.jsdmirror.com` （ jsDelivr 国内镜像）  
+
+2. **图片 CDN**  
+公益博客 CDN : `blogcdn.net`  
+
+3. **评论 Twikoo**  
+部署： `MongoDB Atlas + Vercel` ， 解析 : `vercel.cdn.yt-blog.top`（优选 Vercel IP）   
+
+4. **图片素材**  
+共享图片： `www.pexels.com`  ,  `openverse.org` ( CC 协议)   
+
+5. **图标 icons**  
+来源：`tablericons.com`  
+
+
+
+如有其他疑问请联系：`mail@hyruo.com`
