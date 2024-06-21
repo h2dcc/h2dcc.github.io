@@ -17,6 +17,7 @@ menu:
 
 ## About the author
 
+
 ### Public Service Lawyer
 After passing the national judicial examination in 2018, I became a public service lawyer in Foshan city.
 
@@ -29,19 +30,28 @@ Since 2020 , I have served as a legal advisor to a government department in Fosh
 ---
 
 
-## Experience 
 
-### Experience in IT and internet work
-Before engaging in legal work, I worked in several IT and internet companies, accumulating about a year of experience. I was primarily involved in tasks such as network equipment and information system maintenance, website operation and maintenance.
+### Work Experience 
 
-### Experience in judicial work
-I have three work experiences at courts: a one-month internship during their sophomore year, a three-month internship during their senior year, and an 18-month position starting before college graduation, all involving judgment execution and judicial supervision work.
+Since graduating from university in 2011, I have undergone several job transitions. My main work experiences are as follows.
 
-### Experience in judicial administration
-In late 2012, I had began working at a Judicial Bureau in another city in Guangdong Province. Their primary roles included judicial administration, legal education and promotion, conflict and dispute mediation, conducted administrative reviews,handled administrative disputes,and supervising community correctional offenders.
 
-### Experience in legal supervision
-In August 2014, I have began working in legal supervision.Overseeing local courts, procuratorates, public security bureaus, and judicial bureaus. The role involved ensuring these entities upheld the law and the constitution in their legal and judicial activities, prompting them to improve work reforms, efficiency, and quality to meet public expectations in the new era of the rule of law. Additionally,I had to facilitated coordination between these entities and local governments, other departments, and organizations, assisting in resolving issues that the entities could not handle independently.
+| Industry       | Work Unit          | Job Responsibilities                          | Remarks |
+| :------------- | :----------------- | :-------------------------------------------- | :------ |
+| IT Internet    | Service Outsourcing Enterprise | Network equipment and system maintenance, website development and operation | 1 Y |
+| Judicial Administration | Local Judicial Bureau | People's mediation, administrative mediation, community correction, legal publicity | 2 Y |
+| Judicial Trial and Execution | Local Court | Judicial execution, trial management, and trial supervision | 2 Y |
+| Rule of Law Construction | Local Rule of Law Office | Comprehensive administrative law enforcement reform, judicial reform, petition reform, etc. | 4 Y |
+| Rule of Law Supervision | Local Political and Legal Affairs Commission | Supervising judicial bodies to perform duties according to law, creating a fair judicial environment | 7 Y |
+| Legal Research | Local Law Society | Legal research, legal exchange, rule of law practice, and legal services | 5 Y |
+| Public Sector Lawyer | Local Government Unit | Administrative reconsideration, administrative litigation, legal consultation, and legal review | 6 Y |
+| Legal Advisor | Local Government | Legal risk prevention, problem research and resolution, coordination of legal affairs | 4 Y |
+
+* Note: The entries in this table are not listed in any particular order, and some of the positions were part-time.*
+
+
+
+
 
 ---
 
