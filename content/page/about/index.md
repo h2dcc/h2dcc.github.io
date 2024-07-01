@@ -40,12 +40,12 @@ menu:
 | 常见博客问题      |        答案       | 
 | :-----------: | :-----------: | 
 | 为什么搞博客？  |  个人兴趣    |
-| 博客服务器在哪？ | Github  Gitlab  Vercel 等平台随机，哪个速度快换哪个 |
-| 博客用的什么程序？ | HUGO 全世界最快的网站构建框架 `https://gohugo.io/` |
+| 服务器在哪？ | 托管在 Github  Gitlab  Vercel 等平台 |
+| 用的什么程序？ | HUGO 全世界最快的网站构建框架 `https://gohugo.io/` |
 | 域名什么意思？| 我女儿名字 `H. Y. Ruo` |
 | 联系方式是什么? |  `mail@hyruo.com`  |
-| 能添加微信 QQ 么？| 邮件或评论联系添加 |
-| 为什么不用 Wordpress ？ | 太卡、太慢 |
+| 能加微信么？| 邮件或评论联系添加 |
+| 为何不用 WP ？ | 太卡、太慢 |
 
 
 ![律师工作证](5352a4a7a2a9c0c43ee452a4026a170.jpg)
@@ -67,9 +67,6 @@ menu:
 
 ---
 
-### 域名问题
-
-在本站历史上曾使用过很多个域名，具体也记不大清了，大概有这些： `ifosu.com` `hyruo.com` `bensky.cn` `h2d.cc` `fosu.cc` `foshan.de` `faxue.info` `tplife.org` 
 
 
 ![](image-4.png)
