@@ -39,12 +39,12 @@ menu:
 
 | 常见博客问题      |        答案       | 
 | :-----------: | :-----------: | 
-| 为什么搞博客？  |  个人兴趣    |
+| 为何搞博客？  |  个人兴趣    |
 | 服务器在哪？ | 托管在 Github  Gitlab  Vercel 等平台 |
-| 用的什么程序？ | HUGO 全世界最快的网站构建框架 `https://gohugo.io/` |
+| 什么网站程序？ | HUGO 全世界最快的网站构建框架 `https://gohugo.io/` |
 | 域名什么意思？| 我女儿名字 `H. Y. Ruo` |
-| 联系方式是什么? |  `mail@hyruo.com`  |
-| 能加微信么？| 邮件或评论联系添加 |
+| 联系方式? |  `mail@hyruo.com`  |
+| 微信 QQ ？| 邮件或评论联系添加 |
 | 为何不用 WP ？ | 太卡、太慢 |
 
 
@@ -139,20 +139,23 @@ menu:
 
 
 1. **静态资源**  
-字体：`HarmonyOS_Regular` , 哔哩哔哩 CDN: `s1.hdslb.com/bfs/static/jinkela/long/font/regular.css`    
-CSS/JS： `cdn.jsdmirror.com` （ jsDelivr 国内镜像）  
+字体：`HarmonyOS_Regular`  
+字体 CDN: `s1.hdslb.com/bfs/static/jinkela/long/font/regular.css`    
+CSS/JS CDN： `cdn.jsdmirror.com` （ jsDelivr 平替）  
 
 2. **图片 CDN**  
 公益博客 CDN : `blogcdn.net`  
 
 3. **评论 Twikoo**  
-部署： `MongoDB Atlas + Vercel` ， 解析 : `vercel.cdn.yt-blog.top`（优选 Vercel IP）   
+部署： `MongoDB Atlas + Vercel`   
+解析 : `vercel.cdn.yt-blog.top`（优选 Vercel IP）   
 
 4. **图片素材**  
-共享图片： `www.pexels.com`  ,  `openverse.org` ( CC 协议)   
+共享图片：`www.pexels.com` ( CC 协议)    
+共享图片：`openverse.org` ( CC 协议)   
 
 5. **图标 icons**  
-来源：`tablericons.com`  
+图标：`tablericons.com`  
 
 
 
